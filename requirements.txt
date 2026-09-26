@@ -1,8 +1,15 @@
 # Runtime dependencies for the native adapter.
 #
+# Install everything below at once:
+#     pip install -r requirements.txt
+#
 # frida ships a large binary extension (~127 MB). It is installed here rather
 # than vendored into the repository.
 frida==17.18.0
+
+# Tray icon and its menu (app/native_tray.py). Without this the program starts,
+# prints a message and exits -- the tray is the only entry point.
+PySide6==6.11.2
 
 # PE parsing, used by the host to verify the target image and by the reanchor
 # tooling in tools/.
@@ -10,6 +17,11 @@ pefile==2024.8.26
 
 # Only needed to re-anchor after a WeChat update (tools/resolve_anchors.py).
 capstone==5.0.6
+
+# Used by tools/resolve_anchors.py to scan the image for rip-relative `lea`
+# sites in one vectorized pass. Pure-Python fallback does not exist, so it is
+# required for re-anchoring (not for normal operation).
+numpy==2.4.6
 
 # The analysis engine under app/engine/ uses only the standard library, plus
 # typesafe-sdk when talking to the official TypeSafe endpoint. It defaults to

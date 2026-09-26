@@ -141,13 +141,26 @@ class TraySingleton:
             self.handle = None
 
 
+MISSING_DEPENDENCY_HINT = (
+    "缺少依赖：{name}。\n"
+    "请先安装运行依赖，然后重新运行：\n"
+    "    pip install -r requirements.txt\n"
+)
+
+
 def run_tray(smoke_seconds=None):
     initial_state_file = None if smoke_seconds is not None else tray_state_path()
     if initial_state_file is not None:
         write_tray_metadata(initial_state_file, "tray_initializing")
-    from PySide6.QtCore import QTimer, Qt
-    from PySide6.QtGui import QAction, QColor, QFont, QIcon, QPainter, QPixmap
-    from PySide6.QtWidgets import QApplication, QMenu, QSystemTrayIcon
+    try:
+        from PySide6.QtCore import QTimer, Qt
+        from PySide6.QtGui import QAction, QColor, QFont, QIcon, QPainter, QPixmap
+        from PySide6.QtWidgets import QApplication, QMenu, QSystemTrayIcon
+    except ImportError as exc:
+        # The tray is the only entry point; without Qt there is nothing to show
+        # the user except this line, so make it say what to actually do.
+        print(MISSING_DEPENDENCY_HINT.format(name=exc.name or "PySide6"), file=sys.stderr)
+        return 4
 
     app = QApplication([sys.argv[0]])
     app.setApplicationName("Jev 微信原生分析")
