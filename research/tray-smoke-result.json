@@ -1,8 +1,0 @@
-{
-  "entry": "main --smoke-test 2",
-  "interpreter": "pythonw.exe",
-  "returncode": 0,
-  "elapsed_seconds": 2.201,
-  "stderr_bytes": 0,
-  "host_started": false
-}
