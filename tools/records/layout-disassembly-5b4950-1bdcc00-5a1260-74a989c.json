@@ -1,0 +1,95 @@
+[
+  {
+    "rva": "0x5b4950",
+    "end": "0x5b495b",
+    "leaf_boundary_inferred": true,
+    "instructions": [
+      "005b4950: mov      rcx, qword ptr [rcx + 8]",
+      "005b4954: xor      edx, edx",
+      "005b4956: jmp      0x1805abbb0"
+    ],
+    "references": []
+  },
+  {
+    "rva": "0x1bdcc00",
+    "end": "0x1bdcc07",
+    "leaf_boundary_inferred": true,
+    "instructions": [
+      "01bdcc00: mov      byte ptr [rcx + 0x224], dl",
+      "01bdcc06: ret      "
+    ],
+    "references": []
+  },
+  {
+    "rva": "0x5a1260",
+    "end": "0x5a12c9",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "005a1260: sub      rsp, 0x38",
+      "005a1264: mov      rax, qword ptr [rip + 0xab19055]",
+      "005a126b: xor      rax, rsp",
+      "005a126e: mov      qword ptr [rsp + 0x30], rax",
+      "005a1273: mov      rax, qword ptr [rcx + 0x28]",
+      "005a1277: mov      rcx, qword ptr [rcx + 8]",
+      "005a127b: mov      qword ptr [rsp + 0x20], 0",
+      "005a1284: movq     xmm0, qword ptr [rax + 0x1c]",
+      "005a1289: movq     xmm1, qword ptr [rax + 0x14]",
+      "005a128e: psubd    xmm0, xmm1",
+      "005a1292: movq     qword ptr [rsp + 0x28], xmm0",
+      "005a1298: lea      rdx, [rsp + 0x20]",
+      "005a129d: call     0x1805b9350",
+      "005a12a2: mov      rax, qword ptr [rsp + 0x30]",
+      "005a12a7: xor      rax, rsp",
+      "005a12aa: mov      rcx, qword ptr [rip + 0xab1900f]",
+      "005a12b1: cmp      rcx, rax",
+      "005a12b4: jne      0x1805a12bb",
+      "005a12b6: add      rsp, 0x38",
+      "005a12ba: ret      ",
+      "005a12bb: mov      rcx, qword ptr [rsp + 0x30]",
+      "005a12c0: xor      rcx, rsp",
+      "005a12c3: call     0x1874a9a60",
+      "005a12c8: int3     "
+    ],
+    "references": [
+      {
+        "from": "0x5a1264",
+        "rva": "0xb0ba2c0",
+        "ascii": null
+      },
+      {
+        "from": "0x5a12aa",
+        "rva": "0xb0ba2c0",
+        "ascii": null
+      }
+    ]
+  },
+  {
+    "rva": "0x74a989c",
+    "end": "0x74a98d8",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "074a989c: push     rbx",
+      "074a989e: sub      rsp, 0x20",
+      "074a98a2: mov      rbx, rcx",
+      "074a98a5: jmp      0x1874a98b6",
+      "074a98a7: mov      rcx, rbx",
+      "074a98aa: call     0x187505cd0",
+      "074a98af: test     eax, eax",
+      "074a98b1: je       0x1874a98c6",
+      "074a98b3: mov      rcx, rbx",
+      "074a98b6: call     0x18751c594",
+      "074a98bb: test     rax, rax",
+      "074a98be: je       0x1874a98a7",
+      "074a98c0: add      rsp, 0x20",
+      "074a98c4: pop      rbx",
+      "074a98c5: ret      ",
+      "074a98c6: cmp      rbx, -1",
+      "074a98ca: je       0x1874a98d2",
+      "074a98cc: call     0x1874aa35c",
+      "074a98d1: int3     ",
+      "074a98d2: call     0x1874b0af8",
+      "074a98d7: int3     "
+    ],
+    "references": []
+  }
+]

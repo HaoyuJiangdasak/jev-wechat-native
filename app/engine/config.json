@@ -1,0 +1,11 @@
+{
+  "relationship": "通用沟通：朋友、同事、客户等；根据上下文判断，不预设亲密关系",
+  "context": 12,
+  "analysis_only": true,
+  "jev_provider": "typesafe",
+  "jev_model": "jev-latest",
+  "check_update": false,
+  "reply_target": false,
+  "thinking": false,
+  "style": ""
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "rva": "0x7b9000",
+    "end": "0x7b9008",
+    "leaf_boundary_inferred": true,
+    "instructions": [
+      "007b9000: lea      rax, [rcx + 0x98]",
+      "007b9007: ret      "
+    ],
+    "references": []
+  }
+]

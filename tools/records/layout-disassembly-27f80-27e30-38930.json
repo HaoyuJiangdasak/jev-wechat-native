@@ -1,0 +1,113 @@
+[
+  {
+    "rva": "0x27f80",
+    "end": "0x27fae",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "00027f80: push     rsi",
+      "00027f81: sub      rsp, 0x20",
+      "00027f85: test     rdx, rdx",
+      "00027f88: je       0x180027f9b",
+      "00027f8a: mov      rsi, rcx",
+      "00027f8d: call     0x1802c4a00",
+      "00027f92: mov      rax, rsi",
+      "00027f95: add      rsp, 0x20",
+      "00027f99: pop      rsi",
+      "00027f9a: ret      ",
+      "00027f9b: lea      rax, [rip + 0xb011bae]",
+      "00027fa2: mov      qword ptr [rcx], rax",
+      "00027fa5: mov      rax, rcx",
+      "00027fa8: add      rsp, 0x20",
+      "00027fac: pop      rsi",
+      "00027fad: ret      "
+    ],
+    "references": [
+      {
+        "from": "0x27f9b",
+        "rva": "0xb039b50",
+        "ascii": null
+      }
+    ]
+  },
+  {
+    "rva": "0x27e30",
+    "end": "0x27ec8",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "00027e30: push     rsi",
+      "00027e31: sub      rsp, 0x30",
+      "00027e35: mov      rsi, rcx",
+      "00027e38: test     rcx, rcx",
+      "00027e3b: sete     al",
+      "00027e3e: cmp      edx, -1",
+      "00027e41: setne    cl",
+      "00027e44: or       cl, al",
+      "00027e46: jne      0x180027e55",
+      "00027e48: mov      rcx, rsi",
+      "00027e4b: call     0x1875225a0",
+      "00027e50: mov      r8, rax",
+      "00027e53: jmp      0x180027e5d",
+      "00027e55: mov      r8d, edx",
+      "00027e58: test     rsi, rsi",
+      "00027e5b: je       0x180027eb1",
+      "00027e5d: lea      rcx, [rsp + 0x28]",
+      "00027e62: mov      rdx, rsi",
+      "00027e65: call     0x1802c4a00",
+      "00027e6a: mov      rsi, qword ptr [rsp + 0x28]",
+      "00027e6f: mov      eax, dword ptr [rsi]",
+      "00027e71: dec      eax",
+      "00027e73: cmp      eax, -3",
+      "00027e76: ja       0x180027e80",
+      "00027e78: lock inc dword ptr [rsi]",
+      "00027e7b: mov      rsi, qword ptr [rsp + 0x28]",
+      "00027e80: mov      eax, dword ptr [rsi]",
+      "00027e82: cmp      eax, -1",
+      "00027e85: je       0x180027ea8",
+      "00027e87: mov      rcx, rsi",
+      "00027e8a: test     eax, eax",
+      "00027e8c: je       0x180027e98",
+      "00027e8e: lock dec dword ptr [rsi]",
+      "00027e91: jne      0x180027ea8",
+      "00027e93: mov      rcx, qword ptr [rsp + 0x28]",
+      "00027e98: mov      edx, 2",
+      "00027e9d: mov      r8d, 8",
+      "00027ea3: call     0x180038930",
+      "00027ea8: mov      rax, rsi",
+      "00027eab: add      rsp, 0x30",
+      "00027eaf: pop      rsi",
+      "00027eb0: ret      ",
+      "00027eb1: lea      rsi, [rip + 0xb011c98]",
+      "00027eb8: mov      qword ptr [rsp + 0x28], rsi",
+      "00027ebd: mov      eax, dword ptr [rsi]",
+      "00027ebf: dec      eax",
+      "00027ec1: cmp      eax, -3",
+      "00027ec4: jbe      0x180027e78",
+      "00027ec6: jmp      0x180027e80"
+    ],
+    "references": [
+      {
+        "from": "0x27eb1",
+        "rva": "0xb039b50",
+        "ascii": null
+      }
+    ]
+  },
+  {
+    "rva": "0x38930",
+    "end": "0x38941",
+    "leaf_boundary_inferred": true,
+    "instructions": [
+      "00038930: lea      rax, [rip + 0xb001261]",
+      "00038937: cmp      rcx, rax",
+      "0003893a: jne      0x187519c68",
+      "00038940: ret      "
+    ],
+    "references": [
+      {
+        "from": "0x38930",
+        "rva": "0xb039b98",
+        "ascii": null
+      }
+    ]
+  }
+]

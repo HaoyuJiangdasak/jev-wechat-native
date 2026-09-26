@@ -1,0 +1,51 @@
+[
+  {
+    "rva": "0x5d49aa0",
+    "end": "0x5d49b22",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "05d49aa0: push     rbp",
+      "05d49aa1: push     rsi",
+      "05d49aa2: sub      rsp, 0x48",
+      "05d49aa6: lea      rbp, [rsp + 0x40]",
+      "05d49aab: mov      qword ptr [rbp], 0xfffffffffffffffe",
+      "05d49ab3: mov      rsi, rcx",
+      "05d49ab6: lea      rax, [rip + 0x3bcbf2b]",
+      "05d49abd: mov      qword ptr [rcx], rax",
+      "05d49ac0: add      rcx, 8",
+      "05d49ac4: mov      qword ptr [rbp - 0x20], rcx",
+      "05d49ac8: call     0x183de4d10",
+      "05d49acd: lea      rcx, [rsi + 0x18]",
+      "05d49ad1: mov      qword ptr [rbp - 0x18], rcx",
+      "05d49ad5: call     0x18018cd70",
+      "05d49ada: nop      ",
+      "05d49adb: lea      rcx, [rsi + 0x28]",
+      "05d49adf: mov      qword ptr [rbp - 0x10], rcx",
+      "05d49ae3: call     0x181cbaa20",
+      "05d49ae8: nop      ",
+      "05d49ae9: lea      rcx, [rsi + 0x38]",
+      "05d49aed: mov      qword ptr [rbp - 8], rcx",
+      "05d49af1: call     0x185d49bb0",
+      "05d49af6: nop      ",
+      "05d49af7: lea      rcx, [rsi + 0x48]",
+      "05d49afb: call     0x180057950",
+      "05d49b00: nop      ",
+      "05d49b01: xorps    xmm0, xmm0",
+      "05d49b04: movups   xmmword ptr [rsi + 0x58], xmm0",
+      "05d49b08: mov      qword ptr [rsi + 0x68], 0",
+      "05d49b10: mov      qword ptr [rsi + 0x70], 0xf",
+      "05d49b18: mov      rax, rsi",
+      "05d49b1b: add      rsp, 0x48",
+      "05d49b1f: pop      rsi",
+      "05d49b20: pop      rbp",
+      "05d49b21: ret      "
+    ],
+    "references": [
+      {
+        "from": "0x5d49ab6",
+        "rva": "0x99159e8",
+        "ascii": null
+      }
+    ]
+  }
+]

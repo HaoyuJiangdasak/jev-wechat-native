@@ -1,0 +1,68 @@
+[
+  {
+    "rva": "0x5c7d4a0",
+    "end": "0x5c7d539",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "05c7d4a0: push     rbp",
+      "05c7d4a1: push     rsi",
+      "05c7d4a2: push     rdi",
+      "05c7d4a3: sub      rsp, 0x40",
+      "05c7d4a7: lea      rbp, [rsp + 0x40]",
+      "05c7d4ac: mov      qword ptr [rbp - 8], 0xfffffffffffffffe",
+      "05c7d4b4: mov      rsi, r8",
+      "05c7d4b7: mov      rdi, rcx",
+      "05c7d4ba: call     0x185c3c210",
+      "05c7d4bf: lea      rax, [rip + 0x39014f2]",
+      "05c7d4c6: mov      qword ptr [rdi + 0x5a0], rax",
+      "05c7d4cd: mov      qword ptr [rbp - 0x10], rdi",
+      "05c7d4d1: lea      rcx, [rdi + 0x5a8]",
+      "05c7d4d8: mov      qword ptr [rbp - 0x20], rcx",
+      "05c7d4dc: call     0x185c7d5a0",
+      "05c7d4e1: nop      ",
+      "05c7d4e2: lea      rax, [rip + 0x38ef2af]",
+      "05c7d4e9: mov      rcx, qword ptr [rbp - 0x10]",
+      "05c7d4ed: mov      qword ptr [rcx], rax",
+      "05c7d4f0: lea      rax, [rip + 0x38ef501]",
+      "05c7d4f7: mov      qword ptr [rcx + 0x5a0], rax",
+      "05c7d4fe: lea      rax, [rip + 0x38ef533]",
+      "05c7d505: mov      qword ptr [rcx + 0x5a8], rax",
+      "05c7d50c: lea      rax, [rcx + 0x5d0]",
+      "05c7d513: mov      qword ptr [rbp - 0x18], rax",
+      "05c7d517: xorps    xmm0, xmm0",
+      "05c7d51a: movups   xmmword ptr [rcx + 0x5d0], xmm0",
+      "05c7d521: mov      rdx, rsi",
+      "05c7d524: xor      r8d, r8d",
+      "05c7d527: call     0x185c7d6c0",
+      "05c7d52c: nop      ",
+      "05c7d52d: mov      rax, qword ptr [rbp - 0x10]",
+      "05c7d531: add      rsp, 0x40",
+      "05c7d535: pop      rdi",
+      "05c7d536: pop      rsi",
+      "05c7d537: pop      rbp",
+      "05c7d538: ret      "
+    ],
+    "references": [
+      {
+        "from": "0x5c7d4bf",
+        "rva": "0x957e9b8",
+        "ascii": null
+      },
+      {
+        "from": "0x5c7d4e2",
+        "rva": "0x956c798",
+        "ascii": null
+      },
+      {
+        "from": "0x5c7d4f0",
+        "rva": "0x956c9f8",
+        "ascii": null
+      },
+      {
+        "from": "0x5c7d4fe",
+        "rva": "0x956ca38",
+        "ascii": null
+      }
+    ]
+  }
+]

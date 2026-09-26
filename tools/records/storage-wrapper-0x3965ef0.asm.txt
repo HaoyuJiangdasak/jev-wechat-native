@@ -1,0 +1,18 @@
+03965ef0  56                             push rsi
+03965ef1  4883ec30                       sub rsp, 0x30
+03965ef5  4c89c6                         mov rsi, r8
+03965ef8  4c8b4c2460                     mov r9, qword ptr [rsp + 0x60]
+03965efd  41b8f35d2ed5                   mov r8d, 0xd52e5df3
+03965f03  4433442470                     xor r8d, dword ptr [rsp + 0x70]
+03965f08  b88dd0a3a8                     mov eax, 0xa8a3d08d
+03965f0d  33842480000000                 xor eax, dword ptr [rsp + 0x80]
+03965f14  48c1e020                       shl rax, 0x20
+03965f18  4909c0                         or r8, rax
+03965f1b  c644242801                     mov byte ptr [rsp + 0x28], 1
+03965f20  c644242000                     mov byte ptr [rsp + 0x20], 0
+03965f25  4889f2                         mov rdx, rsi
+03965f28  e8b3def2ff                     call 0x3893de0
+03965f2d  4889f0                         mov rax, rsi
+03965f30  4883c430                       add rsp, 0x30
+03965f34  5e                             pop rsi
+03965f35  c3                             ret 

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# The runtime environment is not part of the repository; install from
+# requirements.txt. Any locally vendored libraries go here too.
+tool-libs/
+
+# Frida's binary extension is large (~127 MB) and comes from PyPI.
+**/_frida.pyd
+**/_frida*.so
+
+# Local run artifacts. These describe one machine's session and must never be
+# committed: the state file records counters from a live run.
+native-host-state.json
+native-host.stop
+native-probe-live.json
+native-probe-watch.json
+resolved.json
+anchors-*.json
+vtable-inspection-*.json
+
+# Credentials. Keys belong in environment variables, never in the tree.
+*.key
+.env
+.typesafe_config
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,29 @@
+02350530  55                             push rbp
+02350531  56                             push rsi
+02350532  53                             push rbx
+02350533  4883ec30                       sub rsp, 0x30
+02350537  488d6c2430                     lea rbp, [rsp + 0x30]
+0235053c  48c745f8feffffff               mov qword ptr [rbp - 8], 0xfffffffffffffffe
+02350544  80896d02000010                 or byte ptr [rcx + 0x26d], 0x10
+0235054b  488b8158020000                 mov rax, qword ptr [rcx + 0x258]
+02350552  4885c0                         test rax, rax
+02350555  752a                           jne 0x2350581
+02350557  4889ce                         mov rsi, rcx
+0235055a  88d3                           mov bl, dl
+0235055c  b918000000                     mov ecx, 0x18
+02350561  e836931505                     call 0x74a989c
+02350566  90                             nop 
+02350567  488945f0                       mov qword ptr [rbp - 0x10], rax
+0235056b  4889c1                         mov rcx, rax
+0235056e  e8ed8471fe                     call 0xa68a60
+02350573  90                             nop 
+02350574  488b45f0                       mov rax, qword ptr [rbp - 0x10]
+02350578  48898658020000                 mov qword ptr [rsi + 0x258], rax
+0235057f  89da                           mov edx, ebx
+02350581  80481002                       or byte ptr [rax + 0x10], 2
+02350585  885009                         mov byte ptr [rax + 9], dl
+02350588  4883c430                       add rsp, 0x30
+0235058c  5b                             pop rbx
+0235058d  5e                             pop rsi
+0235058e  5d                             pop rbp
+0235058f  c3                             ret 

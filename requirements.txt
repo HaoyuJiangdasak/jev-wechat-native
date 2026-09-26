@@ -1,0 +1,17 @@
+# Runtime dependencies for the native adapter.
+#
+# frida ships a large binary extension (~127 MB). It is installed here rather
+# than vendored into the repository.
+frida==17.18.0
+
+# PE parsing, used by the host to verify the target image and by the reanchor
+# tooling in tools/.
+pefile==2024.8.26
+
+# Only needed to re-anchor after a WeChat update (tools/resolve_anchors.py).
+capstone==5.0.6
+
+# The analysis engine under app/engine/ uses only the standard library, plus
+# typesafe-sdk when talking to the official TypeSafe endpoint. It defaults to
+# the REST API over urllib, so the SDK is optional.
+# typesafe-sdk==0.7.1

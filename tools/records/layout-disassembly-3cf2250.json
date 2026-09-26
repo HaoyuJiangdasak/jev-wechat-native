@@ -1,0 +1,16 @@
+[
+  {
+    "rva": "0x3cf2250",
+    "end": "0x3cf2266",
+    "leaf_boundary_inferred": true,
+    "instructions": [
+      "03cf2250: mov      rdx, rcx",
+      "03cf2253: mov      rcx, qword ptr [rcx + 0xd0]",
+      "03cf225a: test     rcx, rcx",
+      "03cf225d: je       0x183cf2266",
+      "03cf225f: mov      rax, qword ptr [rcx]",
+      "03cf2262: jmp      qword ptr [rax + 8]"
+    ],
+    "references": []
+  }
+]
