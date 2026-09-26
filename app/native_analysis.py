@@ -23,10 +23,13 @@ When logicalId is supplied, its first stable context is retained in a separate
 same-message view rebind can reuse its pending request and deliver to the new
 id/generation. Without logicalId, the original strict view-binding behavior applies.
 
-A 45-second deadline invalidates results. Python cannot stop an arbitrary injected
-analyze_fn: an expired worker retains the sole execution slot until it returns.
-The default engine has a 40-second SDK timeout. This prevents overlapping requests
-even if an underlying transport fails to honor its timeout.
+An 8-second deadline invalidates results. Up to MAX_WORKERS analyses run at once.
+Python cannot stop an arbitrary injected analyze_fn, so an expired worker keeps its
+slot until it returns and its replacement is only dispatched after that; a stale
+worker whose candidate is gone never publishes or seeds the cache. Each job carries
+a 6-second SDK timeout, far below the deadline, so only a genuinely hung transport
+is ever discarded. Delivery stays serial: one card at a time, spaced by
+DELIVERY_INTERVAL_SECONDS, so the follow-tail scroller can track each write.
 """
 
 from __future__ import annotations

@@ -178,7 +178,8 @@ class HostTests(unittest.TestCase):
         self.live_scheduler_factory(host)
         def wait(seconds):
             self.clock.wait(seconds)
-            if self.clock() >= .8:
+            # Reject the first delivery, then accept the retry that follows it.
+            if any(call[0] == "annotate" for call in script.calls):
                 script.ack = True
         host.wait = wait
         self.assertEqual(host.run(), 0)

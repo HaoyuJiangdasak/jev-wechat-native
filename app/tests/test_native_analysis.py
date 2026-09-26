@@ -44,21 +44,24 @@ class SchedulerTests(unittest.TestCase):
         self.pending.pop(0)()
         self.scheduler.tick()
 
-    def test_latest_three_auto_start_single_worker_and_bounded_context(self):
+    def test_latest_three_start_together_and_context_is_bounded(self):
+        # Long enough that the context bound actually bites: MAX_CONTEXT caps the
+        # number of "her" messages, not the total, and their "me" replies ride along.
         messages = [msg(i, who="her" if i % 2 == 0 else "me", text=f"示例 {i}")
-                    for i in range(18)]
+                    for i in range(40)]
         self.snapshot(messages=messages)
-        self.assertEqual(len(self.pending), 1)
+        # The three newest eligible messages are dispatched concurrently.
+        self.assertEqual(len(self.pending), 3)
         for _ in range(3):
             self.finish()
-            self.assertLessEqual(len(self.pending), 1)
             self.now += 2.8
             self.scheduler.tick()
-        self.assertEqual([item[0] for item in self.delivered], [16, 14, 12])
-        self.assertEqual([call[0][-1][1] for call in self.calls], ["示例 16", "示例 14", "示例 12"])
-        self.assertTrue(all(len(call[0]) == 12 for call in self.calls))
+        self.assertEqual([item[0] for item in self.delivered], [38, 36, 34])
+        self.assertEqual([call[0][-1][1] for call in self.calls], ["示例 38", "示例 36", "示例 34"])
+        self.assertTrue(all(sum(1 for turn in call[0] if turn[0] == "her") == 12
+                            for call in self.calls))
         options = self.calls[0][1]
-        self.assertEqual(options["timeout"], 40)
+        self.assertEqual(options["timeout"], 6)
         self.assertEqual(options["context"], 12)
         self.assertTrue(options["analysis_only"])
         self.assertEqual((options["jev_provider"], options["jev_model"]), ("typesafe", "jev-latest"))
@@ -66,12 +69,14 @@ class SchedulerTests(unittest.TestCase):
         self.snapshot(messages=messages)
         self.assertFalse(self.pending)
         self.assertEqual(len(self.delivered), 3)
+        self.assertEqual(len(self.calls), 3)  # Served from cache, no new request.
 
     def test_cross_conversation_late_completion_cannot_publish_or_seed_cache(self):
         self.snapshot()
         self.snapshot("peer:B")
-        self.assertEqual(len(self.pending), 1)
-        self.finish()
+        # peer:A's worker cannot be cancelled; peer:B adds its own alongside it.
+        self.assertEqual(len(self.pending), 2)
+        self.finish()  # peer:A returns late and must be discarded
         self.assertFalse(self.delivered)
         self.assertFalse(self.scheduler.cache)
         self.assertEqual(len(self.pending), 1)
@@ -97,18 +102,19 @@ class SchedulerTests(unittest.TestCase):
         older = [dict(msg(i, text=f"旧消息 {i}"), targetEligible=False) for i in range(1, 5)]
         targets = [dict(msg(i, text=f"目标消息 {i}"), targetEligible=True) for i in range(5, 8)]
         self.snapshot(messages=older + targets)
-        self.finish()  # Latest target grows and clips remaining targets out.
-        self.snapshot(messages=older)
-        self.finish()  # Previously scheduled target completes late and is discarded.
+        self.finish()  # The newest target delivers; its two neighbours stay in flight.
+        self.snapshot(messages=older)  # Clipping removes every eligible target.
+        for _ in range(2):
+            self.finish()  # The clipped targets return late and must be discarded.
         self.assertEqual([item[0] for item in self.delivered], [7])
         self.assertFalse(self.pending)
         for _ in range(5):
             self.now += 10
             self.snapshot(messages=older)
         self.assertFalse(self.pending)
-        self.assertEqual(len(self.calls), 2)
+        self.assertEqual(len(self.calls), 3)
         self.assertEqual(self.scheduler.request_counts,
-                         {"requestsStarted": 2, "requestsCompleted": 2})
+                         {"requestsStarted": 3, "requestsCompleted": 3})
 
     def test_ineligible_only_snapshot_starts_no_request_and_flags_are_strict(self):
         self.snapshot(messages=[dict(msg(), targetEligible=False)])
@@ -152,11 +158,11 @@ class SchedulerTests(unittest.TestCase):
         self.finish()
         first_receipt = self.scheduler.delivery_receipt(1, 1)
         self.assertFalse(self.scheduler.candidates[0].delivered)
-        for now in [.2, .8, 1, 2, 2.799]:
+        for now in [.1, .2, .299]:
             self.now = now
             self.scheduler.tick()
         self.assertEqual(len(attempts), 1)
-        self.now = 2.8
+        self.now = .3
         self.scheduler.tick()
         receipt = self.scheduler.delivery_receipt(1, 1)
         self.assertNotEqual(receipt, first_receipt)
@@ -181,19 +187,20 @@ class SchedulerTests(unittest.TestCase):
         self.scheduler.on_result = lambda *args: deliveries.append((self.now, args))
         self.snapshot("peer:B", [])
         self.snapshot(messages=messages)
+        # Every target is already cached; the first card goes out at once.
         self.assertEqual(len(deliveries), 1)
         start = self.now
-        for elapsed in [.2, .8, 1, 2, 2.799]:
+        for elapsed in [.1, .2, .299]:
             self.now = start + elapsed
             self.scheduler.tick()
             self.assertEqual(len(deliveries), 1)
-        self.now = start + 2.8
+        self.now = start + .3
         self.scheduler.tick()
         self.assertEqual(len(deliveries), 2)
-        self.now += 2.8
+        self.now += .3
         self.scheduler.tick()
         self.assertEqual(len(deliveries), 3)
-        self.assertTrue(all(second[0] - first[0] >= 2.799999
+        self.assertTrue(all(second[0] - first[0] >= .299999
                             for first, second in zip(deliveries, deliveries[1:])))
         self.assertEqual(len(self.calls), 3)
         self.assertFalse(self.pending)
@@ -211,12 +218,12 @@ class SchedulerTests(unittest.TestCase):
         receipt = self.scheduler.delivery_receipt(1, 1)
         self.now = 2
         self.scheduler.tick()
-        self.assertEqual(len(attempts), 1)
+        self.assertEqual(len(attempts), 1)   # The host reserved five seconds.
         self.assertTrue(self.scheduler.mark_applied(1, 1, receipt, applied=False))
-        self.now = 2.999
+        self.now = 2.299
         self.scheduler.tick()
-        self.assertEqual(len(attempts), 1)
-        self.now = 3
+        self.assertEqual(len(attempts), 1)   # A negative ack retries after the interval.
+        self.now = 2.3
         self.scheduler.tick()
         self.assertEqual(len(attempts), 2)
         self.assertEqual(len(self.calls), 1)
@@ -309,21 +316,24 @@ class SchedulerTests(unittest.TestCase):
         self.snapshot("peer:C", [msg(3)])
         self.snapshot("peer:D", [msg(4)])
         self.snapshot("peer:C", [msg(3)])
-        self.finish()
+        # The first peer:C worker and peer:D's worker are both still in flight.
+        self.assertEqual(len(self.pending), 3)
+        self.finish()   # The stale peer:C worker is discarded
         self.assertEqual(len(self.delivered), 1)
-        self.assertEqual(len(self.pending), 1)
-        self.finish()
+        self.assertEqual(len(self.pending), 2)
+        self.finish()   # The stale peer:D worker is discarded
+        self.finish()   # The current peer:C worker is delivered
         self.now += 2.8
         self.scheduler.tick()
         self.assertEqual(self.delivered[-1][:2], (3, 1))
 
     def test_timeout_discards_late_result_and_never_overlaps_worker(self):
         self.snapshot()
-        self.now = 45
+        self.now = 8
         self.scheduler.tick()
         self.assertTrue(self.scheduler.busy)
-        self.assertTrue(self.scheduler.active.expired)
-        self.now = 53
+        self.assertTrue(all(job.expired for job in self.scheduler.active.values()))
+        self.now = 8.5
         self.scheduler.tick()
         self.assertEqual(len(self.pending), 1)  # Only the original worker exists.
         self.finish()
@@ -335,30 +345,34 @@ class SchedulerTests(unittest.TestCase):
 
     def test_exact_deadline_completion_rejected_even_without_prior_tick(self):
         self.snapshot()
-        self.now = 45
+        self.now = 8
         self.finish()
         self.assertFalse(self.delivered)
         self.assertFalse(self.pending)
-        self.now = 52.999
+        self.now = 8.499
         self.scheduler.tick()
         self.assertFalse(self.pending)
-        self.now = 53
+        self.now = 8.5
         self.scheduler.tick()
         self.assertEqual(len(self.pending), 1)
 
-    def test_failure_retries_once_after_eight_seconds_then_stops(self):
-        self.failures = 3
+    def test_failure_retries_then_stops_after_max_attempts(self):
+        self.failures = 4  # Every attempt fails.
         self.snapshot()
         self.finish()
-        self.now = 7.999
+        self.now = .499
         self.scheduler.tick()
         self.assertFalse(self.pending)
-        self.now = 8
+        self.now = .5
         self.scheduler.tick()
+        self.assertEqual(len(self.pending), 1)
         self.finish()
+        self.now = 1
+        self.scheduler.tick()
+        self.finish()  # Third and final attempt; attempts are now exhausted.
         self.now = 200
         self.snapshot()
-        self.assertEqual(len(self.calls), 2)
+        self.assertEqual(len(self.calls), 3)
         self.assertFalse(self.pending)
         self.assertFalse(self.delivered)
 
