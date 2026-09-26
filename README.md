@@ -62,6 +62,11 @@
 - 微信 PC 版，版本需与 `app/native_anchors.json` 中记录的版本一致
 - 一个 TypeSafe API Key（[typesafe.ai](https://typesafe.ai)）
 
+> **请务必用 Python 3.11。** `frida` 目前只为 3.11 及更早版本提供 Windows 轮子。
+> 在 3.13 / 3.14 下 `pip install` 会报 `Could not find a version that satisfies
+> the requirement frida==17.18.0 (from versions: none)` —— 这**不是网络问题**，
+> 而是 pip 把不兼容的版本静默过滤掉了，看起来很像镜像连不上，容易误判。
+
 ### 安装
 
 ```bash
