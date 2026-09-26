@@ -1,0 +1,39 @@
+{
+  "target_pid": 12424,
+  "dll_sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "frida_version": "17.18.0",
+  "mode": "observe_view_creation",
+  "attached": true,
+  "detached": true,
+  "unloaded": true,
+  "passed": true,
+  "counters": {
+    "mode": "observe_view_creation",
+    "builds": 0,
+    "validNativeViews": 0,
+    "rejectedObjects": 0,
+    "errors": 0,
+    "textVtableRvas": [],
+    "uniqueViews": 9,
+    "textSetters": 11,
+    "ownedTextSetters": 9,
+    "ownerVtables": [
+      "0x9175d78"
+    ],
+    "callerRvas": [
+      "0x1bc6c59"
+    ],
+    "textLengths": [
+      24,
+      8,
+      1,
+      4,
+      34,
+      4,
+      7,
+      6,
+      9
+    ]
+  },
+  "script_errors": []
+}

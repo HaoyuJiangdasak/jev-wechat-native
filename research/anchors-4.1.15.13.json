@@ -1,0 +1,272 @@
+{
+ "dll": "C:\\Program Files\\Tencent\\Weixin\\4.1.15.13\\Weixin.dll",
+ "sha256": "10f8e995453e2da46d4f2b5080cd6da1f13cc5147746adc119ceae38cb039de5",
+ "size": 201552944,
+ "functions": {
+  "fromUtf8": {
+   "newRva": "0x27f80",
+   "tier": "identity",
+   "matched": 10,
+   "oldRva": "0x27f80"
+  },
+  "destroyQString": {
+   "newRva": "0x14e0",
+   "tier": "identity",
+   "matched": 13,
+   "oldRva": "0x14e0"
+  },
+  "setText": {
+   "newRva": "0x1e84750",
+   "tier": "derived",
+   "method": "callee of rebindListener (shape 12/20)",
+   "runnersUp": [
+    "3:0x1e7e400",
+    "3:0x1e846c0",
+    "0:0x1e7e4c0"
+   ]
+  },
+  "widgetMetaCall": {
+   "newRva": "0x5bcc40",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x5bbfc0"
+  },
+  "rebindListener": {
+   "newRva": "0x1bc9be0",
+   "tier": "bytes",
+   "matched": 64,
+   "oldRva": "0x1bc6490",
+   "byteMatched": 64
+  },
+  "metaCast": {
+   "newRva": "0x28c390",
+   "tier": "identity",
+   "matched": 20,
+   "oldRva": "0x28c390"
+  },
+  "sliderMetaCall": {
+   "newRva": "0x20b8350",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x20b4600"
+  },
+  "setValue": {
+   "newRva": "0x20b71f0",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x20b34a0"
+  },
+  "buildCtor": {
+   "newRva": "0x1bcbd90",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x1bc8640"
+  },
+  "qtDataFree": {
+   "newRva": "0x38930",
+   "tier": "identity",
+   "matched": 4,
+   "oldRva": "0x38930"
+  },
+  "qtDecode1": {
+   "newRva": "0x2c4a00",
+   "tier": "identity",
+   "matched": 64,
+   "oldRva": "0x2c4a00"
+  },
+  "qtDecode2": {
+   "newRva": "0x2c4aa0",
+   "tier": "identity",
+   "matched": 64,
+   "oldRva": "0x2c4aa0"
+  },
+  "qtHelper": {
+   "newRva": "0x27e30",
+   "tier": "identity",
+   "matched": 20,
+   "oldRva": "0x27e30"
+  },
+  "leafBinding120": {
+   "newRva": "0x3b4dd0",
+   "tier": "identity",
+   "matched": 2,
+   "oldRva": "0x3b4dd0"
+  },
+  "selfSentCmp": {
+   "newRva": "0xa1b0b0",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0xa19e60"
+  },
+  "bindingCtor": {
+   "newRva": "0x3d02580",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x3cff540"
+  },
+  "uiMsgDefCtor": {
+   "newRva": "0xa5a150",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0xa58f00"
+  },
+  "baseUpdater": {
+   "newRva": "0x5c40720",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x5c3de20"
+  },
+  "textOverride": {
+   "newRva": "0x3d04b80",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x3d01b40"
+  },
+  "filterPred": {
+   "newRva": "0x3e2e920",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x3e2b8e0"
+  },
+  "listenerKeySetter": {
+   "newRva": "0x3e2be20",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x3e28de0"
+  },
+  "convSwitchInit": {
+   "newRva": "0x3de8ed0",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x3de5e90"
+  },
+  "keyFormat": {
+   "newRva": "0xa185b0",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0xa17360"
+  },
+  "compositeKey": {
+   "newRva": "0x227dd90",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0x227a000"
+  },
+  "tsFlag": {
+   "newRva": "0xa1e740",
+   "tier": "shape",
+   "matched": 20,
+   "oldRva": "0xa1d4f0"
+  },
+  "msgCopyCtor": {
+   "newRva": "0x1a5b50",
+   "tier": "identity",
+   "matched": 20,
+   "oldRva": "0x1a5b50"
+  },
+  "isSelf": {
+   "newRva": "0x5c44110",
+   "tier": "derived",
+   "method": "thunk -> selfSentCmp"
+  },
+  "verticalScrollBar": {
+   "newRva": "0xce9a00",
+   "tier": "derived",
+   "method": "unique leaf bytes"
+  },
+  "keyLeaf": {
+   "newRva": "0x7b9870",
+   "tier": "derived",
+   "method": "unique leaf bytes"
+  },
+  "textGetter": {
+   "newRva": "0x3d03d60",
+   "tier": "derived",
+   "method": "text interface vtable +0x28"
+  }
+ },
+ "vtables": {
+  "bindingVtable": {
+   "newRva": "0x956d338",
+   "oldRva": "0x956b278",
+   "colOffset": 16,
+   "via": "0x3cffe90@0x3cffeb2 -> 0x3d02ed0@0x3d02ef2"
+  },
+  "textInterfaceVtable": {
+   "newRva": "0x956d608",
+   "oldRva": "0x956b548",
+   "colOffset": 1520,
+   "via": "0x3cffe90@0x3cffed9 -> 0x3d02ed0@0x3d02f19"
+  },
+  "uiMessageVtable": {
+   "newRva": "0x8d9e9a8",
+   "oldRva": "0x8d9c978",
+   "colOffset": 0,
+   "via": "0xa58f00@0xa58f23 -> 0xa5a150@0xa5a173"
+  },
+  "listenerVtable": {
+   "newRva": "0x958a5a8",
+   "oldRva": "0x95884e8",
+   "colOffset": 0,
+   "via": "0x3de5760@0x3de577a -> 0x3de87a0@0x3de87ba"
+  },
+  "labelVtable": {
+   "newRva": "0x91d1c08",
+   "oldRva": "0x91cfb08",
+   "colOffset": 0,
+   "via": "0x1e7a170@0x1e7a1e8 -> 0x1e7db80@0x1e7dbf8"
+  },
+  "ownerVtable": {
+   "newRva": "0x9177cf8",
+   "oldRva": "0x9175d78",
+   "colOffset": 0,
+   "method": "metaObject slot0 -> mmui::ChatTextItemView metaobject (COL offset 0, 19 bases)",
+   "candidates": [
+    "0x9177cf8/off0",
+    "0x992f5c8/off0",
+    "0x991e9b8/off0",
+    "0x992a918/off0",
+    "0x992dd28/off0",
+    "0x99338c8/off0"
+   ]
+  }
+ },
+ "metaobjects": {
+  "recyclerMeta": {
+   "oldRva": 149537816,
+   "newRva": 149546040,
+   "tier": "qtmeta",
+   "stringTable": 185971312,
+   "className": "mmui::RecyclerListView",
+   "candidates": [
+    "0x8e9e438"
+   ]
+  },
+  "scrollAreaMeta": {
+   "oldRva": 150071672,
+   "newRva": 150079704,
+   "tier": "qtmeta",
+   "stringTable": 186240912,
+   "className": "QAbstractScrollArea",
+   "candidates": [
+    "0x8f208d8"
+   ]
+  },
+  "scrollBarMeta": {
+   "oldRva": 152884920,
+   "newRva": 152893368,
+   "tier": "qtmeta",
+   "stringTable": 187774616,
+   "className": "QScrollBar",
+   "candidates": [
+    "0x91cf7b8"
+   ]
+  }
+ },
+ "unresolvedFunctions": [],
+ "unresolvedVtables": [],
+ "provenance": {
+  "records": 154,
+  "byteDumps": 27
+ }
+}
