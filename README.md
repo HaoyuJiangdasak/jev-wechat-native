@@ -65,7 +65,7 @@
 ### 安装
 
 ```bash
-git clone https://github.com/<your-name>/jev-wechat-native.git
+git clone https://github.com/HaoyuJiangdasak/jev-wechat-native.git
 cd jev-wechat-native
 
 python -m venv .venv
