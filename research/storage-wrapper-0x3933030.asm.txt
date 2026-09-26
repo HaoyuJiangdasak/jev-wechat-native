@@ -1,0 +1,45 @@
+03933030  55                             push rbp
+03933031  56                             push rsi
+03933032  57                             push rdi
+03933033  4881ec20030000                 sub rsp, 0x320
+0393303a  488dac2480000000               lea rbp, [rsp + 0x80]
+03933042  48c78598020000feffffff         mov qword ptr [rbp + 0x298], 0xfffffffffffffffe
+0393304d  4889ce                         mov rsi, rcx
+03933050  488d4da0                       lea rcx, [rbp - 0x60]
+03933054  e8871289fc                     call 0x1c42e0
+03933059  90                             nop 
+0393305a  b900030000                     mov ecx, 0x300
+0393305f  e83868b703                     call 0x74a989c
+03933064  90                             nop 
+03933065  4889c7                         mov rdi, rax
+03933068  488d051957bc05                 lea rax, [rip + 0x5bc5719]
+0393306f  488907                         mov qword ptr [rdi], rax
+03933072  4889bd88020000                 mov qword ptr [rbp + 0x288], rdi
+03933079  4883c708                       add rdi, 8
+0393307d  488d55a0                       lea rdx, [rbp - 0x60]
+03933081  4889f9                         mov rcx, rdi
+03933084  e8176fc3fd                     call 0x1569fa0
+03933089  90                             nop 
+0393308a  488d054ff77707                 lea rax, [rip + 0x777f74f]
+03933091  488b8d88020000                 mov rcx, qword ptr [rbp + 0x288]
+03933098  488981f0020000                 mov qword ptr [rcx + 0x2f0], rax
+0393309f  4889b9f8020000                 mov qword ptr [rcx + 0x2f8], rdi
+039330a6  48898d90020000                 mov qword ptr [rbp + 0x290], rcx
+039330ad  488d4da0                       lea rcx, [rbp - 0x60]
+039330b1  e83a2089fc                     call 0x1c50f0
+039330b6  488b0e                         mov rcx, qword ptr [rsi]
+039330b9  488d9590020000                 lea rdx, [rbp + 0x290]
+039330c0  e82bb6a6fc                     call 0x39e6f0
+039330c5  90                             nop 
+039330c6  488b8d90020000                 mov rcx, qword ptr [rbp + 0x290]
+039330cd  4885c9                         test rcx, rcx
+039330d0  740b                           je 0x39330dd
+039330d2  488b01                         mov rax, qword ptr [rcx]
+039330d5  ba01000000                     mov edx, 1
+039330da  ff10                           call qword ptr [rax]
+039330dc  90                             nop 
+039330dd  4881c420030000                 add rsp, 0x320
+039330e4  5f                             pop rdi
+039330e5  5e                             pop rsi
+039330e6  5d                             pop rbp
+039330e7  c3                             ret 

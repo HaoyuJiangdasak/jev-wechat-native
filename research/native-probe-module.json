@@ -1,0 +1,20 @@
+{
+  "target_pid": 12424,
+  "dll_sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "frida_version": "17.18.0",
+  "mode": "module_check",
+  "attached": true,
+  "detached": true,
+  "unloaded": true,
+  "passed": true,
+  "counters": {
+    "mode": "module_check",
+    "builds": 0,
+    "validNativeViews": 0,
+    "rejectedObjects": 0,
+    "errors": 0,
+    "textVtableRvas": [],
+    "uniqueViews": 0
+  },
+  "script_errors": []
+}

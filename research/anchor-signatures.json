@@ -1,0 +1,724 @@
+{
+ "maxins": 16,
+ "bytePrefix": 64,
+ "anchors": {
+  "BaseUpdater": {
+   "oldRva": "0x5c3de20",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x518",
+    "lea rbp, [rsp + 0x80]",
+    "movaps xmmword ptr [rbp + 0x480], xmm6",
+    "mov qword ptr [rbp + 0x478], BIG",
+    "mov rbx, rdx",
+    "mov rsi, rcx",
+    "mov rax, qword ptr [rcx]",
+    "call qword ptr [rax + 8]"
+   ]
+  },
+  "BindingCtor": {
+   "oldRva": "0x3cff540",
+   "shape": [
+    "push rbp",
+    "push r14",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x80",
+    "lea rbp, [rsp + 0x80]",
+    "mov qword ptr [rbp - 8], BIG",
+    "mov bl, r9b",
+    "mov rsi, r8",
+    "mov rdi, rdx",
+    "mov r14, rcx",
+    "xor edx, edx",
+    "call BIG",
+    "mov qword ptr [rbp - 0x10], r14",
+    "lea rcx, [r14 + 0x10]"
+   ]
+  },
+  "BindingSource1": {
+   "oldRva": "0x1bc5590",
+   "bytes": "555657534881ec88040000488dac248000000048c78500040000feffffff4889ce0f57c00f2985b0030000488b42084885c0740af0ff4008488b4208eb0231c0"
+  },
+  "BuildCtor": {
+   "oldRva": "0x1bc8640",
+   "bytes": "554157415641545657534881ec40010000488dac248000000048c785b8000000feffffff4885d20f84490900004889d74889ce4889d1b201e8834501004889f9",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x140",
+    "lea rbp, [rsp + 0x80]",
+    "mov qword ptr [rbp + 0xb8], BIG",
+    "test rdx, rdx",
+    "je BIG",
+    "mov rdi, rdx",
+    "mov rsi, rcx",
+    "mov rcx, rdx",
+    "mov dl, 1"
+   ]
+  },
+  "ChatTextItemViewUpdate": {
+   "oldRva": "0x1bc6490",
+   "bytes": "5541574156415541545657534881ec78040000488dac24800000000f29b5e003000048c785d8030000feffffff4889d74889ce0f2835000000000f29b5800300",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x478",
+    "lea rbp, [rsp + 0x80]",
+    "movaps xmmword ptr [rbp + 0x3e0], xmm6",
+    "mov qword ptr [rbp + 0x3d8], BIG",
+    "mov rdi, rdx",
+    "mov rsi, rcx",
+    "movaps xmm6, xmmword ptr [rip + BIG]",
+    "movaps xmmword ptr [rbp + 0x380], xmm6"
+   ]
+  },
+  "CompositeKey": {
+   "oldRva": "0x227a000",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x38",
+    "lea rbp, [rsp + 0x30]",
+    "mov qword ptr [rbp], BIG",
+    "mov rsi, rdx",
+    "mov r15, rcx",
+    "xorps xmm0, xmm0",
+    "movups xmmword ptr [rcx + 0x10], xmm0",
+    "movups xmmword ptr [rcx], xmm0",
+    "mov rdi, qword ptr [rdx + 0x80]",
+    "cmp qword ptr [rdx + 0x88], 0x10"
+   ]
+  },
+  "ConvSwitchInit": {
+   "oldRva": "0x3de5e90",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x3f8",
+    "lea rbp, [rsp + 0x80]",
+    "movaps xmmword ptr [rbp + 0x360], xmm6",
+    "mov qword ptr [rbp + 0x358], BIG",
+    "mov qword ptr [rbp + 0x348], r9",
+    "mov r13, r8",
+    "mov r14, rdx",
+    "mov rsi, rcx"
+   ]
+  },
+  "CtorLvl2": {
+   "oldRva": "0x5c7d4a0",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "push rdi",
+    "sub rsp, 0x40",
+    "lea rbp, [rsp + 0x40]",
+    "mov qword ptr [rbp - 8], BIG",
+    "mov rsi, r8",
+    "mov rdi, rcx",
+    "call BIG",
+    "lea rax, [rip + BIG]",
+    "mov qword ptr [rdi + 0x5a0], rax",
+    "mov qword ptr [rbp - 0x10], rdi",
+    "lea rcx, [rdi + 0x5a8]",
+    "mov qword ptr [rbp - 0x20], rcx",
+    "call BIG",
+    "nop"
+   ]
+  },
+  "CtorLvl3": {
+   "oldRva": "0x5c3c210",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x78",
+    "lea rbp, [rsp + 0x70]",
+    "mov qword ptr [rbp], BIG",
+    "mov bl, r9b",
+    "mov rsi, r8",
+    "mov rdi, rcx",
+    "call BIG",
+    "lea rax, [rip + BIG]",
+    "mov qword ptr [rdi], rax",
+    "mov dword ptr [rdi + 0x118], 0",
+    "mov byte ptr [rdi + 0x11c], 0",
+    "mov qword ptr [rbp - 8], rdi"
+   ]
+  },
+  "DynamicCastSite": {
+   "oldRva": "0x1bc5e20",
+   "bytes": "555657534881ec38030000488dac248000000048c785b0020000feffffff4889d34889ce488b89500200004885c974510f2805000000000f1103c74424200000"
+  },
+  "FieldCopy": {
+   "oldRva": "0xa2bdc0",
+   "shape": [
+    "push rbp",
+    "push r14",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x30",
+    "lea rbp, [rsp + 0x30]",
+    "mov qword ptr [rbp - 8], BIG",
+    "mov rdi, rdx",
+    "mov rsi, rcx",
+    "mov rax, qword ptr [rdx + 8]",
+    "mov qword ptr [rcx + 8], rax",
+    "cmp rcx, rdx",
+    "je BIG",
+    "mov rbx, qword ptr [rdi + 0x20]",
+    "cmp qword ptr [rdi + 0x28], 0x10"
+   ]
+  },
+  "FilterPred": {
+   "oldRva": "0x3e2b8e0",
+   "shape": [
+    "push rsi",
+    "push rdi",
+    "sub rsp, 0x468",
+    "mov rsi, rdx",
+    "mov rdi, rcx",
+    "lea rcx, [rsp + 0x20]",
+    "call BIG",
+    "mov rax, qword ptr [rsi + 0x440]",
+    "mov qword ptr [rsp + 0x460], rax",
+    "mov rax, qword ptr [rdi + 8]",
+    "cmp qword ptr [rax + 0xb8], 0x10",
+    "jb BIG",
+    "mov rdx, qword ptr [rax + 0xa0]",
+    "mov r8, qword ptr [rax + 0xb0]",
+    "mov rax, qword ptr [rsp + 0xa0]",
+    "cmp qword ptr [rsp + 0xa8], 0x10"
+   ]
+  },
+  "FilterPredB": {
+   "oldRva": "0x3e2bab0",
+   "shape": [
+    "push rsi",
+    "sub rsp, 0x470",
+    "mov rsi, rcx",
+    "mov rax, qword ptr [rip + BIG]",
+    "xor rax, rsp",
+    "mov qword ptr [rsp + 0x468], rax",
+    "lea rcx, [rsp + 0x28]",
+    "call BIG",
+    "mov rax, qword ptr [rsi + 8]",
+    "cmp qword ptr [rax + 0xb8], 0x10",
+    "jb BIG",
+    "mov rdx, qword ptr [rax + 0xa0]",
+    "mov r8, qword ptr [rax + 0xb0]",
+    "mov rax, qword ptr [rsp + 0xa8]",
+    "cmp qword ptr [rsp + 0xb0], 0x10",
+    "jae BIG"
+   ]
+  },
+  "IsSelf": {
+   "oldRva": "0x5c41810",
+   "shape": [
+    "add rcx, 0x120",
+    "jmp BIG"
+   ]
+  },
+  "KeyFormat": {
+   "oldRva": "0xa17360",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x98",
+    "lea rbp, [rsp + 0x80]",
+    "movaps xmmword ptr [rbp], xmm6",
+    "mov qword ptr [rbp - 8], BIG",
+    "mov r15, rdx",
+    "mov rsi, rcx",
+    "cmp dword ptr [rcx + 0x24], 0",
+    "je BIG"
+   ]
+  },
+  "KeyLeaf": {
+   "oldRva": "0x7b9000",
+   "shape": [
+    "lea rax, [rcx + 0x98]",
+    "ret"
+   ]
+  },
+  "LeafBinding120": {
+   "oldRva": "0x3b4dd0",
+   "shape": [
+    "lea rax, [rcx + 0x120]",
+    "ret"
+   ]
+  },
+  "ListenerKeySetter": {
+   "oldRva": "0x3e28de0",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "push rdi",
+    "sub rsp, 0x30",
+    "lea rbp, [rsp + 0x30]",
+    "mov qword ptr [rbp - 8], BIG",
+    "lea rsi, [rcx + 0xa0]",
+    "mov qword ptr [rbp - 0x10], rdx",
+    "cmp rsi, rdx",
+    "je BIG",
+    "mov rax, qword ptr [rbp - 0x10]",
+    "mov rdi, qword ptr [rax + 0x10]",
+    "cmp qword ptr [rax + 0x18], 0x10",
+    "mov r9, rax",
+    "jb BIG",
+    "mov r9, qword ptr [rax]"
+   ]
+  },
+  "ListenerNotify": {
+   "oldRva": "0x3cf2250",
+   "shape": [
+    "mov rdx, rcx",
+    "mov rcx, qword ptr [rcx + 0xd0]",
+    "test rcx, rcx",
+    "je BIG",
+    "mov rax, qword ptr [rcx]",
+    "jmp qword ptr [rax + 8]"
+   ]
+  },
+  "ListenerSave": {
+   "oldRva": "0x3cf0e40",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0xd8",
+    "lea rbp, [rsp + 0x80]",
+    "mov qword ptr [rbp + 0x50], BIG",
+    "mov rsi, rdx",
+    "xorps xmm0, xmm0",
+    "movups xmmword ptr [rcx + 0x20], xmm0",
+    "movups xmmword ptr [rcx + 8], xmm0",
+    "mov qword ptr [rcx + 0x18], 0",
+    "lea rax, [rip + BIG]",
+    "mov qword ptr [rcx], rax",
+    "mov qword ptr [rbp + 0x48], rcx",
+    "add rcx, 0x30"
+   ]
+  },
+  "MetaCast": {
+   "oldRva": "0x28c390",
+   "shape": [
+    "push rsi",
+    "push rdi",
+    "sub rsp, 0x28",
+    "test rdx, rdx",
+    "je BIG",
+    "mov rsi, rdx",
+    "mov rdi, rcx",
+    "mov rax, qword ptr [rdx]",
+    "mov rcx, rdx",
+    "call qword ptr [rax]",
+    "nop dword ptr [rax]",
+    "cmp rdi, rax",
+    "je BIG",
+    "mov rax, qword ptr [rax]",
+    "test rax, rax",
+    "jne BIG"
+   ]
+  },
+  "MsgCopyCtor": {
+   "oldRva": "0x1a5b50",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x108",
+    "lea rbp, [rsp + 0x80]",
+    "mov qword ptr [rbp + 0x80], BIG",
+    "mov rdi, rdx",
+    "mov rsi, rcx",
+    "lea rax, [rip + BIG]",
+    "mov qword ptr [rcx], rax",
+    "mov rax, qword ptr [rdx + 8]"
+   ]
+  },
+  "NewsAppCmp": {
+   "oldRva": "0xb9d4a0",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "sub rsp, 0x28",
+    "lea rbp, [rsp + 0x20]",
+    "mov qword ptr [rbp], BIG",
+    "mov rsi, rcx",
+    "mov eax, dword ptr [rip + BIG]",
+    "mov ecx, dword ptr [rip + BIG]",
+    "mov rdx, qword ptr gs:[0x58]",
+    "mov rcx, qword ptr [rdx + rcx*8]",
+    "cmp eax, dword ptr [rcx + 0xc4]",
+    "jg BIG",
+    "cmp qword ptr [rip + BIG], 0x10",
+    "jb BIG",
+    "mov rdx, qword ptr [rip + BIG]",
+    "mov r8, qword ptr [rip + BIG]"
+   ]
+  },
+  "NotifyCmp": {
+   "oldRva": "0xb9e2a0",
+   "shape": [
+    "mov rax, qword ptr [rcx + 0x10]",
+    "cmp qword ptr [rcx + 0x18], 0x10",
+    "jb BIG",
+    "mov rcx, qword ptr [rcx]",
+    "cmp rax, 0x15",
+    "je BIG",
+    "cmp rax, 0xd",
+    "jne BIG",
+    "movabs rax, BIG",
+    "xor rax, qword ptr [rcx]",
+    "movabs rdx, BIG",
+    "xor rdx, qword ptr [rcx + 5]",
+    "or rdx, rax",
+    "sete al",
+    "ret"
+   ]
+  },
+  "QQMailCmp": {
+   "oldRva": "0xb9d850",
+   "shape": [
+    "cmp qword ptr [rcx + 0x10], 6",
+    "jne BIG",
+    "cmp qword ptr [rcx + 0x18], 0x10",
+    "jb BIG",
+    "mov rcx, qword ptr [rcx]",
+    "mov eax, BIG",
+    "xor eax, dword ptr [rcx]",
+    "movzx ecx, word ptr [rcx + 4]",
+    "xor ecx, 0x6c69",
+    "or ecx, eax",
+    "sete al",
+    "ret"
+   ]
+  },
+  "QtDataFree": {
+   "oldRva": "0x38930",
+   "shape": [
+    "lea rax, [rip + BIG]",
+    "cmp rcx, rax",
+    "jne BIG",
+    "ret"
+   ]
+  },
+  "QtDecode1": {
+   "oldRva": "0x2c4a00",
+   "bytes": "5541565657534883ec30488d6c243048c745f8feffffff4489c64889d74989ce4489c24531c0e8357ed5ff498b1e48035b104889d94889fa4189f0e860000000"
+  },
+  "QtDecode2": {
+   "oldRva": "0x2c4aa0",
+   "bytes": "4156565755534889c84d63c84a8d0c0a4183f9100f8c93000000660fefc04989d06666666666662e0f1f840000000000f3410f6f0866440fd7d14585d20f857d"
+  },
+  "QtDestroyQString": {
+   "oldRva": "0x14e0",
+   "shape": [
+    "mov rax, rcx",
+    "mov rcx, qword ptr [rcx]",
+    "mov edx, dword ptr [rcx]",
+    "cmp edx, -1",
+    "je BIG",
+    "test edx, edx",
+    "je BIG",
+    "lock dec dword ptr [rcx]",
+    "jne BIG",
+    "mov rcx, qword ptr [rax]",
+    "mov edx, 2",
+    "mov r8d, 8",
+    "jmp BIG"
+   ]
+  },
+  "QtFromUtf8": {
+   "oldRva": "0x27f80",
+   "shape": [
+    "push rsi",
+    "sub rsp, 0x20",
+    "test rdx, rdx",
+    "je BIG",
+    "mov rsi, rcx",
+    "call BIG",
+    "mov rax, rsi",
+    "add rsp, 0x20",
+    "pop rsi",
+    "ret"
+   ]
+  },
+  "QtHelper": {
+   "oldRva": "0x27e30",
+   "shape": [
+    "push rsi",
+    "sub rsp, 0x30",
+    "mov rsi, rcx",
+    "test rcx, rcx",
+    "sete al",
+    "cmp edx, -1",
+    "setne cl",
+    "or cl, al",
+    "jne BIG",
+    "mov rcx, rsi",
+    "call BIG",
+    "mov r8, rax",
+    "jmp BIG",
+    "mov r8d, edx",
+    "test rsi, rsi",
+    "je BIG"
+   ]
+  },
+  "SelfSentCmp": {
+   "oldRva": "0xa19e60",
+   "shape": [
+    "push rsi",
+    "sub rsp, 0x20",
+    "cmp dword ptr [rcx + 8], 0x2710",
+    "je BIG",
+    "cmp qword ptr [rcx + 0x20], 0",
+    "je BIG",
+    "mov rsi, rcx",
+    "call BIG",
+    "mov rdx, qword ptr [rax]",
+    "mov rcx, rax",
+    "call qword ptr [rdx + 0x20]",
+    "cmp qword ptr [rax + 0x18], 0x10",
+    "mov rdx, rax",
+    "jb BIG",
+    "mov rdx, qword ptr [rax]",
+    "mov r8, qword ptr [rax + 0x10]"
+   ]
+  },
+  "SetValue": {
+   "oldRva": "0x20b34a0",
+   "shape": [
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x70",
+    "mov rsi, rcx",
+    "mov rax, qword ptr [rip + BIG]",
+    "xor rax, rsp",
+    "mov qword ptr [rsp + 0x68], rax",
+    "mov rbx, qword ptr [rcx + 8]",
+    "mov rax, qword ptr [rbx]",
+    "mov rcx, rbx",
+    "call qword ptr [rax + 0x20]",
+    "mov edi, eax",
+    "mov eax, dword ptr [rbx + 0x1e8]",
+    "cmp dword ptr [rbx + 0x1e4], edi",
+    "jne BIG"
+   ]
+  },
+  "SliderMetaCall": {
+   "oldRva": "0x20b4600",
+   "shape": [
+    "sub rsp, 0x48",
+    "mov rax, qword ptr [rip + BIG]",
+    "xor rax, rsp",
+    "mov qword ptr [rsp + 0x40], rax",
+    "cmp edx, 0xa",
+    "ja BIG",
+    "mov eax, edx",
+    "lea rdx, [rip + BIG]",
+    "movsxd rax, dword ptr [rdx + rax*4]",
+    "add rax, rdx",
+    "jmp rax",
+    "cmp r8d, 8",
+    "ja BIG",
+    "mov eax, r8d",
+    "lea rdx, [rip + BIG]",
+    "movsxd rax, dword ptr [rdx + rax*4]"
+   ]
+  },
+  "TextGetter": {
+   "oldRva": "0x3d00d20",
+   "bytes": "555657534883ec48488d6c244048c74500feffffff4889d6488db920faffff488b41c84883c1c8ff502084c074640f2805000000000f2945f04889f9e86f406b"
+  },
+  "TextOverride": {
+   "oldRva": "0x3d01b40",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x178",
+    "lea rbp, [rsp + 0x80]",
+    "mov qword ptr [rbp + 0xf0], BIG",
+    "mov r14, rdx",
+    "mov rsi, rcx",
+    "lea rbx, [rcx + 0x200]",
+    "xorps xmm0, xmm0",
+    "movaps xmmword ptr [rbp + 0xa0], xmm0"
+   ]
+  },
+  "TsFlag": {
+   "oldRva": "0xa1d4f0",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x48",
+    "lea rbp, [rsp + 0x40]",
+    "mov qword ptr [rbp], BIG",
+    "mov esi, edx",
+    "mov rdi, rcx",
+    "mov qword ptr [rbp - 0x18], 0",
+    "mov ecx, 0x30",
+    "call BIG",
+    "mov qword ptr [rbp - 0x20], rax",
+    "mov qword ptr [rbp - 0x10], 0x23",
+    "mov qword ptr [rbp - 8], 0x2f",
+    "movups xmm0, xmmword ptr [rip + BIG]"
+   ]
+  },
+  "TsForward": {
+   "oldRva": "0xa17160",
+   "shape": [
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0x20",
+    "mov rax, qword ptr [rcx + 0x2b0]",
+    "test rax, rax",
+    "je BIG",
+    "mov rdx, qword ptr [rax + 0x88]",
+    "test rdx, rdx",
+    "je BIG",
+    "lock inc dword ptr [rdx + 8]",
+    "mov rdi, qword ptr [rax + 0x80]",
+    "mov rsi, qword ptr [rax + 0x88]",
+    "test rsi, rsi",
+    "je BIG",
+    "lock dec dword ptr [rsi + 8]"
+   ]
+  },
+  "UIMsgDefCtor": {
+   "oldRva": "0xa58f00",
+   "shape": [
+    "push rbp",
+    "push r15",
+    "push r14",
+    "push r13",
+    "push r12",
+    "push rsi",
+    "push rdi",
+    "push rbx",
+    "sub rsp, 0xd8",
+    "lea rbp, [rsp + 0x80]",
+    "mov qword ptr [rbp + 0x50], BIG",
+    "lea rax, [rip + BIG]",
+    "mov qword ptr [rcx], rax",
+    "xorps xmm0, xmm0",
+    "movups xmmword ptr [rcx + 8], xmm0",
+    "movups xmmword ptr [rcx + 0x18], xmm0"
+   ]
+  },
+  "VerticalScrollBar": {
+   "oldRva": "0xce87b0",
+   "shape": [
+    "mov rax, qword ptr [rcx + 8]",
+    "mov rax, qword ptr [rax + 0x220]",
+    "ret"
+   ]
+  },
+  "WidgetMetaCall": {
+   "oldRva": "0x5bbfc0",
+   "shape": [
+    "push rsi",
+    "push rdi",
+    "sub rsp, 0x58",
+    "mov rax, qword ptr [rip + BIG]",
+    "xor rax, rsp",
+    "mov qword ptr [rsp + 0x50], rax",
+    "cmp edx, 0xa",
+    "ja BIG",
+    "mov eax, edx",
+    "lea rdx, [rip + BIG]",
+    "movsxd rax, dword ptr [rdx + rax*4]",
+    "add rax, rdx",
+    "jmp rax",
+    "cmp r8d, 0x1a",
+    "ja BIG",
+    "mov eax, r8d"
+   ]
+  },
+  "XTextViewSetText": {
+   "oldRva": "0x1e80d40",
+   "shape": [
+    "push rbp",
+    "push rsi",
+    "push rdi",
+    "sub rsp, 0x50",
+    "lea rbp, [rsp + 0x50]",
+    "mov qword ptr [rbp - 8], BIG",
+    "mov rsi, rcx",
+    "lea rdi, [rbp - 0x28]",
+    "mov rcx, rdx",
+    "mov rdx, rdi",
+    "call BIG",
+    "nop",
+    "mov rcx, rsi",
+    "mov rdx, rdi",
+    "call BIG",
+    "nop"
+   ]
+  }
+ },
+ "missing": [
+  [
+   "AcctId",
+   "0x45d10"
+  ],
+  [
+   "XTextViewAlt",
+   "0x1e80cb0"
+  ]
+ ]
+}

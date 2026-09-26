@@ -1,0 +1,79 @@
+00a54240  56                             push rsi
+00a54241  57                             push rdi
+00a54242  4883ec28                       sub rsp, 0x28
+00a54246  4889ce                         mov rsi, rcx
+00a54249  81790c10270000                 cmp dword ptr [rcx + 0xc], 0x2710
+00a54250  7544                           jne 0xa54296
+00a54252  e8b91a5fff                     call 0x45d10
+00a54257  488b10                         mov rdx, qword ptr [rax]
+00a5425a  4889c1                         mov rcx, rax
+00a5425d  ff5220                         call qword ptr [rdx + 0x20]
+00a54260  4889c1                         mov rcx, rax
+00a54263  4883781810                     cmp qword ptr [rax + 0x18], 0x10
+00a54268  4889c2                         mov rdx, rax
+00a5426b  7203                           jb 0xa54270
+00a5426d  488b11                         mov rdx, qword ptr [rcx]
+00a54270  488d4618                       lea rax, [rsi + 0x18]
+00a54274  4c8b4110                       mov r8, qword ptr [rcx + 0x10]
+00a54278  4c8b4e28                       mov r9, qword ptr [rsi + 0x28]
+00a5427c  48837e3010                     cmp qword ptr [rsi + 0x30], 0x10
+00a54281  4889c1                         mov rcx, rax
+00a54284  7251                           jb 0xa542d7
+00a54286  488b4e18                       mov rcx, qword ptr [rsi + 0x18]
+00a5428a  4d39c1                         cmp r9, r8
+00a5428d  744d                           je 0xa542dc
+00a5428f  4883c428                       add rsp, 0x28
+00a54293  5f                             pop rdi
+00a54294  5e                             pop rsi
+00a54295  c3                             ret 
+00a54296  bf18000000                     mov edi, 0x18
+00a5429b  48837e2800                     cmp qword ptr [rsi + 0x28], 0
+00a542a0  7479                           je 0xa5431b
+00a542a2  e8691a5fff                     call 0x45d10
+00a542a7  488b10                         mov rdx, qword ptr [rax]
+00a542aa  4889c1                         mov rcx, rax
+00a542ad  ff5220                         call qword ptr [rdx + 0x20]
+00a542b0  4883781810                     cmp qword ptr [rax + 0x18], 0x10
+00a542b5  4889c2                         mov rdx, rax
+00a542b8  7203                           jb 0xa542bd
+00a542ba  488b10                         mov rdx, qword ptr [rax]
+00a542bd  4c8b4010                       mov r8, qword ptr [rax + 0x10]
+00a542c1  488b4628                       mov rax, qword ptr [rsi + 0x28]
+00a542c5  48837e3010                     cmp qword ptr [rsi + 0x30], 0x10
+00a542ca  7233                           jb 0xa542ff
+00a542cc  488b4e18                       mov rcx, qword ptr [rsi + 0x18]
+00a542d0  4c39c0                         cmp rax, r8
+00a542d3  7433                           je 0xa54308
+00a542d5  eb44                           jmp 0xa5431b
+00a542d7  4d39c1                         cmp r9, r8
+00a542da  75b3                           jne 0xa5428f
+00a542dc  4d85c0                         test r8, r8
+00a542df  7447                           je 0xa54328
+00a542e1  4889c7                         mov rdi, rax
+00a542e4  e867dcae06                     call 0x7541f50
+00a542e9  89c1                           mov ecx, eax
+00a542eb  4889f8                         mov rax, rdi
+00a542ee  4883c638                       add rsi, 0x38
+00a542f2  85c9                           test ecx, ecx
+00a542f4  480f44c6                       cmove rax, rsi
+00a542f8  4883c428                       add rsp, 0x28
+00a542fc  5f                             pop rdi
+00a542fd  5e                             pop rsi
+00a542fe  c3                             ret 
+00a542ff  488d4e18                       lea rcx, [rsi + 0x18]
+00a54303  4c39c0                         cmp rax, r8
+00a54306  7513                           jne 0xa5431b
+00a54308  4d85c0                         test r8, r8
+00a5430b  7409                           je 0xa54316
+00a5430d  e83edcae06                     call 0x7541f50
+00a54312  85c0                           test eax, eax
+00a54314  7505                           jne 0xa5431b
+00a54316  bf38000000                     mov edi, 0x38
+00a5431b  4801fe                         add rsi, rdi
+00a5431e  4889f0                         mov rax, rsi
+00a54321  4883c428                       add rsp, 0x28
+00a54325  5f                             pop rdi
+00a54326  5e                             pop rsi
+00a54327  c3                             ret 
+00a54328  4883c638                       add rsi, 0x38
+00a5432c  ebf0                           jmp 0xa5431e

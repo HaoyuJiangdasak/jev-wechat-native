@@ -1,0 +1,12 @@
+3e3a110: mov rax, rcx
+3e3a113: mov ecx, dword ptr [rsp + 0x28]
+3e3a117: mov qword ptr [rax], rdx
+3e3a11a: mov dword ptr [rax + 8], r8d
+3e3a11e: mov qword ptr [rax + 0x10], r9
+3e3a122: mov dword ptr [rax + 0x18], ecx
+3e3a125: test r9, r9
+3e3a128: je 0x3e3a12b
+3e3a12a: ret 
+3e3a12b: imul ecx, r8d, 0x3e8
+3e3a132: mov qword ptr [rax + 0x10], rcx
+3e3a136: ret 

@@ -1,0 +1,180 @@
+{
+  "scope": "Static bytes of installed files only; no process memory, DB, injection or binary execution",
+  "target": "C:\\Program Files\\Tencent\\Weixin\\4.1.15.11\\Weixin.dll",
+  "file_size": 201546288,
+  "sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "terms_ascii_only": {
+    "5.15.14": {
+      "count": 3,
+      "first_file_offsets_hex": [
+        "0x8d90f40",
+        "0x8e67ce3",
+        "0x8fda263"
+      ]
+    },
+    "QtCore": {
+      "count": 13,
+      "first_file_offsets_hex": [
+        "0x8d42ae1",
+        "0x8d42bf9",
+        "0x8d863f9",
+        "0x8d86459"
+      ]
+    },
+    "QWidget": {
+      "count": 137,
+      "first_file_offsets_hex": [
+        "0x839a6f7",
+        "0x8d94c40",
+        "0x8e1966f",
+        "0x8e24d78"
+      ]
+    },
+    "QAbstractItemModel": {
+      "count": 20,
+      "first_file_offsets_hex": [
+        "0x900a3aa",
+        "0x900a405",
+        "0x900a461",
+        "0x900a4bc"
+      ]
+    },
+    "mmui::ChatDetailView": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb1387d0"
+      ]
+    },
+    "mmui::ChatItemView": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb137b10"
+      ]
+    },
+    "mmui::ChatTextItemView": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb1373a8"
+      ]
+    },
+    "mmui::ChatBubbleFrame": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb1376a0"
+      ]
+    },
+    "mmui::ChatBubbleItemView": {
+      "count": 2,
+      "first_file_offsets_hex": [
+        "0x8d95070",
+        "0xb1377e0"
+      ]
+    },
+    "mmui::ChatSystemInfoItemView": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb137c30"
+      ]
+    },
+    "mmui::XRecyclerTableView": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb157f18"
+      ]
+    },
+    "mmui::XSkiaWidegetBase": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0x8e9a6f8"
+      ]
+    },
+    "chat_message_list": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0x917d378"
+      ]
+    },
+    "BaseChatItemViewModel": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0xb13783c"
+      ]
+    },
+    "<XVBoxView": {
+      "count": 4,
+      "first_file_offsets_hex": [
+        "0x839a438",
+        "0x839a481",
+        "0x839a757",
+        "0x839a7a0"
+      ]
+    },
+    "qt_plugin_instance": {
+      "count": 1,
+      "first_file_offsets_hex": [
+        "0x8de78b8"
+      ]
+    },
+    "QtQuick": {
+      "count": 0,
+      "first_file_offsets_hex": []
+    },
+    "QQml": {
+      "count": 0,
+      "first_file_offsets_hex": []
+    },
+    "QQmlExtensionPlugin": {
+      "count": 0,
+      "first_file_offsets_hex": []
+    },
+    ".qml": {
+      "count": 0,
+      "first_file_offsets_hex": []
+    },
+    "qrc:/": {
+      "count": 0,
+      "first_file_offsets_hex": []
+    },
+    "cef_": {
+      "count": 0,
+      "first_file_offsets_hex": []
+    }
+  },
+  "plugin_info_ini": "[plugin_version]\nRadiumWMPF = 25715\nXEditor = 22615\nWeChatOcr = 8096\nWeChatUtility = 6030\nXPlayer = 15065",
+  "installed_filenames": [
+    "ConfSdk.dll",
+    "RadiumWMPF.bin",
+    "VoipEngine.dll",
+    "WeChatOcr.bin",
+    "WeChatUtility.bin",
+    "Weixin.dll",
+    "WeixinExt.exe",
+    "WeixinUpdate.exe",
+    "WetypeInstaller.exe",
+    "XEditor.bin",
+    "XNet.dll",
+    "XPlayer.bin",
+    "backup_drivers.bin",
+    "crashpad_handler.exe",
+    "ilink2.dll",
+    "ilink_stream.dll",
+    "ilink_wrapper.dll",
+    "libEGL.dll",
+    "libGLESv2.dll",
+    "libusb-1.0.dll",
+    "mmcronet.dll",
+    "mmmojo_64.dll",
+    "owl.dll",
+    "plugin_info.ini",
+    "roam_migration.dll",
+    "roam_server.dll",
+    "shared_andromeda.dll",
+    "wcprobe.dll",
+    "wxpublic.dll"
+  ],
+  "limitations": [
+    "Absence of an ASCII marker does not prove absence from compressed, obfuscated, UTF-16 or dynamically loaded code.",
+    "Type-name/string presence is a locator, not proof of its runtime calling convention or a supported external API.",
+    "File offsets are not process addresses and are not patch instructions."
+  ]
+}

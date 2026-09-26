@@ -1,0 +1,214 @@
+[
+  {
+    "function": "0x5d49aa0",
+    "end": "0x5d49b22",
+    "instructions": 35,
+    "matches": [
+      {
+        "field": [
+          "0x58"
+        ],
+        "write": false,
+        "address": "0x5d49b04",
+        "context": [
+          "05d49afb: call 0x57950",
+          "05d49b00: nop ",
+          "05d49b01: xorps xmm0, xmm0",
+          "05d49b04: movups xmmword ptr [rsi + 0x58], xmm0",
+          "05d49b08: mov qword ptr [rsi + 0x68], 0",
+          "05d49b10: mov qword ptr [rsi + 0x70], 0xf",
+          "05d49b18: mov rax, rsi",
+          "05d49b1b: add rsp, 0x48"
+        ]
+      },
+      {
+        "field": [
+          "0x68"
+        ],
+        "write": true,
+        "address": "0x5d49b08",
+        "context": [
+          "05d49b00: nop ",
+          "05d49b01: xorps xmm0, xmm0",
+          "05d49b04: movups xmmword ptr [rsi + 0x58], xmm0",
+          "05d49b08: mov qword ptr [rsi + 0x68], 0",
+          "05d49b10: mov qword ptr [rsi + 0x70], 0xf",
+          "05d49b18: mov rax, rsi",
+          "05d49b1b: add rsp, 0x48",
+          "05d49b1f: pop rsi"
+        ]
+      },
+      {
+        "field": [
+          "0x70"
+        ],
+        "write": true,
+        "address": "0x5d49b10",
+        "context": [
+          "05d49b01: xorps xmm0, xmm0",
+          "05d49b04: movups xmmword ptr [rsi + 0x58], xmm0",
+          "05d49b08: mov qword ptr [rsi + 0x68], 0",
+          "05d49b10: mov qword ptr [rsi + 0x70], 0xf",
+          "05d49b18: mov rax, rsi",
+          "05d49b1b: add rsp, 0x48",
+          "05d49b1f: pop rsi",
+          "05d49b20: pop rbp"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0x5d49c80",
+    "end": "0x5d49da4",
+    "instructions": 96,
+    "matches": [
+      {
+        "field": [
+          "0x70"
+        ],
+        "write": false,
+        "address": "0x5d49c93",
+        "context": [
+          "05d49c86: mov rsi, rcx",
+          "05d49c89: lea rax, [rip + 0x3bcbd58]",
+          "05d49c90: mov qword ptr [rcx], rax",
+          "05d49c93: mov rax, qword ptr [rcx + 0x70]",
+          "05d49c97: cmp rax, 0x10",
+          "05d49c9b: jb 0x5d49cd2",
+          "05d49c9d: mov rcx, qword ptr [rsi + 0x58]",
+          "05d49ca1: lea rdx, [rax + 1]"
+        ]
+      },
+      {
+        "field": [
+          "0x58"
+        ],
+        "write": false,
+        "address": "0x5d49c9d",
+        "context": [
+          "05d49c93: mov rax, qword ptr [rcx + 0x70]",
+          "05d49c97: cmp rax, 0x10",
+          "05d49c9b: jb 0x5d49cd2",
+          "05d49c9d: mov rcx, qword ptr [rsi + 0x58]",
+          "05d49ca1: lea rdx, [rax + 1]",
+          "05d49ca5: cmp rdx, 0x1000",
+          "05d49cac: jb 0x5d49ccd",
+          "05d49cae: mov r8, qword ptr [rcx - 8]"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0x5d4a2a0",
+    "end": "0x5d4a3a9",
+    "instructions": 66,
+    "matches": [
+      {
+        "field": [
+          "0x58"
+        ],
+        "write": true,
+        "address": "0x5d4a398",
+        "context": [
+          "05d4a38c: mov byte ptr [rax + 0x10], 1",
+          "05d4a390: mov rdx, qword ptr [rbp - 0x20]",
+          "05d4a394: mov qword ptr [rdx + 0x50], rcx",
+          "05d4a398: mov qword ptr [rdx + 0x58], rax",
+          "05d4a39c: mov rax, rdx",
+          "05d4a39f: movaps xmm6, xmmword ptr [rbp - 0x10]",
+          "05d4a3a3: add rsp, 0x60",
+          "05d4a3a7: pop rbp"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0x5d4a750",
+    "end": "0x5d4a812",
+    "instructions": 57,
+    "matches": [
+      {
+        "field": [
+          "0x58"
+        ],
+        "write": false,
+        "address": "0x5d4a763",
+        "context": [
+          "05d4a756: mov rsi, rcx",
+          "05d4a759: lea rax, [rip + 0x3bcb668]",
+          "05d4a760: mov qword ptr [rcx], rax",
+          "05d4a763: mov rdi, qword ptr [rcx + 0x58]",
+          "05d4a767: test rdi, rdi",
+          "05d4a76a: je 0x5d4a789",
+          "05d4a76c: lock dec dword ptr [rdi + 8]",
+          "05d4a770: jne 0x5d4a789"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0x5d4cf10",
+    "end": "0x5d4e40a",
+    "instructions": 1161,
+    "matches": [
+      {
+        "field": [
+          "0x70"
+        ],
+        "write": false,
+        "address": "0x5d4e150",
+        "context": [
+          "05d4e13f: add rdi, 0xc0",
+          "05d4e146: mov rax, qword ptr [rax + 0xc0]",
+          "05d4e14d: mov rcx, rdi",
+          "05d4e150: call qword ptr [rax + 0x70]",
+          "05d4e153: nop ",
+          "05d4e154: mov rax, qword ptr [rbp + 0x480]",
+          "05d4e15b: test rax, rax",
+          "05d4e15e: je 0x5d4e3d6"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0x5d4f0e0",
+    "end": "0x5d4faaf",
+    "instructions": 597,
+    "matches": [
+      {
+        "field": [
+          "0x70"
+        ],
+        "write": false,
+        "address": "0x5d4f234",
+        "context": [
+          "05d4f227: lea r8, [rbp + 0x170]",
+          "05d4f22e: call 0x19ea80",
+          "05d4f233: nop ",
+          "05d4f234: lea r15, [r12 + 0x70]",
+          "05d4f239: mov rax, qword ptr [rbp + 0x190]",
+          "05d4f240: mov rcx, qword ptr [rbp + 0x198]",
+          "05d4f247: test rcx, rcx",
+          "05d4f24a: je 0x5d4f2ad"
+        ]
+      },
+      {
+        "field": [
+          "0x70"
+        ],
+        "write": false,
+        "address": "0x5d4f60f",
+        "context": [
+          "05d4f5fc: mov rdi, qword ptr [r12 + 0x80]",
+          "05d4f604: cmp qword ptr [r12 + 0x88], 0x10",
+          "05d4f60d: jb 0x5d4f614",
+          "05d4f60f: mov r15, qword ptr [r12 + 0x70]",
+          "05d4f614: test rdi, rdi",
+          "05d4f617: js 0x5d4fa96",
+          "05d4f61d: lea rsi, [rbp + 0x288]",
+          "05d4f624: cmp rdi, 0xf"
+        ]
+      }
+    ]
+  }
+]

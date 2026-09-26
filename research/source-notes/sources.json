@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "EEEEhex/RevokeHook",
+    "path": "RevokeHook/RevokeHook/dllmain.cpp",
+    "name": "revokehook-dllmain.cpp.txt",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014"
+  },
+  {
+    "repo": "EEEEhex/RevokeHook",
+    "path": "Config3.json",
+    "name": "revokehook-config3.json",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014"
+  },
+  {
+    "repo": "EEEEhex/RevokeHook",
+    "path": "RevokeHookUI/RevokeHookUI/Services/CallChainSearchService.cs",
+    "name": "revokehook-callchain.cs.txt",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014"
+  },
+  {
+    "repo": "EEEEhex/RevokeHook",
+    "path": "RevokeHookUI/RevokeHookUI/Services/SignatureSearchService.cs",
+    "name": "revokehook-signatures.cs.txt",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014"
+  },
+  {
+    "repo": "zetaloop/BetterWX",
+    "path": "revoke.py",
+    "name": "betterwx-revoke.py.txt",
+    "sha": "f3c5f7927ba5014d22e50d8d25b524f2a823d56b"
+  },
+  {
+    "repo": "aixed/WeChat-Hook",
+    "path": "src/wx_send.cpp",
+    "name": "aixed-wx-send.cpp.txt",
+    "sha": "e905d07ade50d2c6472e4eb3bd4f3fe19cf662c6"
+  },
+  {
+    "repo": "aixed/WeChat-Hook",
+    "path": "include/global.h",
+    "name": "aixed-global.h.txt",
+    "sha": "e905d07ade50d2c6472e4eb3bd4f3fe19cf662c6"
+  },
+  {
+    "name": "revokehook-config2.json",
+    "repo": "EEEEhex/RevokeHook",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014",
+    "path": "Config2.json"
+  },
+  {
+    "name": "revokehook-legacy-config.json",
+    "repo": "EEEEhex/RevokeHook",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014",
+    "path": "Config.json"
+  },
+  {
+    "name": "revokehook-mainwindow.cs.txt",
+    "repo": "EEEEhex/RevokeHook",
+    "sha": "ffb6a899b50ee3e11b4dfbae93d7fde4058f7014",
+    "path": "RevokeHookUI/RevokeHookUI/MainWindow.xaml.cs"
+  }
+]

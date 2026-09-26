@@ -1,0 +1,71 @@
+{
+ "dll": "C:\\Program Files\\Tencent\\Weixin\\4.1.15.13\\Weixin.dll",
+ "vtables": {
+  "148490616": {
+   "name": "uiMessageVtable",
+   "oldVtable": "0x8d9c978",
+   "newVtable": "0x8d9e9a8",
+   "via": "ctor 0xa58f00 site 0xa58f23 -> 0xa5a173",
+   "delta": "0x2030",
+   "rttiColValid": true
+  },
+  "149537816": {
+   "name": "recyclerMetaCast",
+   "oldVtable": "0x8e9c418",
+   "newVtable": "0x8e9e438",
+   "via": "ctor 0x1bc8640 site 0x1bc8b17 -> 0x1bcc267",
+   "delta": "0x2020",
+   "rttiColValid": false
+  },
+  "156676584": {
+   "name": "bindingBase1",
+   "oldVtable": "0x956b1e8",
+   "newVtable": "0x956d2a8",
+   "via": "ctor 0x3cff540 site 0x3cff5a0 -> 0x3d025e0",
+   "delta": "0x20c0",
+   "rttiColValid": true
+  },
+  "156676728": {
+   "name": "bindingVtable",
+   "oldVtable": "0x956b278",
+   "newVtable": "0x956d338",
+   "via": "ctor 0x3cff540 site 0x3cff5ae -> 0x3d025ee",
+   "delta": "0x20c0",
+   "rttiColValid": true
+  },
+  "156677336": {
+   "name": "bindingBase3",
+   "oldVtable": "0x956b4d8",
+   "newVtable": "0x956d598",
+   "via": "ctor 0x3cff540 site 0x3cff5b9 -> 0x3d025f9",
+   "delta": "0x20c0",
+   "rttiColValid": true
+  },
+  "156677400": {
+   "name": "bindingBase4",
+   "oldVtable": "0x956b518",
+   "newVtable": "0x956d5d8",
+   "via": "ctor 0x3cff540 site 0x3cff5c7 -> 0x3d02607",
+   "delta": "0x20c0",
+   "rttiColValid": true
+  },
+  "156677448": {
+   "name": "textInterfaceVtable",
+   "oldVtable": "0x956b548",
+   "newVtable": "0x956d608",
+   "via": "ctor 0x3cff540 site 0x3cff5d5 -> 0x3d02615",
+   "delta": "0x20c0",
+   "rttiColValid": true
+  }
+ },
+ "problems": [
+  "no new RVA for ctor 0x1e7a170",
+  "bindingBase1: no rip-relative operand at 0x3d028d8",
+  "bindingVtable: no rip-relative operand at 0x3d028e2",
+  "bindingBase3: no rip-relative operand at 0x3d028ed",
+  "bindingBase4: no rip-relative operand at 0x3d028fb",
+  "textInterfaceVtable: no rip-relative operand at 0x3d02909",
+  "no new RVA for ctor 0x3de1a50",
+  "no new RVA for ctor 0x3de5760"
+ ]
+}

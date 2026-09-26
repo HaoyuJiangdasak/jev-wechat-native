@@ -1,0 +1,545 @@
+[
+  {
+    "index": 0,
+    "vtable": "0x9175d78",
+    "accessor": "0x8891e0",
+    "class": "mmui::ChatTextItemView",
+    "meta": "0x8e79900",
+    "inheritance": [
+      {
+        "class": "mmui::ChatTextItemView",
+        "meta": "0x8e79900"
+      },
+      {
+        "class": "mmui::ChatBubbleReferItemView",
+        "meta": "0x8e79818"
+      },
+      {
+        "class": "mmui::ChatBubbleItemView",
+        "meta": "0x8e79578"
+      },
+      {
+        "class": "mmui::ChatItemView",
+        "meta": "0x8e79990"
+      },
+      {
+        "class": "mmui::XTableCell",
+        "meta": "0x8e9cb50"
+      },
+      {
+        "class": "QFReuseWidget",
+        "meta": "0x8e9bc70"
+      },
+      {
+        "class": "QFWidget",
+        "meta": "0x8e9bc40"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "vtable": "0x8e265b8",
+    "accessor": "0x5bd420",
+    "class": "QWidget",
+    "meta": "0x8e25c58",
+    "inheritance": [
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "vtable": "0x920cb48",
+    "accessor": "0x8f5a50",
+    "class": "mmui::RecyclerListView",
+    "meta": "0x8e9c418",
+    "inheritance": [
+      {
+        "class": "mmui::RecyclerListView",
+        "meta": "0x8e9c418"
+      },
+      {
+        "class": "mmui::VirtualScrollArea",
+        "meta": "0x8e9c300"
+      },
+      {
+        "class": "QAbstractScrollArea",
+        "meta": "0x8f1e978"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "vtable": "0x917e7f8",
+    "accessor": "0x88e3d0",
+    "class": "mmui::MessageView",
+    "meta": "0x8e7afa8",
+    "inheritance": [
+      {
+        "class": "mmui::MessageView",
+        "meta": "0x8e7afa8"
+      },
+      {
+        "class": "mmui::XView",
+        "meta": "0x8e9d8c8"
+      },
+      {
+        "class": "mmui::XSkiaWidget",
+        "meta": "0x8e9a3e8"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "vtable": "0x91d2698",
+    "accessor": "0x8fc880",
+    "class": "mmui::XVBoxView",
+    "meta": "0x8e9e620",
+    "inheritance": [
+      {
+        "class": "mmui::XVBoxView",
+        "meta": "0x8e9e620"
+      },
+      {
+        "class": "mmui::XView",
+        "meta": "0x8e9d8c8"
+      },
+      {
+        "class": "mmui::XSkiaWidget",
+        "meta": "0x8e9a3e8"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "vtable": "0x95959e8",
+    "accessor": "0x8fc210",
+    "class": "mmui::XSplitterView",
+    "meta": "0x8e9e150",
+    "inheritance": [
+      {
+        "class": "mmui::XSplitterView",
+        "meta": "0x8e9e150"
+      },
+      {
+        "class": "QSplitter",
+        "meta": "0x900a028"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "vtable": "0x9181508",
+    "accessor": "0x88f7b0",
+    "class": "mmui::ChatMessagePage",
+    "meta": "0x8e7b658",
+    "inheritance": [
+      {
+        "class": "mmui::ChatMessagePage",
+        "meta": "0x8e7b658"
+      },
+      {
+        "class": "mmui::ChatPage",
+        "meta": "0x8e7b3d0"
+      },
+      {
+        "class": "mmui::XView",
+        "meta": "0x8e9d8c8"
+      },
+      {
+        "class": "mmui::XSkiaWidget",
+        "meta": "0x8e9a3e8"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "vtable": "0x91d2188",
+    "accessor": "0x8fc700",
+    "class": "mmui::XStackedWidget",
+    "meta": "0x8e9e568",
+    "inheritance": [
+      {
+        "class": "mmui::XStackedWidget",
+        "meta": "0x8e9e568"
+      },
+      {
+        "class": "QStackedWidget",
+        "meta": "0x900c2e0"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "vtable": "0x95959e8",
+    "accessor": "0x8fc210",
+    "class": "mmui::XSplitterView",
+    "meta": "0x8e9e150",
+    "inheritance": [
+      {
+        "class": "mmui::XSplitterView",
+        "meta": "0x8e9e150"
+      },
+      {
+        "class": "QSplitter",
+        "meta": "0x900a028"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "vtable": "0x92402c8",
+    "accessor": "0x88c950",
+    "class": "mmui::ChatDetailView",
+    "meta": "0x8e7a930",
+    "inheritance": [
+      {
+        "class": "mmui::ChatDetailView",
+        "meta": "0x8e7a930"
+      },
+      {
+        "class": "mmui::DetailView",
+        "meta": "0x8e7a880"
+      },
+      {
+        "class": "mmui::XView",
+        "meta": "0x8e9d8c8"
+      },
+      {
+        "class": "mmui::XSkiaWidget",
+        "meta": "0x8e9a3e8"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "vtable": "0x91d2188",
+    "accessor": "0x8fc700",
+    "class": "mmui::XStackedWidget",
+    "meta": "0x8e9e568",
+    "inheritance": [
+      {
+        "class": "mmui::XStackedWidget",
+        "meta": "0x8e9e568"
+      },
+      {
+        "class": "QStackedWidget",
+        "meta": "0x900c2e0"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "vtable": "0x95959e8",
+    "accessor": "0x8fc210",
+    "class": "mmui::XSplitterView",
+    "meta": "0x8e9e150",
+    "inheritance": [
+      {
+        "class": "mmui::XSplitterView",
+        "meta": "0x8e9e150"
+      },
+      {
+        "class": "QSplitter",
+        "meta": "0x900a028"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "vtable": "0x95959e8",
+    "accessor": "0x8fc210",
+    "class": "mmui::XSplitterView",
+    "meta": "0x8e9e150",
+    "inheritance": [
+      {
+        "class": "mmui::XSplitterView",
+        "meta": "0x8e9e150"
+      },
+      {
+        "class": "QSplitter",
+        "meta": "0x900a028"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "vtable": "0x95d0278",
+    "accessor": "0x8afcd0",
+    "class": "mmui::MainView",
+    "meta": "0x8e84720",
+    "inheritance": [
+      {
+        "class": "mmui::MainView",
+        "meta": "0x8e84720"
+      },
+      {
+        "class": "mmui::XView",
+        "meta": "0x8e9d8c8"
+      },
+      {
+        "class": "mmui::XSkiaWidget",
+        "meta": "0x8e9a3e8"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "vtable": "0x8e265b8",
+    "accessor": "0x5bd420",
+    "class": "QWidget",
+    "meta": "0x8e25c58",
+    "inheritance": [
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "vtable": "0x95d0278",
+    "accessor": "0x8afcd0",
+    "class": "mmui::MainView",
+    "meta": "0x8e84720",
+    "inheritance": [
+      {
+        "class": "mmui::MainView",
+        "meta": "0x8e84720"
+      },
+      {
+        "class": "mmui::XView",
+        "meta": "0x8e9d8c8"
+      },
+      {
+        "class": "mmui::XSkiaWidget",
+        "meta": "0x8e9a3e8"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "vtable": "0x900c318",
+    "accessor": "0x13f54a0",
+    "class": "QStackedWidget",
+    "meta": "0x900c2e0",
+    "inheritance": [
+      {
+        "class": "QStackedWidget",
+        "meta": "0x900c2e0"
+      },
+      {
+        "class": "QFrame",
+        "meta": "0x900fba0"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "vtable": "0x8e265b8",
+    "accessor": "0x5bd420",
+    "class": "QWidget",
+    "meta": "0x8e25c58",
+    "inheritance": [
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "vtable": "0x9645238",
+    "accessor": "0x8afd60",
+    "class": "mmui::MainWindow",
+    "meta": "0x8e847c0",
+    "inheritance": [
+      {
+        "class": "mmui::MainWindow",
+        "meta": "0x8e847c0"
+      },
+      {
+        "class": "mmui::FramelessMainWindow",
+        "meta": "0x8e778a8"
+      },
+      {
+        "class": "mmui::XWindow",
+        "meta": "0x8e9e960"
+      },
+      {
+        "class": "QMainWindow",
+        "meta": "0x9187588"
+      },
+      {
+        "class": "QWidget",
+        "meta": "0x8e25c58"
+      },
+      {
+        "class": "QObject",
+        "meta": "0x8de7e98"
+      }
+    ]
+  }
+]

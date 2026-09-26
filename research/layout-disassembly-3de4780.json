@@ -1,0 +1,72 @@
+[
+  {
+    "rva": "0x3de4780",
+    "end": "0x3de4859",
+    "leaf_boundary_inferred": false,
+    "instructions": [
+      "03de4780: push     rbp",
+      "03de4781: push     rsi",
+      "03de4782: sub      rsp, 0x58",
+      "03de4786: lea      rbp, [rsp + 0x50]",
+      "03de478b: mov      qword ptr [rbp], 0xfffffffffffffffe",
+      "03de4793: mov      rsi, rcx",
+      "03de4796: call     0x183e22950",
+      "03de479b: lea      rax, [rip + 0x57a4246]",
+      "03de47a2: mov      qword ptr [rsi], rax",
+      "03de47a5: lea      rax, [rip + 0x57a44bc]",
+      "03de47ac: mov      qword ptr [rsi + 0x150], rax",
+      "03de47b3: mov      qword ptr [rbp - 0x10], rsi",
+      "03de47b7: lea      rcx, [rsi + 0x158]",
+      "03de47be: mov      qword ptr [rbp - 0x30], rcx",
+      "03de47c2: call     0x18018cd70",
+      "03de47c7: nop      ",
+      "03de47c8: mov      rax, qword ptr [rbp - 0x10]",
+      "03de47cc: lea      rcx, [rax + 0x168]",
+      "03de47d3: mov      qword ptr [rbp - 0x28], rcx",
+      "03de47d7: call     0x18018cd70",
+      "03de47dc: nop      ",
+      "03de47dd: mov      rax, qword ptr [rbp - 0x10]",
+      "03de47e1: lea      rcx, [rax + 0x178]",
+      "03de47e8: mov      byte ptr [rbp - 1], 0",
+      "03de47ec: lea      rdx, [rbp - 1]",
+      "03de47f0: mov      qword ptr [rbp - 0x20], rcx",
+      "03de47f4: call     0x180042cd0",
+      "03de47f9: nop      ",
+      "03de47fa: mov      rax, qword ptr [rbp - 0x10]",
+      "03de47fe: mov      byte ptr [rax + 0x188], 1",
+      "03de4805: xorps    xmm0, xmm0",
+      "03de4808: movups   xmmword ptr [rax + 0x190], xmm0",
+      "03de480f: mov      ecx, 0x40",
+      "03de4814: call     0x1874a989c",
+      "03de4819: nop      ",
+      "03de481a: mov      rdx, qword ptr [rbp - 0x10]",
+      "03de481e: lea      rcx, [rdx + 0x190]",
+      "03de4825: mov      qword ptr [rbp - 0x18], rcx",
+      "03de4829: mov      qword ptr [rax], rax",
+      "03de482c: mov      qword ptr [rax + 8], rax",
+      "03de4830: mov      qword ptr [rax + 0x10], rax",
+      "03de4834: mov      word ptr [rax + 0x18], 0x101",
+      "03de483a: mov      qword ptr [rdx + 0x190], rax",
+      "03de4841: lea      rcx, [rdx + 0x1a0]",
+      "03de4848: call     0x1806ac770",
+      "03de484d: nop      ",
+      "03de484e: mov      rax, qword ptr [rbp - 0x10]",
+      "03de4852: add      rsp, 0x58",
+      "03de4856: pop      rsi",
+      "03de4857: pop      rbp",
+      "03de4858: ret      "
+    ],
+    "references": [
+      {
+        "from": "0x3de479b",
+        "rva": "0x95889e8",
+        "ascii": null
+      },
+      {
+        "from": "0x3de47a5",
+        "rva": "0x9588c68",
+        "ascii": null
+      }
+    ]
+  }
+]

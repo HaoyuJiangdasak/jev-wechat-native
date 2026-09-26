@@ -1,0 +1,39 @@
+{
+  "version": "4.1.15.11",
+  "sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "status": "Static key semantics confirmed; cross-chat runtime consistency checks pending",
+  "binding_vtable_rva": "0x956b278",
+  "binding_message_offset": "0x120",
+  "binding_listener_offset": "0xd0",
+  "listener_vtable_rva": "0x95884e8",
+  "listener_complete_offset": 0,
+  "ui_message_type_offset": "0x8",
+  "required_message_type": 1,
+  "ui_message_conversation_string_offset": "0x70",
+  "listener_conversation_string_offset": "0xa0",
+  "must_match": "UIMessage conversation string == listener conversation string; both nonempty",
+  "string_layout": {
+    "object_size": 32,
+    "size_offset": 16,
+    "capacity_offset": 24,
+    "inline_capacity_less_than": 16,
+    "heap_pointer_offset": 0,
+    "encoding": "UTF-8"
+  },
+  "evidence_rvas": {
+    "message_filter_predicate": "0x3e2b8e0",
+    "message_filter_predicate_variant": "0x3e2bab0",
+    "message_copy_constructor": "0x1a5b50",
+    "listener_key_setter_static_evidence_only": "0x3e28de0",
+    "conversation_initialization_or_switch": "0x3de5e90",
+    "qqmail_classification": "0xb9d850",
+    "notification_classification": "0xb9e2a0",
+    "newsapp_classification": "0xb9d4a0"
+  },
+  "stable_message_id": null,
+  "warnings": [
+    "Read fields only; setter consumes its temporary string argument and is not a getter.",
+    "Fail closed for unknown vtables, invalid strings, empty values or mismatch.",
+    "A conversation key is not a message identity; preserve generation and original-text checks."
+  ]
+}

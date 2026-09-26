@@ -1,0 +1,103 @@
+{
+  "version": "4.1.15.11",
+  "sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "status": "Static RTTI/assembly candidates only; verify live vtable before any use. No conversation key established.",
+  "candidates": [
+    {
+      "binding_vtable_rva": "0x956b278",
+      "complete_type_rva": "0xb2d1950",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x956b548",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x3d00d20"
+    },
+    {
+      "binding_vtable_rva": "0x9ad43c8",
+      "complete_type_rva": "0xb86c5a0",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ad4698",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x6af5f60"
+    },
+    {
+      "binding_vtable_rva": "0x9ae2ba8",
+      "complete_type_rva": "0xb875670",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ae2e78",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x6b608c0"
+    },
+    {
+      "binding_vtable_rva": "0x9ae3838",
+      "complete_type_rva": "0xb875730",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ae3b08",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x6b62ba0"
+    },
+    {
+      "binding_vtable_rva": "0x9ae3db8",
+      "complete_type_rva": "0xb875770",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ae4088",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x6b741d0"
+    },
+    {
+      "binding_vtable_rva": "0x9ae6178",
+      "complete_type_rva": "0xb876880",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ae6448",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x6b72f40"
+    },
+    {
+      "binding_vtable_rva": "0x9ae81f8",
+      "complete_type_rva": "0xb8772f0",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ae84c8",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x6b7c260"
+    },
+    {
+      "binding_vtable_rva": "0x9ae9398",
+      "complete_type_rva": "0xb7b8ac0",
+      "binding_offset": 16,
+      "self_sent_slot": "0x20",
+      "self_sent_function_rva": "0x5c41810",
+      "ui_message_from_binding": "0x120",
+      "text_interface_from_binding": "0x5e0",
+      "text_interface_vtable_rva": "0x9ae9668",
+      "text_getter_slot": "0x28",
+      "text_getter_function_rva": "0x3d00d20"
+    }
+  ]
+}

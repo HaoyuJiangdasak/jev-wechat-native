@@ -1,0 +1,59 @@
+[
+  {
+    "from_rva": "0x88daba",
+    "to_rva": "0x88dfa0",
+    "label": "MessageView::InsertMessage signal",
+    "instruction": "lea r9, [rip + 0x4df]",
+    "containing_function": [
+      "0x88d9f0",
+      "0x88df2b"
+    ]
+  },
+  {
+    "from_rva": "0x1c249fb",
+    "to_rva": "0x1bf9ee0",
+    "label": "ChatInputView::InsertMessage slot",
+    "instruction": "lea r15, [rip - 0x2ab22]",
+    "containing_function": [
+      "0x1c241f0",
+      "0x1c25374"
+    ]
+  },
+  {
+    "from_rva": "0x1c24a13",
+    "to_rva": "0x88dfa0",
+    "label": "MessageView::InsertMessage signal",
+    "instruction": "lea rax, [rip - 0x1396a7a]",
+    "containing_function": [
+      "0x1c241f0",
+      "0x1c25374"
+    ]
+  },
+  {
+    "from_rva": "0x88d40c",
+    "to_rva": "0x1bf9ee0",
+    "label": "ChatInputView::InsertMessage slot",
+    "instruction": "jmp 0x181bf9ee0",
+    "containing_function": [
+      "0x88d2e0",
+      "0x88d6db"
+    ]
+  },
+  {
+    "from_rva": "0x1bf9f31",
+    "to_rva": "0x3d9ddb0",
+    "label": "slot delegated routine",
+    "instruction": "jmp 0x183d9ddb0",
+    "containing_function": [
+      "0x1bf9ee0",
+      "0x1bfa046"
+    ]
+  },
+  {
+    "from_rva": "0x1c0eb40",
+    "to_rva": "0x88dfa0",
+    "label": "MessageView::InsertMessage signal",
+    "instruction": "jmp 0x18088dfa0",
+    "containing_function": null
+  }
+]

@@ -1,0 +1,175 @@
+{"rva": "0x5bb290", "end": "0x5bb3de", "instructions": 93, "references": []}
+005bb290: push     rsi
+005bb291: push     rdi
+005bb292: push     rbx
+005bb293: sub      rsp, 0x20
+005bb297: mov      rsi, rcx
+005bb29a: mov      rax, qword ptr [rip + 0xb359407]
+005bb2a1: test     rax, rax
+005bb2a4: je       0x1805bb338
+005bb2aa: mov      rcx, qword ptr [rax + 8]
+005bb2ae: mov      rcx, qword ptr [rcx + 0x58]
+005bb2b2: test     rcx, rcx
+005bb2b5: je       0x1805bb2da
+005bb2b7: mov      rcx, qword ptr [rcx + 8]
+005bb2bb: test     rcx, rcx
+005bb2be: je       0x1805bb2da
+005bb2c0: mov      rdi, qword ptr [rcx + 0x20]
+005bb2c4: test     rdi, rdi
+005bb2c7: jne      0x1805bb308
+005bb2c9: jmp      0x1805bb2da
+005bb2cb: nop      dword ptr [rax + rax]
+005bb2d0: mov      rcx, qword ptr [rax + 0x28]
+005bb2d4: cmp      qword ptr [rcx], 0
+005bb2d8: jne      0x1805bb2e9
+005bb2da: mov      rax, qword ptr [rax + 8]
+005bb2de: mov      rax, qword ptr [rax + 0x10]
+005bb2e2: test     rax, rax
+005bb2e5: jne      0x1805bb2d0
+005bb2e7: jmp      0x1805bb32d
+005bb2e9: mov      rax, qword ptr [rax + 8]
+005bb2ed: mov      rax, qword ptr [rax + 0x58]
+005bb2f1: test     rax, rax
+005bb2f4: je       0x1805bb32d
+005bb2f6: mov      rax, qword ptr [rax + 8]
+005bb2fa: test     rax, rax
+005bb2fd: je       0x1805bb32d
+005bb2ff: mov      rdi, qword ptr [rax + 0x20]
+005bb303: test     rdi, rdi
+005bb306: je       0x1805bb32d
+005bb308: mov      rbx, rdx
+005bb30b: cmp      byte ptr [rip + 0xb3593a6], 1
+005bb312: jne      0x1805bb320
+005bb314: call     0x1801668e0
+005bb319: mov      byte ptr [rip + 0xb359398], 0
+005bb320: mov      rcx, rdi
+005bb323: xor      edx, edx
+005bb325: call     0x1802d76b0
+005bb32a: mov      rdx, rbx
+005bb32d: mov      qword ptr [rip + 0xb359370], 0
+005bb338: mov      byte ptr [rip + 0xb359379], 0
+005bb33f: mov      rax, qword ptr [rsi + 8]
+005bb343: mov      rax, qword ptr [rax + 0x58]
+005bb347: test     rax, rax
+005bb34a: je       0x1805bb35e
+005bb34c: mov      rax, qword ptr [rax + 8]
+005bb350: test     rax, rax
+005bb353: je       0x1805bb35e
+005bb355: mov      rdi, qword ptr [rax + 0x20]
+005bb359: test     rdi, rdi
+005bb35c: jne      0x1805bb3a6
+005bb35e: mov      rax, rsi
+005bb361: nop      word ptr cs:[rax + rax]
+005bb370: mov      rax, qword ptr [rax + 8]
+005bb374: mov      rax, qword ptr [rax + 0x10]
+005bb378: test     rax, rax
+005bb37b: je       0x1805bb3c4
+005bb37d: mov      rcx, qword ptr [rax + 0x28]
+005bb381: cmp      qword ptr [rcx], 0
+005bb385: je       0x1805bb370
+005bb387: mov      rax, qword ptr [rax + 8]
+005bb38b: mov      rax, qword ptr [rax + 0x58]
+005bb38f: test     rax, rax
+005bb392: je       0x1805bb3c4
+005bb394: mov      rax, qword ptr [rax + 8]
+005bb398: test     rax, rax
+005bb39b: je       0x1805bb3c4
+005bb39d: mov      rdi, qword ptr [rax + 0x20]
+005bb3a1: test     rdi, rdi
+005bb3a4: je       0x1805bb3c4
+005bb3a6: test     rdx, rdx
+005bb3a9: je       0x1805bb3ba
+005bb3ab: mov      byte ptr [rip + 0xb359306], 1
+005bb3b2: mov      rcx, rdx
+005bb3b5: call     0x180166670
+005bb3ba: mov      rcx, rdi
+005bb3bd: mov      dl, 1
+005bb3bf: call     0x1802d76b0
+005bb3c4: mov      qword ptr [rip + 0xb3592dd], rsi
+005bb3cb: mov      qword ptr [rip + 0xb3592ca], 0
+005bb3d6: add      rsp, 0x20
+005bb3da: pop      rbx
+005bb3db: pop      rdi
+005bb3dc: pop      rsi
+005bb3dd: ret      
+{"rva": "0x5bb460", "end": "0x5bb55a", "instructions": 74, "references": []}
+005bb460: push     rsi
+005bb461: sub      rsp, 0x20
+005bb465: mov      rsi, rcx
+005bb468: mov      rax, qword ptr [rip + 0xb359241]
+005bb46f: test     rax, rax
+005bb472: je       0x1805bb4ea
+005bb474: mov      rcx, qword ptr [rax + 8]
+005bb478: mov      rcx, qword ptr [rcx + 0x58]
+005bb47c: test     rcx, rcx
+005bb47f: je       0x1805bb4aa
+005bb481: mov      rcx, qword ptr [rcx + 8]
+005bb485: test     rcx, rcx
+005bb488: je       0x1805bb4aa
+005bb48a: mov      rcx, qword ptr [rcx + 0x20]
+005bb48e: test     rcx, rcx
+005bb491: jne      0x1805bb4d8
+005bb493: jmp      0x1805bb4aa
+005bb495: nop      word ptr cs:[rax + rax]
+005bb4a0: mov      rcx, qword ptr [rax + 0x28]
+005bb4a4: cmp      qword ptr [rcx], 0
+005bb4a8: jne      0x1805bb4b9
+005bb4aa: mov      rax, qword ptr [rax + 8]
+005bb4ae: mov      rax, qword ptr [rax + 0x10]
+005bb4b2: test     rax, rax
+005bb4b5: jne      0x1805bb4a0
+005bb4b7: jmp      0x1805bb4df
+005bb4b9: mov      rax, qword ptr [rax + 8]
+005bb4bd: mov      rax, qword ptr [rax + 0x58]
+005bb4c1: test     rax, rax
+005bb4c4: je       0x1805bb4df
+005bb4c6: mov      rax, qword ptr [rax + 8]
+005bb4ca: test     rax, rax
+005bb4cd: je       0x1805bb4df
+005bb4cf: mov      rcx, qword ptr [rax + 0x20]
+005bb4d3: test     rcx, rcx
+005bb4d6: je       0x1805bb4df
+005bb4d8: xor      edx, edx
+005bb4da: call     0x1802d7690
+005bb4df: mov      qword ptr [rip + 0xb3591c6], 0
+005bb4ea: mov      rax, qword ptr [rsi + 8]
+005bb4ee: mov      rax, qword ptr [rax + 0x58]
+005bb4f2: test     rax, rax
+005bb4f5: je       0x1805bb509
+005bb4f7: mov      rax, qword ptr [rax + 8]
+005bb4fb: test     rax, rax
+005bb4fe: je       0x1805bb509
+005bb500: mov      rcx, qword ptr [rax + 0x20]
+005bb504: test     rcx, rcx
+005bb507: jne      0x1805bb546
+005bb509: mov      rax, rsi
+005bb50c: nop      dword ptr [rax]
+005bb510: mov      rax, qword ptr [rax + 8]
+005bb514: mov      rax, qword ptr [rax + 0x10]
+005bb518: test     rax, rax
+005bb51b: je       0x1805bb54d
+005bb51d: mov      rcx, qword ptr [rax + 0x28]
+005bb521: cmp      qword ptr [rcx], 0
+005bb525: je       0x1805bb510
+005bb527: mov      rax, qword ptr [rax + 8]
+005bb52b: mov      rax, qword ptr [rax + 0x58]
+005bb52f: test     rax, rax
+005bb532: je       0x1805bb54d
+005bb534: mov      rax, qword ptr [rax + 8]
+005bb538: test     rax, rax
+005bb53b: je       0x1805bb54d
+005bb53d: mov      rcx, qword ptr [rax + 0x20]
+005bb541: test     rcx, rcx
+005bb544: je       0x1805bb54d
+005bb546: mov      dl, 1
+005bb548: call     0x1802d7690
+005bb54d: mov      qword ptr [rip + 0xb35915c], rsi
+005bb554: add      rsp, 0x20
+005bb558: pop      rsi
+005bb559: ret      
+{"rva": "0x5bade0", "end": "0x5badf4", "instructions": 5, "references": []}
+005bade0: mov      rax, qword ptr [rip + 0xb3598c1]
+005bade7: test     rax, rax
+005badea: jne      0x1805badf3
+005badec: mov      rax, qword ptr [rip + 0xb3598ad]
+005badf3: ret      

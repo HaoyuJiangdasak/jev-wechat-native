@@ -1,0 +1,82 @@
+01bf9ee0: push     rbp
+01bf9ee1: push     rsi
+01bf9ee2: push     rdi
+01bf9ee3: sub      rsp, 0x180
+01bf9eea: lea      rbp, [rsp + 0x80]
+01bf9ef2: mov      qword ptr [rbp + 0xf8], 0xfffffffffffffffe
+01bf9efd: mov      rdi, rcx
+01bf9f00: mov      rcx, qword ptr [rcx + 0x1c0]
+01bf9f07: test     rcx, rcx
+01bf9f0a: je       0x181bf9f36
+01bf9f0c: mov      rsi, rdx
+01bf9f0f: call     0x181e60e40
+01bf9f14: cmp      rax, qword ptr [rdi + 0x1d0]
+01bf9f1b: je       0x181bf9f36
+01bf9f1d: mov      rcx, qword ptr [rdi + 0x2a0]
+01bf9f24: mov      rdx, rsi
+01bf9f27: add      rsp, 0x180
+01bf9f2e: pop      rdi
+01bf9f2f: pop      rsi
+01bf9f30: pop      rbp
+01bf9f31: jmp      0x183d9ddb0
+01bf9f36: mov      ecx, 3
+01bf9f3b: call     0x18006cde0
+01bf9f40: test     eax, eax
+01bf9f42: je       0x181bfa035
+01bf9f48: lea      rsi, [rbp + 0xd8]
+01bf9f4f: mov      rcx, rsi
+01bf9f52: call     0x18006cf10
+01bf9f57: cmp      qword ptr [rbp + 0xf0], 0x10
+01bf9f5f: jb       0x181bf9f68
+01bf9f61: mov      rsi, qword ptr [rbp + 0xd8]
+01bf9f68: lea      rax, [rip + 0x7583e99]
+01bf9f6f: mov      qword ptr [rsp + 0x20], rax
+01bf9f74: mov      qword ptr [rsp + 0x38], 0
+01bf9f7d: mov      byte ptr [rsp + 0x30], 0
+01bf9f82: mov      dword ptr [rsp + 0x28], 0x4ea
+01bf9f8a: lea      r9, [rip + 0x7583ddf]
+01bf9f91: lea      rcx, [rbp - 0x40]
+01bf9f95: mov      edx, 3
+01bf9f9a: mov      r8, rsi
+01bf9f9d: call     0x18006d270
+01bf9fa2: nop      
+01bf9fa3: xorps    xmm0, xmm0
+01bf9fa6: movaps   xmmword ptr [rbp + 0xc0], xmm0
+01bf9fad: movaps   xmmword ptr [rbp + 0xb0], xmm0
+01bf9fb4: movaps   xmmword ptr [rbp + 0xa0], xmm0
+01bf9fbb: movaps   xmmword ptr [rbp + 0x90], xmm0
+01bf9fc2: movaps   xmmword ptr [rbp + 0x80], xmm0
+01bf9fc9: movaps   xmmword ptr [rbp + 0x70], xmm0
+01bf9fcd: movaps   xmmword ptr [rbp + 0x60], xmm0
+01bf9fd1: movaps   xmmword ptr [rbp + 0x50], xmm0
+01bf9fd5: lea      rdx, [rip + 0x7584004]
+01bf9fdc: lea      rcx, [rbp - 0x40]
+01bf9fe0: lea      r8, [rbp + 0x50]
+01bf9fe4: call     0x18006d810
+01bf9fe9: nop      
+01bf9fea: lea      rcx, [rbp - 0x40]
+01bf9fee: call     0x18006d370
+01bf9ff3: mov      rax, qword ptr [rbp + 0xf0]
+01bf9ffa: cmp      rax, 0x10
+01bf9ffe: jb       0x181bfa035
+01bfa000: mov      rcx, qword ptr [rbp + 0xd8]
+01bfa007: lea      rdx, [rax + 1]
+01bfa00b: cmp      rdx, 0x1000
+01bfa012: jb       0x181bfa02f
+01bfa014: mov      r8, qword ptr [rcx - 8]
+01bfa018: add      rcx, -8
+01bfa01c: sub      rcx, r8
+01bfa01f: cmp      rcx, 0x20
+01bfa023: jae      0x181bfa040
+01bfa025: add      rax, 0x28
+01bfa029: mov      rdx, rax
+01bfa02c: mov      rcx, r8
+01bfa02f: call     0x1874a98e0
+01bfa034: nop      
+01bfa035: add      rsp, 0x180
+01bfa03c: pop      rdi
+01bfa03d: pop      rsi
+01bfa03e: pop      rbp
+01bfa03f: ret      
+01bfa040: call     0x18750b38c
+01bfa045: int3     

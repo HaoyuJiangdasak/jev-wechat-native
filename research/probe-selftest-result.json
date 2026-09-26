@@ -1,0 +1,19 @@
+{
+  "frida_version": "17.18.0",
+  "host_python": "C:\\Users\\Public\\miniconda3\\python.exe",
+  "target_kind": "new temporary child process",
+  "attached": true,
+  "loaded": true,
+  "unloaded": true,
+  "detached": true,
+  "child_reaped": true,
+  "passed": true,
+  "child_pid": 13812,
+  "payload": {
+    "arch": "x64",
+    "pointerSize": 8,
+    "moduleCount": 34
+  },
+  "child_exit_code": 1,
+  "elapsed_seconds": 0.143
+}

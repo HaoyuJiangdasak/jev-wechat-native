@@ -1,0 +1,146 @@
+[
+  {
+    "function": "0x3cc03d0",
+    "address": "0x3cc056a",
+    "write": false,
+    "context": [
+      "03cc0550: jae 0x3cc05a9",
+      "03cc0552: add rdx, 0x27",
+      "03cc0556: mov rcx, rax",
+      "03cc0559: call 0x74a98e0",
+      "03cc055e: mov rcx, qword ptr [rsi + 0x1b8]",
+      "03cc0565: test rcx, rcx",
+      "03cc0568: je 0x3cc059a",
+      "03cc056a: mov rdx, qword ptr [rsi + 0x1c8]",
+      "03cc0571: sub rdx, rcx",
+      "03cc0574: cmp rdx, 0x1000",
+      "03cc057b: jb 0x3cc0595"
+    ]
+  },
+  {
+    "function": "0x3cc2b30",
+    "address": "0x3cc2f6b",
+    "write": true,
+    "context": [
+      "03cc2f4a: mov qword ptr [rbp + 0xb0], rax",
+      "03cc2f51: mov rcx, rax",
+      "03cc2f54: xor r8d, r8d",
+      "03cc2f57: call 0x4697e90",
+      "03cc2f5c: nop ",
+      "03cc2f5d: mov rax, qword ptr [rbp + 0xb8]",
+      "03cc2f64: mov rcx, qword ptr [rbp + 0xb0]",
+      "03cc2f6b: mov qword ptr [rax + 0x1c8], rcx",
+      "03cc2f72: xor edx, edx",
+      "03cc2f74: call 0x5b8040",
+      "03cc2f79: nop "
+    ]
+  },
+  {
+    "function": "0x3cc2b30",
+    "address": "0x3cc2f81",
+    "write": false,
+    "context": [
+      "03cc2f5d: mov rax, qword ptr [rbp + 0xb8]",
+      "03cc2f64: mov rcx, qword ptr [rbp + 0xb0]",
+      "03cc2f6b: mov qword ptr [rax + 0x1c8], rcx",
+      "03cc2f72: xor edx, edx",
+      "03cc2f74: call 0x5b8040",
+      "03cc2f79: nop ",
+      "03cc2f7a: mov rax, qword ptr [rbp + 0xb8]",
+      "03cc2f81: mov rcx, qword ptr [rax + 0x1c8]",
+      "03cc2f88: mov edx, 8",
+      "03cc2f8d: call 0x46983f0",
+      "03cc2f92: nop "
+    ]
+  },
+  {
+    "function": "0x3cc2b30",
+    "address": "0x3cc2f9a",
+    "write": false,
+    "context": [
+      "03cc2f79: nop ",
+      "03cc2f7a: mov rax, qword ptr [rbp + 0xb8]",
+      "03cc2f81: mov rcx, qword ptr [rax + 0x1c8]",
+      "03cc2f88: mov edx, 8",
+      "03cc2f8d: call 0x46983f0",
+      "03cc2f92: nop ",
+      "03cc2f93: mov rax, qword ptr [rbp + 0xb8]",
+      "03cc2f9a: mov rdx, qword ptr [rax + 0x1c8]",
+      "03cc2fa1: mov rcx, rbx",
+      "03cc2fa4: xor r8d, r8d",
+      "03cc2fa7: mov r9d, 0x24"
+    ]
+  },
+  {
+    "function": "0x3cc3180",
+    "address": "0x3cc321c",
+    "write": false,
+    "context": [
+      "03cc31fe: lea rdx, [rsi + 0x20]",
+      "03cc3202: call 0x1e80b60",
+      "03cc3207: mov rcx, qword ptr [rdi + 0x1c0]",
+      "03cc320e: test rcx, rcx",
+      "03cc3211: je 0x3cc321c",
+      "03cc3213: lea rdx, [rsi + 0x40]",
+      "03cc3217: call 0x1e80b60",
+      "03cc321c: mov rcx, qword ptr [rdi + 0x1c8]",
+      "03cc3223: test rcx, rcx",
+      "03cc3226: je 0x3cc3237",
+      "03cc3228: mov rdx, rsi"
+    ]
+  },
+  {
+    "function": "0x3cc3240",
+    "address": "0x3cc328e",
+    "write": false,
+    "context": [
+      "03cc3273: mov rdx, rbx",
+      "03cc3276: call 0x1e80b60",
+      "03cc327b: mov rcx, qword ptr [rdi + 0x1c0]",
+      "03cc3282: test rcx, rcx",
+      "03cc3285: je 0x3cc328e",
+      "03cc3287: mov dl, 1",
+      "03cc3289: call 0x5b63d0",
+      "03cc328e: mov rcx, qword ptr [rdi + 0x1c8]",
+      "03cc3295: test rcx, rcx",
+      "03cc3298: je 0x3cc32a9",
+      "03cc329a: mov rdx, rsi"
+    ]
+  },
+  {
+    "function": "0x3cd6f40",
+    "address": "0x3cd709e",
+    "write": false,
+    "context": [
+      "03cd705e: movups xmmword ptr [rcx + 0x168], xmm0",
+      "03cd7065: mov dword ptr [rcx + 0x178], 0",
+      "03cd706f: mov qword ptr [rcx + 0x198], 0xf",
+      "03cd707a: mov byte ptr [rcx + 0x1a0], 0",
+      "03cd7081: movups xmmword ptr [rcx + 0x1a8], xmm0",
+      "03cd7088: mov qword ptr [rcx + 0x1b8], 0",
+      "03cd7093: mov qword ptr [rcx + 0x1c0], 0xf",
+      "03cd709e: movups xmmword ptr [rcx + 0x1c8], xmm0",
+      "03cd70a5: mov qword ptr [rcx + 0x1d8], 0",
+      "03cd70b0: mov qword ptr [rcx + 0x1e0], 0xf",
+      "03cd70bb: lea rax, [rcx + 0x210]"
+    ]
+  },
+  {
+    "function": "0x3cd7a80",
+    "address": "0x3cd7ff7",
+    "write": false,
+    "context": [
+      "03cd7fd3: mov rax, qword ptr [rbx]",
+      "03cd7fd6: mov rcx, rbx",
+      "03cd7fd9: call qword ptr [rax + 8]",
+      "03cd7fdc: jmp 0x3cd7ff0",
+      "03cd7fde: mov qword ptr [rbp + 0x5b8], rax",
+      "03cd7fe5: mov qword ptr [rbp + 0x5c0], 0",
+      "03cd7ff0: mov rax, qword ptr [rbp + 0x5b8]",
+      "03cd7ff7: mov rcx, qword ptr [rax + 0x1c8]",
+      "03cd7ffe: mov rax, qword ptr [rcx + 0x10]",
+      "03cd8002: test rax, rax",
+      "03cd8005: je 0x3cd8011"
+    ]
+  }
+]

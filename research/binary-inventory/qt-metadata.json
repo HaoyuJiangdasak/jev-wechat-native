@@ -1,0 +1,1182 @@
+[
+  {
+    "class": "mmui::ChatInputView",
+    "string_offset": "0xb138cf8",
+    "string_rva": "0xb13aaf8",
+    "string_table_offset": "0xb138a70",
+    "string_table_rva": "0xb13a870",
+    "strings": [
+      "mmui::ChatInputView",
+      "OnSend",
+      "",
+      "OnSendResult",
+      "has_error",
+      "OnShowBizMenu",
+      "SwitchInputType",
+      "type",
+      "InputTextChanged",
+      "AdaptiveContentChanged",
+      "InputLayoutSizeChanged",
+      "OnBrandPrivateMsgForbidChanged",
+      "forbid",
+      "Send",
+      "SendActionType",
+      "action_type",
+      "HandleUserWillLogout",
+      "HideMainWindowWhenShot",
+      "InsertMessage",
+      "kernel::MessageWrapper",
+      "message",
+      "InsertMention",
+      "kernel::AtUsersMemberInfo",
+      "member",
+      "SetReferMessage",
+      "kernel::ReferSendData",
+      "refer_send_data"
+    ],
+    "metaobjects": [
+      {
+        "offset": "0x8e79468",
+        "rva": "0x8e7ac68",
+        "fields": [
+          "0x188e9d8c8",
+          "0x18b13a870",
+          "0x188e7aaa0",
+          "0x18088d2e0",
+          "0x0",
+          "0x0"
+        ],
+        "metadata_header": [
+          8,
+          0,
+          0,
+          0,
+          14,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        "methods": [
+          {
+            "index": 0,
+            "name": "OnSend",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              1,
+              0,
+              84,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 1,
+            "name": "OnSendResult",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              3,
+              1,
+              85,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              1
+            ],
+            "parameter_names": [
+              "has_error"
+            ]
+          },
+          {
+            "index": 2,
+            "name": "OnShowBizMenu",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              5,
+              0,
+              88,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 3,
+            "name": "SwitchInputType",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              6,
+              1,
+              89,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              2
+            ],
+            "parameter_names": [
+              "type"
+            ]
+          },
+          {
+            "index": 4,
+            "name": "InputTextChanged",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              8,
+              0,
+              92,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 5,
+            "name": "AdaptiveContentChanged",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              9,
+              0,
+              93,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 6,
+            "name": "InputLayoutSizeChanged",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              10,
+              0,
+              94,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 7,
+            "name": "OnBrandPrivateMsgForbidChanged",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              11,
+              1,
+              95,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              1
+            ],
+            "parameter_names": [
+              "forbid"
+            ]
+          },
+          {
+            "index": 8,
+            "name": "Send",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              13,
+              1,
+              98,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "SendActionType"
+            ],
+            "parameter_names": [
+              "action_type"
+            ]
+          },
+          {
+            "index": 9,
+            "name": "HandleUserWillLogout",
+            "argc": 0,
+            "flags": "0xa",
+            "row": [
+              16,
+              0,
+              101,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 10,
+            "name": "HideMainWindowWhenShot",
+            "argc": 0,
+            "flags": "0xa",
+            "row": [
+              17,
+              0,
+              102,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 11,
+            "name": "InsertMessage",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              18,
+              1,
+              103,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "kernel::MessageWrapper"
+            ],
+            "parameter_names": [
+              "message"
+            ]
+          },
+          {
+            "index": 12,
+            "name": "InsertMention",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              21,
+              1,
+              106,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "kernel::AtUsersMemberInfo"
+            ],
+            "parameter_names": [
+              "member"
+            ]
+          },
+          {
+            "index": 13,
+            "name": "SetReferMessage",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              24,
+              1,
+              109,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "kernel::ReferSendData"
+            ],
+            "parameter_names": [
+              "refer_send_data"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "mmui::MessageView",
+    "string_offset": "0xb139320",
+    "string_rva": "0xb13b120",
+    "string_table_offset": "0xb138ea0",
+    "string_table_rva": "0xb13aca0",
+    "strings": [
+      "mmui::MessageView",
+      "OnWindowDeactivated",
+      "",
+      "OnWindowVisibleActivated",
+      "InsertMessage",
+      "kernel::MessageWrapper",
+      "message",
+      "SelectModeChanged",
+      "is_select_mode",
+      "selected_count",
+      "OnNewSessionMessageLoaded",
+      "std::string",
+      "user_name",
+      "SelectCountChanged",
+      "MentionContact",
+      "kernel::AtUsersMemberInfo",
+      "contact",
+      "OnSetReferMessage",
+      "kernel::ReferSendData",
+      "refer_send_data",
+      "GetChatroomTopMsgInfo",
+      "mmui::QueryChatSessionTopMsgResult",
+      "uint64_t",
+      "svr_msg_id",
+      "EnableInputField",
+      "enable",
+      "OnMessageListScrollingStart",
+      "ViewModelChanged",
+      "std::shared_ptr<ChatMessageViewModel>",
+      "view_model",
+      "OnSend",
+      "OnSendResult",
+      "has_error",
+      "OnShowPatTipBar",
+      "ShowPatBarViewParam",
+      "param",
+      "OnRegionSelectionFinish",
+      "start_index",
+      "end_index",
+      "NavigateToMessageAndHighlight",
+      "MessageUniqueId",
+      "message_unique_id",
+      "is_highlight",
+      "IsMsgWidgetVisible",
+      "msg_server_id",
+      "SetChatMsgTipBarAlign",
+      "Qt::Alignment",
+      "align"
+    ],
+    "metaobjects": [
+      {
+        "offset": "0x8e797a8",
+        "rva": "0x8e7afa8",
+        "fields": [
+          "0x188e9d8c8",
+          "0x18b13aca0",
+          "0x188e7acf0",
+          "0x18088d9f0",
+          "0x0",
+          "0x0"
+        ],
+        "metadata_header": [
+          8,
+          0,
+          0,
+          0,
+          20,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        "methods": [
+          {
+            "index": 0,
+            "name": "OnWindowDeactivated",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              1,
+              0,
+              114,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 1,
+            "name": "OnWindowVisibleActivated",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              3,
+              0,
+              115,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 2,
+            "name": "InsertMessage",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              4,
+              1,
+              116,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              "kernel::MessageWrapper"
+            ],
+            "parameter_names": [
+              "message"
+            ]
+          },
+          {
+            "index": 3,
+            "name": "SelectModeChanged",
+            "argc": 2,
+            "flags": "0x6",
+            "row": [
+              7,
+              2,
+              119,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              1,
+              2
+            ],
+            "parameter_names": [
+              "is_select_mode",
+              "selected_count"
+            ]
+          },
+          {
+            "index": 4,
+            "name": "OnNewSessionMessageLoaded",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              10,
+              1,
+              124,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              "std::string"
+            ],
+            "parameter_names": [
+              "user_name"
+            ]
+          },
+          {
+            "index": 5,
+            "name": "SelectCountChanged",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              13,
+              1,
+              127,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              2
+            ],
+            "parameter_names": [
+              "selected_count"
+            ]
+          },
+          {
+            "index": 6,
+            "name": "MentionContact",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              14,
+              1,
+              130,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              "kernel::AtUsersMemberInfo"
+            ],
+            "parameter_names": [
+              "contact"
+            ]
+          },
+          {
+            "index": 7,
+            "name": "OnSetReferMessage",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              17,
+              1,
+              133,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              "kernel::ReferSendData"
+            ],
+            "parameter_names": [
+              "refer_send_data"
+            ]
+          },
+          {
+            "index": 8,
+            "name": "GetChatroomTopMsgInfo",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              20,
+              1,
+              136,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              "mmui::QueryChatSessionTopMsgResult",
+              "uint64_t"
+            ],
+            "parameter_names": [
+              "svr_msg_id"
+            ]
+          },
+          {
+            "index": 9,
+            "name": "EnableInputField",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              24,
+              1,
+              139,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              1
+            ],
+            "parameter_names": [
+              "enable"
+            ]
+          },
+          {
+            "index": 10,
+            "name": "OnMessageListScrollingStart",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              26,
+              0,
+              142,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 11,
+            "name": "ViewModelChanged",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              27,
+              1,
+              143,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              "std::shared_ptr<ChatMessageViewModel>"
+            ],
+            "parameter_names": [
+              "view_model"
+            ]
+          },
+          {
+            "index": 12,
+            "name": "OnSend",
+            "argc": 0,
+            "flags": "0xa",
+            "row": [
+              30,
+              0,
+              146,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 13,
+            "name": "OnSendResult",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              31,
+              1,
+              147,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              1
+            ],
+            "parameter_names": [
+              "has_error"
+            ]
+          },
+          {
+            "index": 14,
+            "name": "OnShowPatTipBar",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              33,
+              1,
+              150,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "ShowPatBarViewParam"
+            ],
+            "parameter_names": [
+              "param"
+            ]
+          },
+          {
+            "index": 15,
+            "name": "OnRegionSelectionFinish",
+            "argc": 2,
+            "flags": "0xa",
+            "row": [
+              36,
+              2,
+              153,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              2,
+              2
+            ],
+            "parameter_names": [
+              "start_index",
+              "end_index"
+            ]
+          },
+          {
+            "index": 16,
+            "name": "NavigateToMessageAndHighlight",
+            "argc": 2,
+            "flags": "0xa",
+            "row": [
+              39,
+              2,
+              158,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "MessageUniqueId",
+              1
+            ],
+            "parameter_names": [
+              "message_unique_id",
+              "is_highlight"
+            ]
+          },
+          {
+            "index": 17,
+            "name": "NavigateToMessageAndHighlight",
+            "argc": 1,
+            "flags": "0x2a",
+            "row": [
+              39,
+              1,
+              163,
+              2,
+              42
+            ],
+            "return_and_parameter_types": [
+              43,
+              "MessageUniqueId"
+            ],
+            "parameter_names": [
+              "message_unique_id"
+            ]
+          },
+          {
+            "index": 18,
+            "name": "IsMsgWidgetVisible",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              43,
+              1,
+              166,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              1,
+              "uint64_t"
+            ],
+            "parameter_names": [
+              "msg_server_id"
+            ]
+          },
+          {
+            "index": 19,
+            "name": "SetChatMsgTipBarAlign",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              45,
+              1,
+              169,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "Qt::Alignment"
+            ],
+            "parameter_names": [
+              "align"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "mmui::ChatMessagePage",
+    "string_offset": "0xb139d78",
+    "string_rva": "0xb13bb78",
+    "string_table_offset": "0xb139b20",
+    "string_table_rva": "0xb13b920",
+    "strings": [
+      "mmui::ChatMessagePage",
+      "OnMessageTipBarStatusChanged",
+      "",
+      "is_shown",
+      "NavigateToMessageAndHighlight",
+      "uint64_t",
+      "msg_id",
+      "is_highlight",
+      "OnMessageListScrollingStart",
+      "OnHideInputView",
+      "OnSessionWillReload",
+      "OnSelectModeChanged",
+      "is_select_mode",
+      "selected_count",
+      "OnSelectCountChanged",
+      "count",
+      "OnNewSessionDataLoaded",
+      "std::string",
+      "session_name",
+      "OnPushAnimationFinished",
+      "OnPopAnimationFinished",
+      "OnShowChatMoreInfo",
+      "OnEnableInputField",
+      "enable",
+      "StartPerfReportTimer"
+    ],
+    "metaobjects": [
+      {
+        "offset": "0x8e79e58",
+        "rva": "0x8e7b658",
+        "fields": [
+          "0x188e7b3d0",
+          "0x18b13b920",
+          "0x188e7b480",
+          "0x18088f360",
+          "0x0",
+          "0x0"
+        ],
+        "metadata_header": [
+          8,
+          0,
+          0,
+          0,
+          14,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "methods": [
+          {
+            "index": 0,
+            "name": "OnMessageTipBarStatusChanged",
+            "argc": 1,
+            "flags": "0x6",
+            "row": [
+              1,
+              1,
+              84,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              1
+            ],
+            "parameter_names": [
+              "is_shown"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "NavigateToMessageAndHighlight",
+            "argc": 2,
+            "flags": "0x6",
+            "row": [
+              4,
+              2,
+              87,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43,
+              "uint64_t",
+              1
+            ],
+            "parameter_names": [
+              "msg_id",
+              "is_highlight"
+            ]
+          },
+          {
+            "index": 2,
+            "name": "NavigateToMessageAndHighlight",
+            "argc": 1,
+            "flags": "0x26",
+            "row": [
+              4,
+              1,
+              92,
+              2,
+              38
+            ],
+            "return_and_parameter_types": [
+              43,
+              "uint64_t"
+            ],
+            "parameter_names": [
+              "msg_id"
+            ]
+          },
+          {
+            "index": 3,
+            "name": "OnMessageListScrollingStart",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              8,
+              0,
+              95,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 4,
+            "name": "OnHideInputView",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              9,
+              0,
+              96,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 5,
+            "name": "OnSessionWillReload",
+            "argc": 0,
+            "flags": "0x6",
+            "row": [
+              10,
+              0,
+              97,
+              2,
+              6
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 6,
+            "name": "OnSelectModeChanged",
+            "argc": 2,
+            "flags": "0xa",
+            "row": [
+              11,
+              2,
+              98,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              1,
+              2
+            ],
+            "parameter_names": [
+              "is_select_mode",
+              "selected_count"
+            ]
+          },
+          {
+            "index": 7,
+            "name": "OnSelectCountChanged",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              14,
+              1,
+              103,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              2
+            ],
+            "parameter_names": [
+              "count"
+            ]
+          },
+          {
+            "index": 8,
+            "name": "OnNewSessionDataLoaded",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              16,
+              1,
+              106,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              "std::string"
+            ],
+            "parameter_names": [
+              "session_name"
+            ]
+          },
+          {
+            "index": 9,
+            "name": "OnPushAnimationFinished",
+            "argc": 0,
+            "flags": "0xa",
+            "row": [
+              19,
+              0,
+              109,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 10,
+            "name": "OnPopAnimationFinished",
+            "argc": 0,
+            "flags": "0xa",
+            "row": [
+              20,
+              0,
+              110,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 11,
+            "name": "OnShowChatMoreInfo",
+            "argc": 0,
+            "flags": "0xa",
+            "row": [
+              21,
+              0,
+              111,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          },
+          {
+            "index": 12,
+            "name": "OnEnableInputField",
+            "argc": 1,
+            "flags": "0xa",
+            "row": [
+              22,
+              1,
+              112,
+              2,
+              10
+            ],
+            "return_and_parameter_types": [
+              43,
+              1
+            ],
+            "parameter_names": [
+              "enable"
+            ]
+          },
+          {
+            "index": 13,
+            "name": "StartPerfReportTimer",
+            "argc": 0,
+            "flags": "0x8",
+            "row": [
+              24,
+              0,
+              115,
+              2,
+              8
+            ],
+            "return_and_parameter_types": [
+              43
+            ],
+            "parameter_names": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "mmui::ChatBotSystemMessageItemView",
+    "string_offset": "0xb13c5a8",
+    "string_rva": "0xb13e3a8",
+    "string_table_offset": "0xb13c590",
+    "string_table_rva": "0xb13e390",
+    "strings": [
+      "mmui::ChatBotSystemMessageItemView"
+    ],
+    "metaobjects": [
+      {
+        "offset": "0x8e7bdf8",
+        "rva": "0x8e7d5f8",
+        "fields": [
+          "0x188e7d440",
+          "0x18b13e390",
+          "0x188e90028",
+          "0x18000af20",
+          "0x0",
+          "0x0"
+        ],
+        "metadata_header": [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "methods": []
+      }
+    ]
+  }
+]

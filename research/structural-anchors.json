@@ -1,0 +1,66 @@
+{
+ "IsSelf": {
+  "oldRva": "0x5c41810",
+  "newRva": "0x5c44110",
+  "method": "thunk->SelfSentCmp",
+  "candidates": [
+   "0x5c44110"
+  ]
+ },
+ "VerticalScrollBar": {
+  "oldRva": "0xce87b0",
+  "newRva": "0xce9a00",
+  "method": "unique leaf bytes",
+  "candidates": [
+   "0xce9a00"
+  ]
+ },
+ "KeyLeaf": {
+  "oldRva": "0x7b9000",
+  "newRva": "0x7b9870",
+  "method": "unique leaf bytes",
+  "candidates": [
+   "0x7b9870"
+  ]
+ },
+ "XTextViewSetText": {
+  "oldRva": "0x1e80d40",
+  "newRva": "0x1e84750",
+  "method": "callee of ChatTextItemViewUpdate",
+  "calledCandidates": [
+   "0x1e846c0",
+   "0x1e84750",
+   "0x1e85520",
+   "0x1e86360"
+  ]
+ },
+ "scrollAreaMeta": {
+  "oldRva": "0x8f1e978",
+  "newRva": null,
+  "method": "qt-class-name",
+  "stringRva": "0x90ad8c0",
+  "candidates": []
+ },
+ "scrollBarMeta": {
+  "oldRva": "0x91cd6b8",
+  "newRva": null,
+  "method": "qt-class-name",
+  "stringRva": "0x90ad738",
+  "candidates": []
+ },
+ "sliderMeta": {
+  "oldRva": "0x920e670",
+  "newRva": null,
+  "method": "qt-class-name",
+  "stringRva": "0x90ad748",
+  "candidates": []
+ },
+ "ownerVtable": {
+  "oldRva": "0x9175d78",
+  "newRva": null,
+  "method": "ctor positional",
+  "via": null,
+  "rttiOffset": null,
+  "refSites": []
+ }
+}

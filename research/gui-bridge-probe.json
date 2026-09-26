@@ -1,0 +1,101 @@
+{
+  "mode": "wechat_gui_thread_diagnostic",
+  "frida_version": "17.18.0",
+  "max_seconds": 10,
+  "attached": true,
+  "unloaded": true,
+  "detached": true,
+  "passed": true,
+  "target_pid": 12424,
+  "hwnd": "0x1079c",
+  "gui_thread_id": 4596,
+  "dll_sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "module": "C:\\Program Files\\Tencent\\Weixin\\4.1.15.11\\Weixin.dll",
+  "result": {
+    "event": "done",
+    "targetPid": 12424,
+    "hwnd": "0x1079c",
+    "expectedGuiThreadId": 4596,
+    "messageId": 49760,
+    "posted": 3,
+    "hits": 3,
+    "threadIds": [
+      4596
+    ],
+    "sequences": [
+      1,
+      2,
+      3
+    ],
+    "callbacksOnGuiThread": true,
+    "detachedHook": true,
+    "wndProcModule": "Weixin.dll",
+    "wndProcRva": "0x25a1740",
+    "timedOut": false,
+    "passed": true,
+    "reason": "three_callbacks"
+  },
+  "events": [
+    {
+      "event": "ready",
+      "targetPid": 12424,
+      "hwnd": "0x1079c",
+      "expectedGuiThreadId": 4596,
+      "messageId": 49760,
+      "posted": 0,
+      "hits": 0,
+      "threadIds": [],
+      "sequences": [],
+      "callbacksOnGuiThread": true,
+      "detachedHook": false,
+      "wndProcModule": "Weixin.dll",
+      "wndProcRva": "0x25a1740",
+      "timedOut": false,
+      "passed": false
+    },
+    {
+      "event": "callback",
+      "sequence": 1,
+      "threadId": 4596,
+      "expectedGuiThreadId": 4596
+    },
+    {
+      "event": "callback",
+      "sequence": 2,
+      "threadId": 4596,
+      "expectedGuiThreadId": 4596
+    },
+    {
+      "event": "callback",
+      "sequence": 3,
+      "threadId": 4596,
+      "expectedGuiThreadId": 4596
+    },
+    {
+      "event": "done",
+      "targetPid": 12424,
+      "hwnd": "0x1079c",
+      "expectedGuiThreadId": 4596,
+      "messageId": 49760,
+      "posted": 3,
+      "hits": 3,
+      "threadIds": [
+        4596
+      ],
+      "sequences": [
+        1,
+        2,
+        3
+      ],
+      "callbacksOnGuiThread": true,
+      "detachedHook": true,
+      "wndProcModule": "Weixin.dll",
+      "wndProcRva": "0x25a1740",
+      "timedOut": false,
+      "passed": true,
+      "reason": "three_callbacks"
+    }
+  ],
+  "script_errors": [],
+  "elapsed_seconds": 0.249
+}

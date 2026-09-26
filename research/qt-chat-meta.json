@@ -1,0 +1,1908 @@
+{
+  "target": "C:\\Program Files\\Tencent\\Weixin\\4.1.15.11\\Weixin.dll",
+  "image_base": "0x180000000",
+  "classes": {
+    "mmui::ChatItemView": {
+      "class": "mmui::ChatItemView",
+      "static_metaobject_rva": "0x8e79990",
+      "string_table_rva": "0xb1398e0",
+      "metadata_rva": "0x8e79dd0",
+      "static_metacall_rva": "0x88a1b0",
+      "parent_metaobject_rva": "0x8e9cb50",
+      "own_methods": [],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "animation_color",
+          "type": "QColor",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        }
+      ]
+    },
+    "mmui::XTableCell": {
+      "class": "mmui::XTableCell",
+      "static_metaobject_rva": "0x8e9cb50",
+      "string_table_rva": "0xb159d40",
+      "metadata_rva": "0x8e9caf0",
+      "static_metacall_rva": "0x8f77d0",
+      "parent_metaobject_rva": "0x8e9bc70",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "MenuForEvent",
+          "arguments": [
+            {
+              "type": "QPoint",
+              "name": "pos"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        }
+      ],
+      "own_properties": []
+    },
+    "QFReuseWidget": {
+      "class": "QFReuseWidget",
+      "static_metaobject_rva": "0x8e9bc70",
+      "string_table_rva": "0xb158848",
+      "metadata_rva": "0x8ea2920",
+      "static_metacall_rva": "0xaf20",
+      "parent_metaobject_rva": "0x8e9bc40",
+      "own_methods": [],
+      "own_properties": []
+    },
+    "QFWidget": {
+      "class": "QFWidget",
+      "static_metaobject_rva": "0x8e9bc40",
+      "string_table_rva": "0xb158b38",
+      "metadata_rva": "0x8ea2960",
+      "static_metacall_rva": "0xaf20",
+      "parent_metaobject_rva": "0x8e25c58",
+      "own_methods": [],
+      "own_properties": []
+    },
+    "QWidget": {
+      "class": "QWidget",
+      "static_metaobject_rva": "0x8e25c58",
+      "string_table_rva": "0xb0f74f0",
+      "metadata_rva": "0x8e25dc0",
+      "static_metacall_rva": "0x5bbfc0",
+      "parent_metaobject_rva": "0x8de7e98",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "windowTitleChanged",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": "title"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "windowIconChanged",
+          "arguments": [
+            {
+              "type": "QMetaType#69",
+              "name": "icon"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 2,
+          "name": "windowIconTextChanged",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": "iconText"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 3,
+          "name": "customContextMenuRequested",
+          "arguments": [
+            {
+              "type": "QPoint",
+              "name": "pos"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 4,
+          "name": "setEnabled",
+          "arguments": [
+            {
+              "type": "bool",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 5,
+          "name": "setDisabled",
+          "arguments": [
+            {
+              "type": "bool",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 6,
+          "name": "setWindowModified",
+          "arguments": [
+            {
+              "type": "bool",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 7,
+          "name": "setWindowTitle",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 8,
+          "name": "setStyleSheet",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": "styleSheet"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 9,
+          "name": "setFocus",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 10,
+          "name": "update",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 11,
+          "name": "repaint",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 12,
+          "name": "setVisible",
+          "arguments": [
+            {
+              "type": "bool",
+              "name": "visible"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 13,
+          "name": "setHidden",
+          "arguments": [
+            {
+              "type": "bool",
+              "name": "hidden"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 14,
+          "name": "show",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 15,
+          "name": "hide",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 16,
+          "name": "showMinimized",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 17,
+          "name": "showMaximized",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 18,
+          "name": "showFullScreen",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 19,
+          "name": "showNormal",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 20,
+          "name": "close",
+          "arguments": [],
+          "return": "bool",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 21,
+          "name": "raise",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 22,
+          "name": "lower",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 23,
+          "name": "updateMicroFocus",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "protected",
+          "flags": "0x9"
+        },
+        {
+          "local_index": 24,
+          "name": "_q_showIfNotHidden",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        },
+        {
+          "local_index": 25,
+          "name": "grab",
+          "arguments": [
+            {
+              "type": "QRect",
+              "name": "rectangle"
+            }
+          ],
+          "return": "QMetaType#65",
+          "kind": "method",
+          "access": "public",
+          "flags": "0x2"
+        },
+        {
+          "local_index": 26,
+          "name": "grab",
+          "arguments": [],
+          "return": "QMetaType#65",
+          "kind": "method",
+          "access": "public",
+          "flags": "0x22"
+        }
+      ],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "modal",
+          "type": "bool",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 1,
+          "name": "windowModality",
+          "type": "Qt::WindowModality",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 2,
+          "name": "enabled",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 3,
+          "name": "geometry",
+          "type": "QRect",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 4,
+          "name": "frameGeometry",
+          "type": "QRect",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 5,
+          "name": "normalGeometry",
+          "type": "QRect",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 6,
+          "name": "x",
+          "type": "int",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 7,
+          "name": "y",
+          "type": "int",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 8,
+          "name": "pos",
+          "type": "QPoint",
+          "readable": true,
+          "writable": true,
+          "flags": "0x84003"
+        },
+        {
+          "local_index": 9,
+          "name": "frameSize",
+          "type": "QSize",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 10,
+          "name": "size",
+          "type": "QSize",
+          "readable": true,
+          "writable": true,
+          "flags": "0x84003"
+        },
+        {
+          "local_index": 11,
+          "name": "width",
+          "type": "int",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 12,
+          "name": "height",
+          "type": "int",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 13,
+          "name": "rect",
+          "type": "QRect",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 14,
+          "name": "childrenRect",
+          "type": "QRect",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 15,
+          "name": "childrenRegion",
+          "type": "QMetaType#72",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 16,
+          "name": "sizePolicy",
+          "type": "QMetaType#121",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 17,
+          "name": "minimumSize",
+          "type": "QSize",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 18,
+          "name": "maximumSize",
+          "type": "QSize",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 19,
+          "name": "minimumWidth",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x84103"
+        },
+        {
+          "local_index": 20,
+          "name": "minimumHeight",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x84103"
+        },
+        {
+          "local_index": 21,
+          "name": "maximumWidth",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x84103"
+        },
+        {
+          "local_index": 22,
+          "name": "maximumHeight",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x84103"
+        },
+        {
+          "local_index": 23,
+          "name": "sizeIncrement",
+          "type": "QSize",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 24,
+          "name": "baseSize",
+          "type": "QSize",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 25,
+          "name": "palette",
+          "type": "QMetaType#68",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 26,
+          "name": "font",
+          "type": "QMetaType#64",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 27,
+          "name": "cursor",
+          "type": "QMetaType#74",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95107"
+        },
+        {
+          "local_index": 28,
+          "name": "mouseTracking",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 29,
+          "name": "tabletTracking",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 30,
+          "name": "isActiveWindow",
+          "type": "bool",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 31,
+          "name": "focusPolicy",
+          "type": "Qt::FocusPolicy",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 32,
+          "name": "focus",
+          "type": "bool",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 33,
+          "name": "contextMenuPolicy",
+          "type": "Qt::ContextMenuPolicy",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 34,
+          "name": "updatesEnabled",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x94103"
+        },
+        {
+          "local_index": 35,
+          "name": "visible",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x94103"
+        },
+        {
+          "local_index": 36,
+          "name": "minimized",
+          "type": "bool",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 37,
+          "name": "maximized",
+          "type": "bool",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 38,
+          "name": "fullScreen",
+          "type": "bool",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 39,
+          "name": "sizeHint",
+          "type": "QSize",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 40,
+          "name": "minimumSizeHint",
+          "type": "QSize",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 41,
+          "name": "acceptDrops",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 42,
+          "name": "windowTitle",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x495103"
+        },
+        {
+          "local_index": 43,
+          "name": "windowIcon",
+          "type": "QMetaType#69",
+          "readable": true,
+          "writable": true,
+          "flags": "0x495103"
+        },
+        {
+          "local_index": 44,
+          "name": "windowIconText",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x495103"
+        },
+        {
+          "local_index": 45,
+          "name": "windowOpacity",
+          "type": "double",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 46,
+          "name": "windowModified",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 47,
+          "name": "toolTip",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 48,
+          "name": "toolTipDuration",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 49,
+          "name": "statusTip",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 50,
+          "name": "whatsThis",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 51,
+          "name": "accessibleName",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 52,
+          "name": "accessibleDescription",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 53,
+          "name": "layoutDirection",
+          "type": "Qt::LayoutDirection",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510f"
+        },
+        {
+          "local_index": 54,
+          "name": "autoFillBackground",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 55,
+          "name": "styleSheet",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 56,
+          "name": "locale",
+          "type": "QMetaType#18",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95107"
+        },
+        {
+          "local_index": 57,
+          "name": "windowFilePath",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 58,
+          "name": "inputMethodHints",
+          "type": "Qt::InputMethodHints",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        }
+      ]
+    },
+    "QObject": {
+      "class": "QObject",
+      "static_metaobject_rva": "0x8de7e98",
+      "string_table_rva": "0xb0cd5d0",
+      "metadata_rva": "0x8de7d80",
+      "static_metacall_rva": "0x27d430",
+      "parent_metaobject_rva": null,
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "destroyed",
+          "arguments": [
+            {
+              "type": "QMetaType#39",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "destroyed",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x26"
+        },
+        {
+          "local_index": 2,
+          "name": "objectNameChanged",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": "objectName"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 3,
+          "name": "deleteLater",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 4,
+          "name": "_q_reregisterTimers",
+          "arguments": [
+            {
+              "type": "QMetaType#31",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        }
+      ],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "objectName",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x495103"
+        }
+      ]
+    },
+    "mmui::ChatTextItemView": {
+      "class": "mmui::ChatTextItemView",
+      "static_metaobject_rva": "0x8e79900",
+      "string_table_rva": "0xb1390d0",
+      "metadata_rva": "0x8e79850",
+      "static_metacall_rva": "0x8890e0",
+      "parent_metaobject_rva": "0x8e79818",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "OnClicked",
+          "arguments": [
+            {
+              "type": "QMouseEvent*",
+              "name": "event"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 1,
+          "name": "OnTextSelectChanged",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": "text"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 2,
+          "name": "OnInitialSelectionExpired",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        },
+        {
+          "local_index": 3,
+          "name": "OnTextLayoutComplete",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::ChatBubbleReferItemView": {
+      "class": "mmui::ChatBubbleReferItemView",
+      "static_metaobject_rva": "0x8e79818",
+      "string_table_rva": "0xb139698",
+      "metadata_rva": "0x8e8eb68",
+      "static_metacall_rva": "0xaf20",
+      "parent_metaobject_rva": "0x8e79578",
+      "own_methods": [],
+      "own_properties": []
+    },
+    "mmui::ChatBubbleItemView": {
+      "class": "mmui::ChatBubbleItemView",
+      "static_metaobject_rva": "0x8e79578",
+      "string_table_rva": "0xb1394f0",
+      "metadata_rva": "0x8e79b50",
+      "static_metacall_rva": "0x889a90",
+      "parent_metaobject_rva": "0x8e79990",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "ShowPreviewButtonMouseClick",
+          "arguments": [
+            {
+              "type": "QWidget*",
+              "name": "parent"
+            },
+            {
+              "type": "std::shared_ptr<mmui::BaseChatItemViewModel>",
+              "name": "model"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "OnBubbleClicked",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        },
+        {
+          "local_index": 2,
+          "name": "OnStatusErrorClicked",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        },
+        {
+          "local_index": 3,
+          "name": "OnTargetMsgBtnClicked",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::ChatBubbleFrame": {
+      "class": "mmui::ChatBubbleFrame",
+      "static_metaobject_rva": "0x8e79b20",
+      "string_table_rva": "0xb139410",
+      "metadata_rva": "0x8e79aa0",
+      "static_metacall_rva": "0x889820",
+      "parent_metaobject_rva": "0x8e9db98",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "sizeChanged",
+          "arguments": [
+            {
+              "type": "QSize",
+              "name": "size"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "OnCustomContextMenuRequested",
+          "arguments": [
+            {
+              "type": "QPoint",
+              "name": "pos"
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "public",
+          "flags": "0xa"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::XDragSourceView": {
+      "class": "mmui::XDragSourceView",
+      "static_metaobject_rva": "0x8e9db98",
+      "string_table_rva": "0xb15ba90",
+      "metadata_rva": "0x8e9dae0",
+      "static_metacall_rva": "0x8fae40",
+      "parent_metaobject_rva": "0x8e9d8c8",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "dragStart",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "dragEnd",
+          "arguments": [
+            {
+              "type": "QDrag*",
+              "name": "drag"
+            },
+            {
+              "type": "Qt::DropAction",
+              "name": "drop_action"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 2,
+          "name": "MousePressEvent",
+          "arguments": [
+            {
+              "type": "QPoint",
+              "name": "cur_mouse_pos"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 3,
+          "name": "MouseReleaseEvent",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::XView": {
+      "class": "mmui::XView",
+      "static_metaobject_rva": "0x8e9d8c8",
+      "string_table_rva": "0xb15cc50",
+      "metadata_rva": "0x8e9e650",
+      "static_metacall_rva": "0x8fc990",
+      "parent_metaobject_rva": "0x8e9a3e8",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "clicked",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "Clickable",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 1,
+          "name": "Style",
+          "type": "style::View",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        }
+      ]
+    },
+    "mmui::XSkiaWidget": {
+      "class": "mmui::XSkiaWidget",
+      "static_metaobject_rva": "0x8e9a3e8",
+      "string_table_rva": "0xb15d358",
+      "metadata_rva": "0x8ea2e98",
+      "static_metacall_rva": "0xaf20",
+      "parent_metaobject_rva": "0x8e25c58",
+      "own_methods": [],
+      "own_properties": []
+    },
+    "mmui::ChatSystemInfoItemView": {
+      "class": "mmui::ChatSystemInfoItemView",
+      "static_metaobject_rva": "0x8e79ef0",
+      "string_table_rva": "0xb139a18",
+      "metadata_rva": "0x8e8ed68",
+      "static_metacall_rva": "0xaf20",
+      "parent_metaobject_rva": "0x8e79990",
+      "own_methods": [],
+      "own_properties": []
+    },
+    "mmui::ChatDetailView": {
+      "class": "mmui::ChatDetailView",
+      "static_metaobject_rva": "0x8e7a930",
+      "string_table_rva": "0xb13a540",
+      "metadata_rva": "0x8e7a8b0",
+      "static_metacall_rva": "0x88c760",
+      "parent_metaobject_rva": "0x8e7a880",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "BrandMasterViewActivate",
+          "arguments": [
+            {
+              "type": "bool",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "onPageTypeChanged",
+          "arguments": [
+            {
+              "type": "ChatPageType",
+              "name": "page_type"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::DetailView": {
+      "class": "mmui::DetailView",
+      "static_metaobject_rva": "0x8e7a880",
+      "string_table_rva": "0xb147610",
+      "metadata_rva": "0x8e846c0",
+      "static_metacall_rva": "0x8afba0",
+      "parent_metaobject_rva": "0x8e9d8c8",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "OnContextRefresh",
+          "arguments": [
+            {
+              "type": "MasterDetailIndex",
+              "name": "index"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::XRecyclerTableView": {
+      "class": "mmui::XRecyclerTableView",
+      "static_metaobject_rva": "0x8e9c448",
+      "string_table_rva": "0xb159d00",
+      "metadata_rva": "0x8ea2b90",
+      "static_metacall_rva": "0xaf20",
+      "parent_metaobject_rva": "0x8e9c418",
+      "own_methods": [],
+      "own_properties": []
+    },
+    "mmui::RecyclerListView": {
+      "class": "mmui::RecyclerListView",
+      "static_metaobject_rva": "0x8e9c418",
+      "string_table_rva": "0xb159270",
+      "metadata_rva": "0x8e9c330",
+      "static_metacall_rva": "0x8f5600",
+      "parent_metaobject_rva": "0x8e9c300",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "OnDoHandleItem",
+          "arguments": [
+            {
+              "type": "QFReuseWidget*",
+              "name": "add_widget"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "DidReload",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 2,
+          "name": "DidDiffUpdate",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 3,
+          "name": "ContentScrolledBy",
+          "arguments": [
+            {
+              "type": "int",
+              "name": "dx"
+            },
+            {
+              "type": "int",
+              "name": "dy"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 4,
+          "name": "OverscrollChanged",
+          "arguments": [
+            {
+              "type": "int",
+              "name": "overscroll"
+            }
+          ],
+          "return": "int",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": []
+    },
+    "mmui::VirtualScrollArea": {
+      "class": "mmui::VirtualScrollArea",
+      "static_metaobject_rva": "0x8e9c300",
+      "string_table_rva": "0xb159540",
+      "metadata_rva": "0x8e9c4e0",
+      "static_metacall_rva": "0x8f5f30",
+      "parent_metaobject_rva": "0x8f1e978",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "ScrollingStarted",
+          "arguments": [
+            {
+              "type": "QWheelEvent*",
+              "name": "event"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "ScrollingEnded",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 2,
+          "name": "VScrollBarSliderMoved",
+          "arguments": [
+            {
+              "type": "int",
+              "name": "value"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": []
+    },
+    "QAbstractScrollArea": {
+      "class": "QAbstractScrollArea",
+      "static_metaobject_rva": "0x8f1e978",
+      "string_table_rva": "0xb19af90",
+      "metadata_rva": "0x8f1e890",
+      "static_metacall_rva": "0xce9910",
+      "parent_metaobject_rva": "0x900fba0",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "_q_hslide",
+          "arguments": [
+            {
+              "type": "int",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        },
+        {
+          "local_index": 1,
+          "name": "_q_vslide",
+          "arguments": [
+            {
+              "type": "int",
+              "name": ""
+            }
+          ],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        },
+        {
+          "local_index": 2,
+          "name": "_q_showOrHideScrollBars",
+          "arguments": [],
+          "return": "void",
+          "kind": "slot",
+          "access": "private",
+          "flags": "0x8"
+        }
+      ],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "verticalScrollBarPolicy",
+          "type": "Qt::ScrollBarPolicy",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 1,
+          "name": "horizontalScrollBarPolicy",
+          "type": "Qt::ScrollBarPolicy",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 2,
+          "name": "sizeAdjustPolicy",
+          "type": "SizeAdjustPolicy",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        }
+      ]
+    },
+    "QFrame": {
+      "class": "QFrame",
+      "static_metaobject_rva": "0x900fba0",
+      "string_table_rva": "0xb1f7180",
+      "metadata_rva": "0x900faa0",
+      "static_metacall_rva": "0x14233f0",
+      "parent_metaobject_rva": "0x8e25c58",
+      "own_methods": [],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "frameShape",
+          "type": "Shape",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 1,
+          "name": "frameShadow",
+          "type": "Shadow",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9510b"
+        },
+        {
+          "local_index": 2,
+          "name": "lineWidth",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 3,
+          "name": "midLineWidth",
+          "type": "int",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95103"
+        },
+        {
+          "local_index": 4,
+          "name": "frameWidth",
+          "type": "int",
+          "readable": true,
+          "writable": false,
+          "flags": "0x95001"
+        },
+        {
+          "local_index": 5,
+          "name": "frameRect",
+          "type": "QRect",
+          "readable": true,
+          "writable": true,
+          "flags": "0x94103"
+        }
+      ]
+    },
+    "mmui::XTextView": {
+      "class": "mmui::XTextView",
+      "static_metaobject_rva": "0x8e9a558",
+      "string_table_rva": "0xb15aa00",
+      "metadata_rva": "0x8e9d330",
+      "static_metacall_rva": "0x8f9950",
+      "parent_metaobject_rva": "0x8e9a3e8",
+      "own_methods": [
+        {
+          "local_index": 0,
+          "name": "accessibleClickableFocusChanged",
+          "arguments": [
+            {
+              "type": "int",
+              "name": "index"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 1,
+          "name": "LinkControl",
+          "arguments": [
+            {
+              "type": "std::string",
+              "name": "link_text"
+            },
+            {
+              "type": "std::string",
+              "name": "link_data"
+            },
+            {
+              "type": "int32_t",
+              "name": "subType"
+            },
+            {
+              "type": "text::LinkControlType",
+              "name": "type"
+            },
+            {
+              "type": "std::string",
+              "name": "context_data"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 2,
+          "name": "selectTextChanged",
+          "arguments": [
+            {
+              "type": "QString",
+              "name": "str"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 3,
+          "name": "click",
+          "arguments": [
+            {
+              "type": "QMouseEvent*",
+              "name": "event"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 4,
+          "name": "mouseEvents",
+          "arguments": [
+            {
+              "type": "QMouseEvent*",
+              "name": "event"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 5,
+          "name": "EmitSelectInfo",
+          "arguments": [
+            {
+              "type": "Selectable::SelectInfoType",
+              "name": "info"
+            }
+          ],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        },
+        {
+          "local_index": 6,
+          "name": "LayoutComplete",
+          "arguments": [],
+          "return": "void",
+          "kind": "signal",
+          "access": "public",
+          "flags": "0x6"
+        }
+      ],
+      "own_properties": [
+        {
+          "local_index": 0,
+          "name": "Text",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 1,
+          "name": "CrashProtect",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 2,
+          "name": "TextSize",
+          "type": "float",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 3,
+          "name": "HeightMultipler",
+          "type": "float",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 4,
+          "name": "HeigthOverride",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 5,
+          "name": "TextColor",
+          "type": "uint",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 6,
+          "name": "SelectedTextColor",
+          "type": "uint",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 7,
+          "name": "SelectedRectColor",
+          "type": "uint",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 8,
+          "name": "Endellipsis",
+          "type": "QString",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 9,
+          "name": "AutoDetectUrl",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 10,
+          "name": "AutoDetectTag",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 11,
+          "name": "AutoResolveEmotion",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 12,
+          "name": "LineLimit",
+          "type": "size_t",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 13,
+          "name": "EnableToolTips",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 14,
+          "name": "ToolTipsIfEllipsis",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 15,
+          "name": "WordBreak",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 16,
+          "name": "UrlStyle",
+          "type": "text::UrlStyleType",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 17,
+          "name": "SelectStyle",
+          "type": "text::SelectStyleType",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 18,
+          "name": "StructStyleOption",
+          "type": "text::StructStyleOption",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 19,
+          "name": "EstimateMode",
+          "type": "text::EstimateMode",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 20,
+          "name": "Clickable",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 21,
+          "name": "ArrowKeyNavClickable",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 22,
+          "name": "HandCursorInCtrlClick",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 23,
+          "name": "BackColorMode",
+          "type": "text::BackColorMode",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 24,
+          "name": "BackgroundColor",
+          "type": "uint",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 25,
+          "name": "PreferTextWidth",
+          "type": "int32_t",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 26,
+          "name": "AutoWrap",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 27,
+          "name": "Selectable",
+          "type": "bool",
+          "readable": true,
+          "writable": true,
+          "flags": "0x95003"
+        },
+        {
+          "local_index": 28,
+          "name": "VerticalAlign",
+          "type": "text::VerticalAlign",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        },
+        {
+          "local_index": 29,
+          "name": "Style",
+          "type": "style::Label",
+          "readable": true,
+          "writable": true,
+          "flags": "0x9500b"
+        }
+      ]
+    }
+  },
+  "limitations": "Only Qt MOC-exposed members are enumerated; ordinary C++ methods, fields, inheritance beyond Qt metaobjects and live widget instances are not resolved."
+}

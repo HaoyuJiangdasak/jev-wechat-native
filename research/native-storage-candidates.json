@@ -1,0 +1,154 @@
+{
+  "status": "static_research_only_not_callable",
+  "path": "C:\\Program Files\\Tencent\\Weixin\\4.1.15.11\\Weixin.dll",
+  "sha256": "7d056cf7fb834b5558d6646bfb4e0036aae93568e3f9a04cf1dfc5e79032bcac",
+  "machine": "0x8664",
+  "image_base": "0x180000000",
+  "signature_matches": [
+    {
+      "version": "4.1.1.00",
+      "name": "CoReplaceOriginMessageByRevoke",
+      "string_rvas": []
+    },
+    {
+      "version": "4.1.1.00",
+      "name": "DeleteMessages",
+      "string_rvas": [
+        "0x90e0b10"
+      ]
+    },
+    {
+      "version": "4.1.1.00",
+      "name": "CoAddMessageToDB",
+      "string_rvas": []
+    },
+    {
+      "version": "4.1.7.00",
+      "name": "CoReplaceOriginMessageByRevoke",
+      "string_rvas": [
+        "0x9257f40"
+      ]
+    },
+    {
+      "version": "4.1.7.00",
+      "name": "DeleteMessages",
+      "string_rvas": [
+        "0x90e0a40"
+      ]
+    },
+    {
+      "version": "4.1.7.00",
+      "name": "CoAddMessageToDB",
+      "string_rvas": [
+        "0x94fad40"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "version": "4.1.7.00",
+      "name": "CoAddMessageToDB",
+      "string_rva": "0x94fad40",
+      "lea_rva": "0x3893f3c",
+      "function_rva": "0x3893de0",
+      "end_rva": "0x3895282",
+      "instruction": "lea rax, [rip + 0x5c66dfd]"
+    },
+    {
+      "version": "4.1.7.00",
+      "name": "CoReplaceOriginMessageByRevoke",
+      "string_rva": "0x9257f40",
+      "lea_rva": "0x234cf4e",
+      "function_rva": "0x234ce80",
+      "end_rva": "0x234eef9",
+      "instruction": "lea rax, [rip + 0x6f0afeb]"
+    },
+    {
+      "version": "4.1.7.00",
+      "name": "DeleteMessages",
+      "string_rva": "0x90e0a40",
+      "lea_rva": "0x17ccd7d",
+      "function_rva": "0x17ccd10",
+      "end_rva": "0x17cd525",
+      "instruction": "lea rax, [rip + 0x7913cbc]"
+    }
+  ],
+  "call_chains": [
+    {
+      "origin": "0x234ce80",
+      "target_name": "CoAddMessageToDB",
+      "target": "0x3893de0",
+      "calls": [
+        {
+          "call_rva": "0x234e737",
+          "caller_rva": "0x234ce80",
+          "target_rva": "0x180e2b0"
+        },
+        {
+          "call_rva": "0x180e2d5",
+          "caller_rva": "0x180e2b0",
+          "target_rva": "0x3893da0"
+        },
+        {
+          "call_rva": "0x3893dc7",
+          "caller_rva": "0x3893da0",
+          "target_rva": "0x3893de0"
+        }
+      ]
+    },
+    {
+      "origin": "0x234ce80",
+      "target_name": "DeleteMessages",
+      "target": "0x17ccd10",
+      "calls": [
+        {
+          "call_rva": "0x234dabd",
+          "caller_rva": "0x234ce80",
+          "target_rva": "0x17cebc0"
+        },
+        {
+          "call_rva": "0x17cec62",
+          "caller_rva": "0x17cebc0",
+          "target_rva": "0x17ccd10"
+        }
+      ]
+    }
+  ],
+  "selected_chains": [
+    {
+      "name": "zero_argument_delete_path",
+      "calls": [
+        {
+          "call_rva": "0x234ea5a",
+          "caller_rva": "0x234ce80",
+          "target_rva": "0x17cebc0"
+        },
+        {
+          "call_rva": "0x17cec62",
+          "caller_rva": "0x17cebc0",
+          "target_rva": "0x17ccd10"
+        }
+      ]
+    },
+    {
+      "name": "subsequent_add_path",
+      "calls": [
+        {
+          "call_rva": "0x234eb26",
+          "caller_rva": "0x234ce80",
+          "target_rva": "0x180e350"
+        },
+        {
+          "call_rva": "0x180e3bf",
+          "caller_rva": "0x180e350",
+          "target_rva": "0x3965ef0"
+        },
+        {
+          "call_rva": "0x3965f28",
+          "caller_rva": "0x3965ef0",
+          "target_rva": "0x3893de0"
+        }
+      ]
+    }
+  ]
+}

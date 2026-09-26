@@ -1,0 +1,30 @@
+[
+  {
+    "event": "set_status"
+  },
+  {
+    "event": "tick"
+  },
+  {
+    "event": "quit_scheduled"
+  },
+  {
+    "event": "start_host"
+  },
+  {
+    "event": "host_start_attempt",
+    "cwd_matches": true
+  },
+  {
+    "event": "set_status"
+  },
+  {
+    "event": "tick"
+  },
+  {
+    "event": "set_status"
+  },
+  {
+    "event": "tick"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "0x3ce41d0": [
+    {
+      "function": "0x5d73750",
+      "call": "0x5d73759",
+      "context": [
+        "05d73750: push rsi",
+        "05d73751: push rdi",
+        "05d73752: sub rsp, 0x28",
+        "05d73756: mov rsi, rcx",
+        "05d73759: call 0x3ce41d0",
+        "05d7375e: xor edx, edx",
+        "05d73760: cmp byte ptr [rsi + 0x528], 1",
+        "05d73767: jne 0x5d73790"
+      ]
+    }
+  ]
+}

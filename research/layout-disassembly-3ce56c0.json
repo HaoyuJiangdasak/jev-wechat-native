@@ -1,0 +1,12 @@
+[
+  {
+    "rva": "0x3ce56c0",
+    "end": "0x3ce56c8",
+    "leaf_boundary_inferred": true,
+    "instructions": [
+      "03ce56c0: mov      rax, qword ptr [rcx + 0x3d8]",
+      "03ce56c7: ret      "
+    ],
+    "references": []
+  }
+]

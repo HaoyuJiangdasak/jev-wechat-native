@@ -1,0 +1,102 @@
+{
+  "mode": "self_test",
+  "frida_version": "17.18.0",
+  "max_seconds": 10,
+  "attached": true,
+  "unloaded": true,
+  "detached": true,
+  "passed": true,
+  "target_pid": 15160,
+  "hwnd": "0x1907ac",
+  "gui_thread_id": 12796,
+  "dll_sha256": "0ce333be39b6492eaa3f3f40f451decccee61861760673c2ef0c0bab0805d922",
+  "module": "C:\\Users\\Public\\miniconda3\\python.exe",
+  "result": {
+    "event": "done",
+    "targetPid": 15160,
+    "hwnd": "0x1907ac",
+    "expectedGuiThreadId": 12796,
+    "messageId": 49783,
+    "posted": 3,
+    "hits": 3,
+    "threadIds": [
+      12796
+    ],
+    "sequences": [
+      1,
+      2,
+      3
+    ],
+    "callbacksOnGuiThread": true,
+    "detachedHook": true,
+    "wndProcModule": "self-test callback allocation",
+    "wndProcRva": null,
+    "timedOut": false,
+    "passed": true,
+    "reason": "three_callbacks"
+  },
+  "child_reaped": true,
+  "events": [
+    {
+      "event": "ready",
+      "targetPid": 15160,
+      "hwnd": "0x1907ac",
+      "expectedGuiThreadId": 12796,
+      "messageId": 49783,
+      "posted": 0,
+      "hits": 0,
+      "threadIds": [],
+      "sequences": [],
+      "callbacksOnGuiThread": true,
+      "detachedHook": false,
+      "wndProcModule": "self-test callback allocation",
+      "wndProcRva": null,
+      "timedOut": false,
+      "passed": false
+    },
+    {
+      "event": "callback",
+      "sequence": 1,
+      "threadId": 12796,
+      "expectedGuiThreadId": 12796
+    },
+    {
+      "event": "callback",
+      "sequence": 2,
+      "threadId": 12796,
+      "expectedGuiThreadId": 12796
+    },
+    {
+      "event": "callback",
+      "sequence": 3,
+      "threadId": 12796,
+      "expectedGuiThreadId": 12796
+    },
+    {
+      "event": "done",
+      "targetPid": 15160,
+      "hwnd": "0x1907ac",
+      "expectedGuiThreadId": 12796,
+      "messageId": 49783,
+      "posted": 3,
+      "hits": 3,
+      "threadIds": [
+        12796
+      ],
+      "sequences": [
+        1,
+        2,
+        3
+      ],
+      "callbacksOnGuiThread": true,
+      "detachedHook": true,
+      "wndProcModule": "self-test callback allocation",
+      "wndProcRva": null,
+      "timedOut": false,
+      "passed": true,
+      "reason": "three_callbacks"
+    }
+  ],
+  "script_errors": [],
+  "elapsed_seconds": 0.253
+}

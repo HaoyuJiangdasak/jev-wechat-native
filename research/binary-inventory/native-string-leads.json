@@ -1,0 +1,587 @@
+[
+  {
+    "offset": "0x8d95058",
+    "rva": "0x8d96858",
+    "text": "mmui::ChatSessionCell"
+  },
+  {
+    "offset": "0x8d9c5a8",
+    "rva": "0x8d9dda8",
+    "text": "refermsgitem"
+  },
+  {
+    "offset": "0x8e01de4",
+    "rva": "0x8e035e4",
+    "text": "sysmsg"
+  },
+  {
+    "offset": "0x8e797d8",
+    "rva": "0x8e7afd8",
+    "text": "DefaultChatViewModelOwner"
+  },
+  {
+    "offset": "0x8e7a4c0",
+    "rva": "0x8e7bcc0",
+    "text": "ChatSessionListDelegate"
+  },
+  {
+    "offset": "0x8e84900",
+    "rva": "0x8e86100",
+    "text": "PreviewChatMessageWindowContainer"
+  },
+  {
+    "offset": "0x8ec3fa0",
+    "rva": "0x8ec57a0",
+    "text": "announcement@alloryinjoinroommsgrevokehistoryinjmmchatroomtopmsgdelchatroommember"
+  },
+  {
+    "offset": "0x8ec44c8",
+    "rva": "0x8ec5cc8",
+    "text": "clicfg_revoke_normal_msg_interval_xwechat"
+  },
+  {
+    "offset": "0x8ec44f8",
+    "rva": "0x8ec5cf8",
+    "text": "clicfg_revoke_file_msg_interval_xwechat"
+  },
+  {
+    "offset": "0x8ec4520",
+    "rva": "0x8ec5d20",
+    "text": "clicfg_revoke_msg_reedit_duration_xwechat"
+  },
+  {
+    "offset": "0x8ec47f8",
+    "rva": "0x8ec5ff8",
+    "text": "sysmsgtemplate"
+  },
+  {
+    "offset": "0x8ec4808",
+    "rva": "0x8ec6008",
+    "text": "revokehistoryinjoinroommsg"
+  },
+  {
+    "offset": "0x8ec4896",
+    "rva": "0x8ec6096",
+    "text": "<sysmsg type=\"\"><subtype>%d</subtype><content><![CDATA[%s]]></content></sysmsg>"
+  },
+  {
+    "offset": "0x8ec6bd0",
+    "rva": "0x8ec83d0",
+    "text": "revokemsg"
+  },
+  {
+    "offset": "0x8ec6be0",
+    "rva": "0x8ec83e0",
+    "text": " <a href=\"weixin://revoke_edit_click\">"
+  },
+  {
+    "offset": "0x8f88f88",
+    "rva": "0x8f8a788",
+    "text": "MessageManager"
+  },
+  {
+    "offset": "0x8f89390",
+    "rva": "0x8f8ab90",
+    "text": "MessageService"
+  },
+  {
+    "offset": "0x8f89430",
+    "rva": "0x8f8ac30",
+    "text": "FMessageService"
+  },
+  {
+    "offset": "0x8fbdfb0",
+    "rva": "0x8fbf7b0",
+    "text": "ClearMessageStorageRunTimeResource for:%s, scene:%d"
+  },
+  {
+    "offset": "0x904d583",
+    "rva": "0x904ed83",
+    "text": "id-cmc-revokeRequest"
+  },
+  {
+    "offset": "0x90d1f50",
+    "rva": "0x90d3750",
+    "text": "message already revoked"
+  },
+  {
+    "offset": "0x90d2c90",
+    "rva": "0x90d4490",
+    "text": "sysmsg_content_empty"
+  },
+  {
+    "offset": "0x90f8868",
+    "rva": "0x90fa068",
+    "text": "micromsg.RevokeOpenIMChatRoomQRCodeReq"
+  },
+  {
+    "offset": "0x90f88f8",
+    "rva": "0x90fa0f8",
+    "text": "micromsg.RevokeOpenIMChatRoomQRCodeResp"
+  },
+  {
+    "offset": "0x9128818",
+    "rva": "0x912a018",
+    "text": "revoke-history"
+  },
+  {
+    "offset": "0x924d540",
+    "rva": "0x924ed40",
+    "text": "rofilewithrevoketmpl_type_profil_wc_custom_link_revoketime"
+  },
+  {
+    "offset": "0x924d590",
+    "rva": "0x924ed90",
+    "text": "revoke_climsgid"
+  },
+  {
+    "offset": "0x924d5e8",
+    "rva": "0x924ede8",
+    "text": "tmpl_type_profilewithrevokeqrcode"
+  },
+  {
+    "offset": "0x92523e0",
+    "rva": "0x9253be0",
+    "text": "revoke_"
+  },
+  {
+    "offset": "0x9252cc0",
+    "rva": "0x92544c0",
+    "text": "/cgi-bin/micromsg-bin/batchrevokemsg"
+  },
+  {
+    "offset": "0x92537a0",
+    "rva": "0x9254fa0",
+    "text": "/cgi-bin/micromsg-bin/revokemsg"
+  },
+  {
+    "offset": "0x9258332",
+    "rva": "0x9259b32",
+    "text": "REVOKE-GROUP"
+  },
+  {
+    "offset": "0x93e3250",
+    "rva": "0x93e4a50",
+    "text": "kWAAppMsgItemTypeNews"
+  },
+  {
+    "offset": "0x93e3268",
+    "rva": "0x93e4a68",
+    "text": "kWAAppMsgItemTypeProfile"
+  },
+  {
+    "offset": "0x93e3288",
+    "rva": "0x93e4a88",
+    "text": "kWAAppMsgItemTypePage"
+  },
+  {
+    "offset": "0x93e32a0",
+    "rva": "0x93e4aa0",
+    "text": "kWAAppMsgItemTypeCustom"
+  },
+  {
+    "offset": "0x93e32b8",
+    "rva": "0x93e4ab8",
+    "text": "kWAAppMsgItemTypeMax"
+  },
+  {
+    "offset": "0x93ef360",
+    "rva": "0x93f0b60",
+    "text": "X509_REVOKED"
+  },
+  {
+    "offset": "0x93ef5b8",
+    "rva": "0x93f0db8",
+    "text": "revoked"
+  },
+  {
+    "offset": "0x9406de0",
+    "rva": "0x94085e0",
+    "text": "HistorySysMsgInfo"
+  },
+  {
+    "offset": "0x9406e70",
+    "rva": "0x9408670",
+    "text": "Init ChatMessageStorage"
+  },
+  {
+    "offset": "0x9406e88",
+    "rva": "0x9408688",
+    "text": "Init ChatMessageStorage End:"
+  },
+  {
+    "offset": "0x94077d0",
+    "rva": "0x9408fd0",
+    "text": "Init BizMessageStorage"
+  },
+  {
+    "offset": "0x94077e8",
+    "rva": "0x9408fe8",
+    "text": "Init BizMessageStorage End:"
+  },
+  {
+    "offset": "0x9420400",
+    "rva": "0x9421c00",
+    "text": "revokemessage"
+  },
+  {
+    "offset": "0x9420410",
+    "rva": "0x9421c10",
+    "text": "revokebatchmessage"
+  },
+  {
+    "offset": "0x9420458",
+    "rva": "0x9421c58",
+    "text": "FMessageTable"
+  },
+  {
+    "offset": "0x947de58",
+    "rva": "0x947f658",
+    "text": "IsRevoked"
+  },
+  {
+    "offset": "0x9484fb0",
+    "rva": "0x94867b0",
+    "text": "SystemMessages_HongbaoIcon.png"
+  },
+  {
+    "offset": "0x94c26ef",
+    "rva": "0x94c3eef",
+    "text": "X509_CRL_add0_revoked"
+  },
+  {
+    "offset": "0x94cb8cf",
+    "rva": "0x94cd0cf",
+    "text": "no revoked time"
+  },
+  {
+    "offset": "0x9503d58",
+    "rva": "0x9505558",
+    "text": "SystemMessageHandler"
+  },
+  {
+    "offset": "0x95ac3f0",
+    "rva": "0x95adbf0",
+    "text": "virtual void __cdecl mmui::PreviewChatMessagePopover::onClose(void)"
+  },
+  {
+    "offset": "0x95bc948",
+    "rva": "0x95be148",
+    "text": "tab_tips_revoke_id"
+  },
+  {
+    "offset": "0x967c118",
+    "rva": "0x967d918",
+    "text": "micromsg.FinderRevokeTabTips"
+  },
+  {
+    "offset": "0x967c1a8",
+    "rva": "0x967d9a8",
+    "text": "micromsg.FinderRevokeTabTipsInfo"
+  },
+  {
+    "offset": "0x9682f70",
+    "rva": "0x9684770",
+    "text": "mmui::ContentInserter::InsertFromFileList(const QStringList &, kernel::MessageResourceOriginType)::(lambda)::operator()(const kernel::GenSendInfoListResult &)::(lambda)::operator()"
+  },
+  {
+    "offset": "0x96f6040",
+    "rva": "0x96f7840",
+    "text": "E:\\x\\x_rel_t7\\out\\build\\kernel\\gen\\protobufs\\micromsg\\message_batch_revoke.pb.cc"
+  },
+  {
+    "offset": "0x96f6108",
+    "rva": "0x96f7908",
+    "text": "micromsg.RevokeMsgItemReq"
+  },
+  {
+    "offset": "0x96f6198",
+    "rva": "0x96f7998",
+    "text": "micromsg.RevokeMsgItemResp"
+  },
+  {
+    "offset": "0x96f6228",
+    "rva": "0x96f7a28",
+    "text": "micromsg.BatchRevokeMsgRequest"
+  },
+  {
+    "offset": "0x96f62b8",
+    "rva": "0x96f7ab8",
+    "text": "micromsg.BatchRevokeMsgResponse"
+  },
+  {
+    "offset": "0x96f6498",
+    "rva": "0x96f7c98",
+    "text": "revoke_time"
+  },
+  {
+    "offset": "0x96f64a8",
+    "rva": "0x96f7ca8",
+    "text": "_revoke_time"
+  },
+  {
+    "offset": "0x96f6910",
+    "rva": "0x96f8110",
+    "text": "E:\\x\\x_rel_t7\\out\\build\\kernel\\gen\\protobufs\\micromsg\\message_revoke.pb.cc"
+  },
+  {
+    "offset": "0x96f69c8",
+    "rva": "0x96f81c8",
+    "text": "micromsg.RevokeMsgRequest"
+  },
+  {
+    "offset": "0x96f6a58",
+    "rva": "0x96f8258",
+    "text": "micromsg.RevokeMsgResponse"
+  },
+  {
+    "offset": "0x97a7ef8",
+    "rva": "0x97a96f8",
+    "text": "kChatMessageMenu"
+  },
+  {
+    "offset": "0x97a7f28",
+    "rva": "0x97a9728",
+    "text": "kChatMessageTextTranslationMenu"
+  },
+  {
+    "offset": "0x97a7f70",
+    "rva": "0x97a9770",
+    "text": "kChatMessageTextSelectionMenu"
+  },
+  {
+    "offset": "0x97a7fb0",
+    "rva": "0x97a97b0",
+    "text": "kChatMessageVoiceTranslationMenu"
+  },
+  {
+    "offset": "0x97a8098",
+    "rva": "0x97a9898",
+    "text": "kChatMessageMultiSelect"
+  },
+  {
+    "offset": "0x97e9c08",
+    "rva": "0x97eb408",
+    "text": "micromsg.SubscribeMsgItem"
+  },
+  {
+    "offset": "0x97edc46",
+    "rva": "0x97ef446",
+    "text": "<sysmsg type=\"%s\"><content><![CDATA[%s]]></content></sysmsg>"
+  },
+  {
+    "offset": "0x97f1518",
+    "rva": "0x97f2d18",
+    "text": "ilink.IlinkBypassMsgItem"
+  },
+  {
+    "offset": "0x97fbf38",
+    "rva": "0x97fd738",
+    "text": "list_messages_failed: MessageManager not available"
+  },
+  {
+    "offset": "0x97fc990",
+    "rva": "0x97fe190",
+    "text": "get_messages_around_failed: MessageManager not available"
+  },
+  {
+    "offset": "0x97feff8",
+    "rva": "0x98007f8",
+    "text": "send_message_failed: MessageManager is unavailable"
+  },
+  {
+    "offset": "0x9802030",
+    "rva": "0x9803830",
+    "text": "send_text_message_failed: MessageManager is unavailable"
+  },
+  {
+    "offset": "0x983cba8",
+    "rva": "0x983e3a8",
+    "text": "is_revoke"
+  },
+  {
+    "offset": "0x98d6e98",
+    "rva": "0x98d8698",
+    "text": "micromsg.AffRoamChatMsgItem"
+  },
+  {
+    "offset": "0x9a3f870",
+    "rva": "0x9a41070",
+    "text": "ChatSession"
+  },
+  {
+    "offset": "0x9a4933f",
+    "rva": "0x9a4ab3f",
+    "text": "<cgi reqid=\"0\" respid=\"0\" nettype=\"1\" netstrategy=\"0\">revokemsg</cgi>"
+  },
+  {
+    "offset": "0x9a54c0d",
+    "rva": "0x9a5640d",
+    "text": "ConnectionFactoryDefault::__ReorderIPv6Address(const std::shared_ptr<TaskBase> &, TLocalIPStack, const std::string &, LowlevelTransportProtocol, const std::vector<socket_address> &)::(anonymous class)::operator()"
+  },
+  {
+    "offset": "0x9a55865",
+    "rva": "0x9a57065",
+    "text": "GroupingNetChannel::RevokeTask"
+  },
+  {
+    "offset": "0x9a55884",
+    "rva": "0x9a57084",
+    "text": "group %_ revoke cdntask %_ reason %_:%_"
+  },
+  {
+    "offset": "0x9a562bb",
+    "rva": "0x9a57abb",
+    "text": "GroupingNetChannel::RevokeTask(std::shared_ptr<TaskBase>, int)::(anonymous class)::operator()"
+  },
+  {
+    "offset": "0x9a76750",
+    "rva": "0x9a77f50",
+    "text": "SystemMsgContext"
+  },
+  {
+    "offset": "0x9a871b8",
+    "rva": "0x9a889b8",
+    "text": "msgItem"
+  },
+  {
+    "offset": "0x9b264d0",
+    "rva": "0x9b27cd0",
+    "text": "revoke"
+  },
+  {
+    "offset": "0x9b8be1a",
+    "rva": "0x9b8d61a",
+    "text": "certificate revoked"
+  },
+  {
+    "offset": "0x9b9ed90",
+    "rva": "0x9ba0590",
+    "text": "OCSP_REVOKEDINFO"
+  },
+  {
+    "offset": "0x9b9f284",
+    "rva": "0x9ba0a84",
+    "text": "value.revoked"
+  },
+  {
+    "offset": "0x9bb1ef8",
+    "rva": "0x9bb36f8",
+    "text": "BrandNotifyMessageItemViewUi"
+  },
+  {
+    "offset": "0x9c369d8",
+    "rva": "0x9c381d8",
+    "text": "sslv3 alert certificate revoked"
+  },
+  {
+    "offset": "0x9c61a80",
+    "rva": "0x9c63280",
+    "text": "CoRevokeInitializeSpy"
+  },
+  {
+    "offset": "0x9c61b9c",
+    "rva": "0x9c6339c",
+    "text": "RevokeDragDrop"
+  },
+  {
+    "offset": "0xb0538f2",
+    "rva": "0xb0556f2",
+    "text": "This transfer has been revoked by \"%s\""
+  },
+  {
+    "offset": "0xb134ef8",
+    "rva": "0xb136cf8",
+    "text": "mmui::BrandNotifyMessageItemView"
+  },
+  {
+    "offset": "0xb1351a8",
+    "rva": "0xb136fa8",
+    "text": "mmui::BannerBizOnemsgItemView"
+  },
+  {
+    "offset": "0xb135500",
+    "rva": "0xb137300",
+    "text": "QueryChatSessionTopMsgResult"
+  },
+  {
+    "offset": "0xb135c24",
+    "rva": "0xb137a24",
+    "text": "QueryChatSessionTopMsgResult"
+  },
+  {
+    "offset": "0xb1370e0",
+    "rva": "0xb138ee0",
+    "text": "mmui::ChatKfTemplateMsgItemView"
+  },
+  {
+    "offset": "0xb138dff",
+    "rva": "0xb13abff",
+    "text": "InsertMessage"
+  },
+  {
+    "offset": "0xb139360",
+    "rva": "0xb13b160",
+    "text": "InsertMessage"
+  },
+  {
+    "offset": "0xb13947f",
+    "rva": "0xb13b27f",
+    "text": "mmui::QueryChatSessionTopMsgResult"
+  },
+  {
+    "offset": "0xb1394fb",
+    "rva": "0xb13b2fb",
+    "text": "std::shared_ptr<ChatMessageViewModel>"
+  },
+  {
+    "offset": "0xb139d78",
+    "rva": "0xb13bb78",
+    "text": "mmui::ChatMessagePage"
+  },
+  {
+    "offset": "0xb13a718",
+    "rva": "0xb13c518",
+    "text": "mmui::ChatSessionCell"
+  },
+  {
+    "offset": "0xb13a888",
+    "rva": "0xb13c688",
+    "text": "mmui::ChatSessionList"
+  },
+  {
+    "offset": "0xb13adf8",
+    "rva": "0xb13cbf8",
+    "text": "mmui::ChatSessionCellViewModel"
+  },
+  {
+    "offset": "0xb13c5a8",
+    "rva": "0xb13e3a8",
+    "text": "mmui::ChatBotSystemMessageItemView"
+  },
+  {
+    "offset": "0xb145f58",
+    "rva": "0xb147d58",
+    "text": "mmui::SelectExportChatViewModel"
+  },
+  {
+    "offset": "0xb1460e0",
+    "rva": "0xb147ee0",
+    "text": "mmui::SelectExportChatView"
+  },
+  {
+    "offset": "0xb147868",
+    "rva": "0xb149668",
+    "text": "mmui::PreviewChatMessagePage"
+  },
+  {
+    "offset": "0xb1478a0",
+    "rva": "0xb1496a0",
+    "text": "mmui::PreviewChatMessagePopover"
+  },
+  {
+    "offset": "0xb149fb8",
+    "rva": "0xb14bdb8",
+    "text": "mmui::SearchContactNewChatView"
+  }
+]

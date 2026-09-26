@@ -1,0 +1,28 @@
+{
+  "phase": "stopped",
+  "counts": {
+    "snapshots": 15,
+    "resultsQueued": 12,
+    "resultsRejected": 0,
+    "heartbeats": 109,
+    "restoreConfirmed": 1,
+    "unloaded": 1,
+    "detached": 1,
+    "fullChainValidated": 0,
+    "conversationChanges": 0,
+    "selfViews": 3,
+    "errors": 0,
+    "staleSkipped": 0,
+    "identityRejected": 0,
+    "restored": 2,
+    "bindings": 24,
+    "applied": 8,
+    "remoteViews": 4,
+    "identityMatches": 24,
+    "chatEpoch": 1,
+    "visibleViews": 7,
+    "snapshotMessages": 7,
+    "unresolved": 0
+  },
+  "error_types": []
+}

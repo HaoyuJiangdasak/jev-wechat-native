@@ -1,0 +1,439 @@
+[
+  {
+    "function": "0xa58f00",
+    "end": "0xa59366",
+    "instructions": 166,
+    "matches": [
+      {
+        "field": [
+          "0xb8"
+        ],
+        "write": true,
+        "address": "0xa58fb3",
+        "context": [
+          "00a58f9a: movups xmmword ptr [rcx + 0x90], xmm0",
+          "00a58fa1: movups xmmword ptr [rcx + 0xa0], xmm0",
+          "00a58fa8: mov qword ptr [rcx + 0xb0], 0xf",
+          "00a58fb3: mov qword ptr [rcx + 0xb8], 0",
+          "00a58fbe: mov dword ptr [rcx + 0xc0], 0",
+          "00a58fc8: movups xmmword ptr [rcx + 0xe8], xmm0",
+          "00a58fcf: movups xmmword ptr [rcx + 0xd8], xmm0",
+          "00a58fd6: movups xmmword ptr [rcx + 0xc8], xmm0"
+        ]
+      },
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa58fd6",
+        "context": [
+          "00a58fbe: mov dword ptr [rcx + 0xc0], 0",
+          "00a58fc8: movups xmmword ptr [rcx + 0xe8], xmm0",
+          "00a58fcf: movups xmmword ptr [rcx + 0xd8], xmm0",
+          "00a58fd6: movups xmmword ptr [rcx + 0xc8], xmm0",
+          "00a58fdd: mov qword ptr [rcx + 0xf8], 0xf",
+          "00a58fe8: lea rax, [rcx + 0x100]",
+          "00a58fef: mov qword ptr [rbp - 0x48], rax",
+          "00a58ff3: movups xmmword ptr [rcx + 0x100], xmm0"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa5c790",
+    "end": "0xa5c9bd",
+    "instructions": 102,
+    "matches": [
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": true,
+        "address": "0xa5c7b7",
+        "context": [
+          "00a5c7ab: test r8d, r8d",
+          "00a5c7ae: je 0xa5c82e",
+          "00a5c7b0: lea rax, [rip + 0x846c1d1]",
+          "00a5c7b7: mov qword ptr [rcx + 0xd0], rax",
+          "00a5c7be: lea rax, [rip + 0x83d2237]",
+          "00a5c7c5: mov qword ptr [rcx + 0xd8], rax",
+          "00a5c7cc: lea rax, [rip + 0x83d2231]",
+          "00a5c7d3: mov qword ptr [rcx + 0xe0], rax"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": false,
+        "address": "0xa5c862",
+        "context": [
+          "00a5c859: nop ",
+          "00a5c85a: mov rdx, qword ptr [rbp - 0x10]",
+          "00a5c85e: mov qword ptr [rdx + 8], rdi",
+          "00a5c862: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c869: movsxd rax, dword ptr [rax + 4]",
+          "00a5c86d: lea rcx, [rip + 0x83d2964]",
+          "00a5c874: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c87c: mov rax, qword ptr [rdx + 0xd8]"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": true,
+        "address": "0xa5c874",
+        "context": [
+          "00a5c862: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c869: movsxd rax, dword ptr [rax + 4]",
+          "00a5c86d: lea rcx, [rip + 0x83d2964]",
+          "00a5c874: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c87c: mov rax, qword ptr [rdx + 0xd8]",
+          "00a5c883: movsxd rax, dword ptr [rax + 4]",
+          "00a5c887: lea rcx, [rip + 0x83d298a]",
+          "00a5c88e: mov qword ptr [rdx + rax + 0xd8], rcx"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": false,
+        "address": "0xa5c93c",
+        "context": [
+          "00a5c92a: mov qword ptr [rdx + rax + 0x108], rcx",
+          "00a5c932: lea rax, [rip + 0x846c35f]",
+          "00a5c939: mov qword ptr [rdx], rax",
+          "00a5c93c: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c943: movsxd rax, dword ptr [rax + 4]",
+          "00a5c947: lea rcx, [rip + 0x846c37a]",
+          "00a5c94e: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c956: mov rax, qword ptr [rdx + 0xd0]"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": true,
+        "address": "0xa5c94e",
+        "context": [
+          "00a5c93c: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c943: movsxd rax, dword ptr [rax + 4]",
+          "00a5c947: lea rcx, [rip + 0x846c37a]",
+          "00a5c94e: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c956: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c95d: movsxd rax, dword ptr [rax + 4]",
+          "00a5c961: lea ecx, [rax - 0x48]",
+          "00a5c964: mov dword ptr [rdx + rax + 0xcc], ecx"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": false,
+        "address": "0xa5c956",
+        "context": [
+          "00a5c943: movsxd rax, dword ptr [rax + 4]",
+          "00a5c947: lea rcx, [rip + 0x846c37a]",
+          "00a5c94e: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c956: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c95d: movsxd rax, dword ptr [rax + 4]",
+          "00a5c961: lea ecx, [rax - 0x48]",
+          "00a5c964: mov dword ptr [rdx + rax + 0xcc], ecx",
+          "00a5c96b: lea rax, [rip + 0x846c026]"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": false,
+        "address": "0xa5c975",
+        "context": [
+          "00a5c964: mov dword ptr [rdx + rax + 0xcc], ecx",
+          "00a5c96b: lea rax, [rip + 0x846c026]",
+          "00a5c972: mov qword ptr [rdx], rax",
+          "00a5c975: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c97c: movsxd rax, dword ptr [rax + 4]",
+          "00a5c980: lea rcx, [rip + 0x846c041]",
+          "00a5c987: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c98f: mov rax, qword ptr [rdx + 0xd0]"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": true,
+        "address": "0xa5c987",
+        "context": [
+          "00a5c975: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c97c: movsxd rax, dword ptr [rax + 4]",
+          "00a5c980: lea rcx, [rip + 0x846c041]",
+          "00a5c987: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c98f: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c996: movsxd rax, dword ptr [rax + 4]",
+          "00a5c99a: lea ecx, [rax - 0x50]",
+          "00a5c99d: mov dword ptr [rdx + rax + 0xcc], ecx"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": false,
+        "address": "0xa5c98f",
+        "context": [
+          "00a5c97c: movsxd rax, dword ptr [rax + 4]",
+          "00a5c980: lea rcx, [rip + 0x846c041]",
+          "00a5c987: mov qword ptr [rdx + rax + 0xd0], rcx",
+          "00a5c98f: mov rax, qword ptr [rdx + 0xd0]",
+          "00a5c996: movsxd rax, dword ptr [rax + 4]",
+          "00a5c99a: lea ecx, [rax - 0x50]",
+          "00a5c99d: mov dword ptr [rdx + rax + 0xcc], ecx",
+          "00a5c9a4: mov rax, qword ptr [rsi + 0x110]"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa5ce50",
+    "end": "0xa5cf7e",
+    "instructions": 49,
+    "matches": [
+      {
+        "field": [
+          "0x148"
+        ],
+        "write": true,
+        "address": "0xa5cea1",
+        "context": [
+          "00a5ce93: mov qword ptr [rbp - 0x30], rax",
+          "00a5ce97: xorps xmm6, xmm6",
+          "00a5ce9a: movups xmmword ptr [rsi + 0x138], xmm6",
+          "00a5cea1: mov qword ptr [rsi + 0x148], 0",
+          "00a5ceac: movups xmmword ptr [rsi + 0x118], xmm6",
+          "00a5ceb3: movups xmmword ptr [rsi + 0x124], xmm6",
+          "00a5ceba: mov qword ptr [rsi + 0x150], 0xf",
+          "00a5cec5: mov dword ptr [rsi + 0x158], 0"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa60270",
+    "end": "0xa6049e",
+    "instructions": 168,
+    "matches": [
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa602be",
+        "context": [
+          "00a602b3: mov rdx, rax",
+          "00a602b6: mov rcx, r8",
+          "00a602b9: call 0x74a98e0",
+          "00a602be: mov rdi, qword ptr [rsi + 0xc8]",
+          "00a602c5: test rdi, rdi",
+          "00a602c8: je 0xa602e7",
+          "00a602ca: lock dec dword ptr [rdi + 8]",
+          "00a602ce: jne 0xa602e7"
+        ]
+      },
+      {
+        "field": [
+          "0xb8"
+        ],
+        "write": false,
+        "address": "0xa602e7",
+        "context": [
+          "00a602de: mov rax, qword ptr [rdi]",
+          "00a602e1: mov rcx, rdi",
+          "00a602e4: call qword ptr [rax + 8]",
+          "00a602e7: mov rdi, qword ptr [rsi + 0xb8]",
+          "00a602ee: test rdi, rdi",
+          "00a602f1: je 0xa60310",
+          "00a602f3: lock dec dword ptr [rdi + 8]",
+          "00a602f7: jne 0xa60310"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa63e50",
+    "end": "0xa64af3",
+    "instructions": 706,
+    "matches": [
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa64098",
+        "context": [
+          "00a6408b: mov rcx, rdi",
+          "00a6408e: call qword ptr [rax + 8]",
+          "00a64091: lea rbx, [rsi + 0x88]",
+          "00a64098: lea rcx, [rsi + 0xc8]",
+          "00a6409f: mov qword ptr [rbp + 8], rcx",
+          "00a640a3: call 0x74adfc4",
+          "00a640a8: nop ",
+          "00a640a9: lea rdx, [rbp + 0x20]"
+        ]
+      },
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa640c3",
+        "context": [
+          "00a640ba: mov r9, r14",
+          "00a640bd: call 0x379610",
+          "00a640c2: nop ",
+          "00a640c3: lea r14, [rsi + 0xc8]",
+          "00a640ca: mov rcx, r14",
+          "00a640cd: call 0x74adfd4",
+          "00a640d2: mov ecx, 2",
+          "00a640d7: call 0x6cde0"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": false,
+        "address": "0xa64432",
+        "context": [
+          "00a64429: mov rax, qword ptr [rdi]",
+          "00a6442c: mov rcx, rdi",
+          "00a6442f: call qword ptr [rax + 8]",
+          "00a64432: cmp byte ptr [rsi + 0xd0], 1",
+          "00a64439: jne 0xa644c0",
+          "00a6443f: movabs rax, 0xaaaaaaaaaaaaaaaa",
+          "00a64449: mov qword ptr [rbp + 0x40], rax",
+          "00a6444d: movaps xmmword ptr [rbp + 0x30], xmm6"
+        ]
+      },
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": true,
+        "address": "0xa644c0",
+        "context": [
+          "00a644b6: nop ",
+          "00a644b7: lea rcx, [rbp + 0x20]",
+          "00a644bb: call 0x7a60",
+          "00a644c0: mov byte ptr [rsi + 0xd0], 1",
+          "00a644c7: cmp qword ptr [rsi + 0x60], 0",
+          "00a644cc: je 0xa6469a",
+          "00a644d2: lea rdi, [rsi + 0x50]",
+          "00a644d6: mov rcx, rdi"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa65a50",
+    "end": "0xa65c5a",
+    "instructions": 117,
+    "matches": [
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa65a7d",
+        "context": [
+          "00a65a70: mov rdi, rdx",
+          "00a65a73: mov rsi, rcx",
+          "00a65a76: lea rbx, [rcx + 0x88]",
+          "00a65a7d: lea r14, [rcx + 0xc8]",
+          "00a65a84: mov rcx, r14",
+          "00a65a87: call 0x74adfc4",
+          "00a65a8c: mov rcx, rbx",
+          "00a65a8f: mov rdx, rdi"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa661a0",
+    "end": "0xa667a5",
+    "instructions": 340,
+    "matches": [
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa66402",
+        "context": [
+          "00a663f9: add rbx, 0x10",
+          "00a663fd: cmp rbx, r15",
+          "00a66400: jne 0xa663f0",
+          "00a66402: lea rbx, [rsi + 0xc8]",
+          "00a66409: mov rcx, rbx",
+          "00a6640c: call 0x74adfc4",
+          "00a66411: mov rax, qword ptr [rsi + 0x98]",
+          "00a66418: test rax, rax"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa66910",
+    "end": "0xa66d86",
+    "instructions": 265,
+    "matches": [
+      {
+        "field": [
+          "0xc8"
+        ],
+        "write": false,
+        "address": "0xa66bb8",
+        "context": [
+          "00a66baf: add r15, 0x10",
+          "00a66bb3: cmp r15, r12",
+          "00a66bb6: jne 0xa66ba0",
+          "00a66bb8: lea rdi, [rsi + 0xc8]",
+          "00a66bbf: mov rcx, rdi",
+          "00a66bc2: call 0x74adfc4",
+          "00a66bc7: mov rax, qword ptr [rsi + 0x98]",
+          "00a66bce: test rax, rax"
+        ]
+      }
+    ]
+  },
+  {
+    "function": "0xa67460",
+    "end": "0xa679e8",
+    "instructions": 301,
+    "matches": [
+      {
+        "field": [
+          "0xd0"
+        ],
+        "write": true,
+        "address": "0xa6794f",
+        "context": [
+          "00a6793f: mov rdx, qword ptr [rdi + 0x18]",
+          "00a67943: lea rcx, [rip + 0xaea9396]",
+          "00a6794a: call 0xa02770",
+          "00a6794f: mov byte ptr [rdi + 0xd0], 0",
+          "00a67956: xorps xmm0, xmm0",
+          "00a67959: movaps xmmword ptr [rbp + 0x200], xmm0",
+          "00a67960: mov rax, qword ptr [rdi + 0x20]",
+          "00a67964: test rax, rax"
+        ]
+      }
+    ]
+  }
+]

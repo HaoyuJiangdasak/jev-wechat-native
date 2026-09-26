@@ -1,0 +1,1 @@
+{"phase": "startup_failed", "counts": {"hostExitCode": 1}, "error_types": ["HostExitedBeforeState"]}

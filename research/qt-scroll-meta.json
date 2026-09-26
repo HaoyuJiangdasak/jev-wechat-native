@@ -1,0 +1,239 @@
+{
+  "QAbstractSlider": {
+    "class": "QAbstractSlider",
+    "static_metaobject_rva": "0x920e670",
+    "string_table_rva": "0xb342810",
+    "metadata_rva": "0x920e460",
+    "static_metacall_rva": "0x20b4600",
+    "parent_metaobject_rva": "0x8e25c58",
+    "own_methods": [
+      {
+        "local_index": 0,
+        "name": "valueChanged",
+        "arguments": [
+          {
+            "type": "int",
+            "name": "value"
+          }
+        ],
+        "return": "void",
+        "kind": "signal",
+        "access": "public",
+        "flags": "0x6"
+      },
+      {
+        "local_index": 1,
+        "name": "sliderPressed",
+        "arguments": [],
+        "return": "void",
+        "kind": "signal",
+        "access": "public",
+        "flags": "0x6"
+      },
+      {
+        "local_index": 2,
+        "name": "sliderMoved",
+        "arguments": [
+          {
+            "type": "int",
+            "name": "position"
+          }
+        ],
+        "return": "void",
+        "kind": "signal",
+        "access": "public",
+        "flags": "0x6"
+      },
+      {
+        "local_index": 3,
+        "name": "sliderReleased",
+        "arguments": [],
+        "return": "void",
+        "kind": "signal",
+        "access": "public",
+        "flags": "0x6"
+      },
+      {
+        "local_index": 4,
+        "name": "rangeChanged",
+        "arguments": [
+          {
+            "type": "int",
+            "name": "min"
+          },
+          {
+            "type": "int",
+            "name": "max"
+          }
+        ],
+        "return": "void",
+        "kind": "signal",
+        "access": "public",
+        "flags": "0x6"
+      },
+      {
+        "local_index": 5,
+        "name": "actionTriggered",
+        "arguments": [
+          {
+            "type": "int",
+            "name": "action"
+          }
+        ],
+        "return": "void",
+        "kind": "signal",
+        "access": "public",
+        "flags": "0x6"
+      },
+      {
+        "local_index": 6,
+        "name": "setValue",
+        "arguments": [
+          {
+            "type": "int",
+            "name": ""
+          }
+        ],
+        "return": "void",
+        "kind": "slot",
+        "access": "public",
+        "flags": "0xa"
+      },
+      {
+        "local_index": 7,
+        "name": "setOrientation",
+        "arguments": [
+          {
+            "type": "Qt::Orientation",
+            "name": ""
+          }
+        ],
+        "return": "void",
+        "kind": "slot",
+        "access": "public",
+        "flags": "0xa"
+      },
+      {
+        "local_index": 8,
+        "name": "setRange",
+        "arguments": [
+          {
+            "type": "int",
+            "name": "min"
+          },
+          {
+            "type": "int",
+            "name": "max"
+          }
+        ],
+        "return": "void",
+        "kind": "slot",
+        "access": "public",
+        "flags": "0xa"
+      }
+    ],
+    "own_properties": [
+      {
+        "local_index": 0,
+        "name": "minimum",
+        "type": "int",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 1,
+        "name": "maximum",
+        "type": "int",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 2,
+        "name": "singleStep",
+        "type": "int",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 3,
+        "name": "pageStep",
+        "type": "int",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 4,
+        "name": "value",
+        "type": "int",
+        "readable": true,
+        "writable": true,
+        "flags": "0x595103"
+      },
+      {
+        "local_index": 5,
+        "name": "sliderPosition",
+        "type": "int",
+        "readable": true,
+        "writable": true,
+        "flags": "0x495103"
+      },
+      {
+        "local_index": 6,
+        "name": "tracking",
+        "type": "bool",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 7,
+        "name": "orientation",
+        "type": "Qt::Orientation",
+        "readable": true,
+        "writable": true,
+        "flags": "0x9510b"
+      },
+      {
+        "local_index": 8,
+        "name": "invertedAppearance",
+        "type": "bool",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 9,
+        "name": "invertedControls",
+        "type": "bool",
+        "readable": true,
+        "writable": true,
+        "flags": "0x95103"
+      },
+      {
+        "local_index": 10,
+        "name": "sliderDown",
+        "type": "bool",
+        "readable": true,
+        "writable": true,
+        "flags": "0x94103"
+      }
+    ]
+  },
+  "QScrollBar": {
+    "class": "QScrollBar",
+    "static_metaobject_rva": "0x91cd6b8",
+    "string_table_rva": "0xb311698",
+    "metadata_rva": "0x91cd6e8",
+    "static_metacall_rva": "0xaf20",
+    "parent_metaobject_rva": "0x920e670",
+    "own_methods": [],
+    "own_properties": []
+  },
+  "mmui::XScrollBar": null,
+  "mmui::ChatListView": null,
+  "mmui::ChatMessageListView": null
+}

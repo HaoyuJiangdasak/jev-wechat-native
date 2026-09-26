@@ -1,0 +1,13 @@
+{
+  "wechat_version": "4.1.15.11",
+  "test": "temporary_native_view_annotation",
+  "applied": 1,
+  "restored": 1,
+  "label_height_before_after": [20, 77],
+  "row_height_before_after": [56, 113],
+  "visually_observed_inside_wechat": true,
+  "following_rows_moved_without_overlap": true,
+  "visually_observed_restoration": true,
+  "incomplete": ["visible_target_selection", "bottom_position_retention", "live_conversation_identity_validation", "automatic_real_analysis"],
+  "full_user_requirement_complete": false
+}
